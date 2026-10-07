@@ -1,7 +1,7 @@
-# Initial implementation validation — 2026-10-07
+# Prototype design validation — 2026-10-07
 
-This report applies to the software and interface contract in the initial
-`design/pico2-prototype` branch. It is not a PCB or bench-test report.
+This report applies to revision A0 on `design/pico2-prototype`. It records
+software and CAD checks. No physical prototype has been tested.
 
 | Check | Result |
 | --- | --- |
@@ -33,10 +33,47 @@ while ROMDIS/data-output enable remain inactive for this diagnostic mode.
 
 ## Remaining validation
 
-- Full schematic, RTC backup components, power budget and module mechanics.
-- KiCad ERC, board DRC, schematic parity and routed-connectivity checks.
+- Actual module/socket fit, cable orientation and full power budget.
 - RTC software and register/timing checks against the original RP5C01.
 - RP2350 ROM service timing and output-disable behavior on real CPC hardware.
 - RTC switchover/current/time retention and each peripheral on the prototype.
 
-Build outputs are local under `build/`; they are not a manufacturing release.
+## CAD checks
+
+Toolchain: KiCad 10.0.6 (Fedora Flatpak), local Freerouting 2.5.0, Java 25.
+The local router's optional optimization phase was disabled; acceptance uses
+KiCad's filled-board DRC and schematic parity, not the router's score.
+
+| CAD check | Result |
+| --- | --- |
+| Schematic ERC | 0 violations |
+| Filled-board DRC | 0 violations |
+| Unrouted connections | 0 |
+| Schematic/PCB parity | 0 mismatches |
+| Independent pin-map/topology checks | Pass |
+| Schematic and 3D inspection | Completed; module fit still requires the physical parts |
+
+Router-created sub-0.20 mm tracks were widened to 0.20 mm and rechecked.
+A RESET trace was moved inward for 0.50 mm board-edge clearance, and a 0.06 mm
+unused stub was removed. Four crowded through-hole ground pads now use solid
+plane connections in place of incomplete thermals; the other pads retain
+thermal relief. No DRC exclusions were added to hide these issues.
+
+Independent checks compare the exported netlist to the imported CPC, PIC,
+W5100S and CH376 pin maps, Pico GPIO allocation and GAL physical pins. They also
+verify the RTC latch, supervisor, oscillator, reset diode and power jumpers,
+and compare module pad coordinates to the source package. These checks help
+catch pin-map mistakes that matching schematic and PCB files alone cannot find.
+
+The schematic PDF and KiCad render were visually inspected. The project carries
+local footprints/models and explicit track, clearance, drill and board-edge
+rules. Final machine-readable reports are in `hardware/kicad/checks/`;
+SHA-256 hashes bind them and the exported views to the delivered CAD.
+
+The RTC access timing still needs measurement: the original RP5C01 requires
+longer strobes than many modern bus devices, and the GAL does not stretch CPC
+cycles. The ROM firmware currently monitors inputs only. RTC battery switching,
+trim range/startup, USB inrush and powered/unpowered bus behaviour must be tested
+on hardware. A clean ERC/DRC does not establish any of these behaviours.
+
+Build outputs are local under `build/`; this is not a manufacturing release.

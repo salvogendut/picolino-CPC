@@ -1,0 +1,1 @@
+(sym_lib_table (version 7) (lib (name "Picolino") (type "KiCad") (uri "${KIPRJMOD}/libraries/Picolino.kicad_sym") (options "") (descr "Picolino local library")))

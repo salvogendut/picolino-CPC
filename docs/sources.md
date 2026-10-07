@@ -42,8 +42,24 @@ GALasm has a commercial-use restriction in its own license; it is not vendored.
   or source from this project is copied.
 - [Analog Devices ADM691A](https://www.analog.com/en/products/adm691a.html):
   reference backup-supervisor function; last-time-buy status checked 2026-10-07.
-- [TI SN74CB3T3245](https://www.ti.com/lit/ds/symlink/sn74cb3t3245.pdf): candidate
+- [TI SN74CB3T3245](https://www.ti.com/lit/ds/symlink/sn74cb3t3245.pdf): selected
   translation/isolation part retained from the POC architecture.
+- [Original Ricoh databook PDF](https://ftpmirror.your.org/pub/misc/bitsavers/components/ricoh/1993_Ricoh_General-Purpose_IC_Data_Book.pdf):
+  oscillator application circuit, printed page 3-6 / PDF page 35.
+- [MAX690A](https://www.analog.com/en/products/max690a.html) and
+  [manufacturer datasheet](https://www.analog.com/MAX692A/datasheet): selected
+  backup switch and power-fail inhibition, including exact eight-pin map.
+- [Keystone 103](https://www.keyelco.com/product.cfm/THM-20mm-Holders-All-sizes/103/product_id/719):
+  CR2032 holder, verified 20.49 mm terminal pitch.
+- [Abracon AB38T](https://abracon.com/Resonators/AB38T.pdf): crystal load,
+  lead diameter and can dimensions. PCB uses gently formed leads.
+- [Kingtronics KKT trimmers](https://www.kingtronics.com/pdf/KKT-SMD-3mm-Ceramic-Trimmer-Capacitor.pdf):
+  KKT330TR capacitance limits and land pattern.
+- [Bourns MF-NSMF](https://www.bourns.com/docs/product-datasheets/mfnsmf.pdf):
+  USB branch resettable fuse, 1206 footprint.
+
+CAD library and 3D-model sources, local modifications and licence notices are
+recorded in [the local-library README](../hardware/kicad/libraries/README.md).
 
 Datasheets are linked, not bundled. Reuse of additional designs must include
 their exact revision, verified pin map and license.

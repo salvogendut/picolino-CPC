@@ -6,6 +6,26 @@ A new combined expansion board for the Amstrad CPC, built around a
 Development branch: `design/pico2-prototype`.
 [Implementation issue #1](https://github.com/salvogendut/picolino-CPC/issues/1).
 
+![Picolino CPC revision A0, rendered from the KiCad PCB](docs/images/picolino-cpc-3d.png)
+
+Revision A0 is a **150 × 120 mm, two-layer prototype**. The image is a KiCad
+render of the routed design. The W5100S model is a simplified envelope; the
+external CH376 module, ribbon cables, shunts and battery cell are not shown.
+
+## Design files
+
+- [KiCad 10 project](hardware/kicad/picolino-cpc.kicad_pro),
+  [schematic](hardware/kicad/picolino-cpc.kicad_sch) and
+  [PCB](hardware/kicad/picolino-cpc.kicad_pcb).
+- [Five-page schematic PDF](hardware/kicad/picolino-cpc-schematic.pdf),
+  [BOM](hardware/kicad/bom.csv) and [top assembly drawing](hardware/kicad/picolino-cpc-assembly.svg).
+- [3D perspective](docs/images/picolino-cpc-3d.png) and
+  [top view](docs/images/picolino-cpc-top.png).
+- [Connections, jumper settings and assembly notes](hardware/README.md).
+
+Open the project after cloning the whole repository. Symbols, footprints and
+3D models use project-relative paths and are included locally.
+
 | Function | Selected hardware | Intended connection |
 | --- | --- | --- |
 | ROM emulation | Socketed Pico 2 | CPC memory bus through level translation |
@@ -27,8 +47,10 @@ The monitor deliberately leaves every CPC-facing GPIO as an input. It is a
 bring-up tool, **not the completed ROM emulator**.
 
 Revision A uses the reference projects' parallel modules and the original RP5C01
-in DIP-18, as confirmed on 2026-10-07. The complete schematic and PCB are still
-to be implemented; there is no fabrication release or hardware validation yet.
+in DIP-18, as confirmed on 2026-10-07. The complete schematic and routed PCB are
+included. **This is an untested prototype, not a fabrication release.** Physical
+module fit, power sequencing, RTC calibration and CPC bus timing still require
+bench validation. Keep both ROM-enable shunts removed with the monitor firmware.
 Track implementation in [the design plan](docs/design-plan.md), and read
 [the architecture](docs/architecture.md) before connecting hardware.
 
@@ -51,6 +73,7 @@ python3 tools/build_legacy.py --galasm /path/to/galasm --rasm /path/to/rasm
 python3 tests/test_decode.py
 python3 tests/test_interfaces.py
 python3 tests/test_ch376.py   # requires z80==1.0.0
+python3 tools/check_hardware.py  # checks the exported KiCad netlist
 ```
 
 Build the Pico 2 monitor using Pico SDK 2.2.0 and an Arm embedded toolchain:

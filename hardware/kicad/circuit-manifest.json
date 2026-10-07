@@ -1,0 +1,2055 @@
+{
+  "J1": {
+    "symbol": "CPC_BUS",
+    "value": "CPC 50-pin expansion",
+    "footprint": "Connector_IDC:IDC-Header_2x25_P2.54mm_Vertical",
+    "nets": {
+      "49": "GND",
+      "2": "GND",
+      "27": "CPC_5V",
+      "15": "A3",
+      "14": "A4",
+      "13": "A5",
+      "12": "A6",
+      "11": "A7",
+      "9": "A9",
+      "33": "WR_N",
+      "31": "IORQ_N",
+      "41": "RESET_N",
+      "50": "PHI",
+      "26": "D0",
+      "25": "D1",
+      "24": "D2",
+      "23": "D3",
+      "22": "D4",
+      "21": "D5",
+      "20": "D6",
+      "19": "D7",
+      "32": "RD_N",
+      "18": "A0",
+      "17": "A1",
+      "16": "A2",
+      "40": "BUSRESET_N",
+      "10": "A8",
+      "8": "A10",
+      "7": "A11",
+      "6": "A12",
+      "5": "A13",
+      "4": "A14",
+      "3": "A15",
+      "42": "ROMEN_N",
+      "43": "ROMDIS"
+    },
+    "sheet": 1,
+    "sch": [
+      64.77,
+      107.95
+    ],
+    "pcb": [
+      148,
+      213,
+      90
+    ],
+    "note": "CPC/Mother X4 contact numbers; short 50-way cable. Pin 1 marked on silk."
+  },
+  "U2": {
+    "symbol": "GAL20V8",
+    "value": "GAL20V8B / picolino.jed",
+    "footprint": "Package_DIP:DIP-24_W7.62mm_Socket_LongPads",
+    "nets": {
+      "1": "A0",
+      "2": "A1",
+      "3": "A2",
+      "4": "A3",
+      "5": "A4",
+      "6": "A5",
+      "7": "A6",
+      "8": "A7",
+      "9": "A8",
+      "10": "A9",
+      "11": "A1X",
+      "12": "GND",
+      "13": "IORQ_N",
+      "14": "RD_N",
+      "15": "RTCCS_N",
+      "16": "W5CS_N",
+      "17": "PINT_N",
+      "18": "RTCAS",
+      "19": "RTCWR_N",
+      "20": "RTCRD_N",
+      "21": "CHLED_N",
+      "22": "CHCS_N",
+      "23": "WR_N",
+      "24": "BOARD_5V"
+    },
+    "sheet": 1,
+    "sch": [
+      185.42,
+      91.44
+    ],
+    "pcb": [
+      168,
+      164,
+      0
+    ],
+    "note": "Program firmware/gal/picolino.pld before fitting."
+  },
+  "U3": {
+    "symbol": "HCT21",
+    "value": "74HCT21",
+    "footprint": "Package_DIP:DIP-14_W7.62mm_Socket_LongPads",
+    "nets": {
+      "1": "A10",
+      "2": "A11",
+      "4": "A12",
+      "5": "A13",
+      "6": "A10_13",
+      "7": "GND",
+      "8": "A1X",
+      "9": "A10_13",
+      "10": "A14",
+      "12": "A15",
+      "13": "A15",
+      "14": "BOARD_5V"
+    },
+    "sheet": 1,
+    "sch": [
+      294.64,
+      83.82
+    ],
+    "pcb": [
+      182,
+      184,
+      90
+    ],
+    "note": ""
+  },
+  "J2": {
+    "symbol": "CH376_HEADER",
+    "value": "CH376 parallel / short ribbon",
+    "footprint": "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "3": "GND",
+      "5": "USB_5V",
+      "9": "A0",
+      "11": "CHCS_N",
+      "13": "RD_N",
+      "15": "WR_N",
+      "2": "D0",
+      "4": "D1",
+      "6": "D2",
+      "8": "D3",
+      "10": "D4",
+      "12": "D5",
+      "14": "D6",
+      "16": "D7"
+    },
+    "sheet": 1,
+    "sch": [
+      294.64,
+      157.48
+    ],
+    "pcb": [
+      108,
+      153,
+      0
+    ],
+    "note": "CPC_PICOROM J2 pinout. External reference CH376 module; pin 7 unused."
+  },
+  "J3": {
+    "symbol": "Conn_01x02",
+    "value": "EXT regulated 5V",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "nets": {
+      "1": "EXT_5V",
+      "2": "GND"
+    },
+    "sheet": 1,
+    "sch": [
+      62.23,
+      219.71
+    ],
+    "pcb": [
+      108,
+      183,
+      90
+    ],
+    "note": ""
+  },
+  "JP1": {
+    "symbol": "Conn_01x03",
+    "value": "POWER: 1 CPC / 2 BOARD / 3 EXT",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+    "nets": {
+      "1": "CPC_5V",
+      "2": "BOARD_5V",
+      "3": "EXT_5V"
+    },
+    "sheet": 1,
+    "sch": [
+      163.83,
+      209.55
+    ],
+    "pcb": [
+      132,
+      180,
+      0
+    ],
+    "note": "Fit ONE shunt only; use 2-3 for external board power."
+  },
+  "F1": {
+    "symbol": "Polyfuse",
+    "value": "USB 500mA hold",
+    "footprint": "Fuse:Fuse_1206_3216Metric",
+    "nets": {
+      "1": "BOARD_5V",
+      "2": "USB_5V"
+    },
+    "sheet": 1,
+    "sch": [
+      245.11,
+      214.63
+    ],
+    "pcb": [
+      108,
+      191,
+      0
+    ],
+    "note": "Example Bourns MF-NSMF050-2; validate inrush and voltage drop with chosen USB drive."
+  },
+  "D1": {
+    "symbol": "D_Schottky",
+    "value": "1N5817",
+    "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+    "nets": {
+      "1": "PICO_VSYS",
+      "2": "BOARD_5V"
+    },
+    "sheet": 1,
+    "sch": [
+      340.36,
+      214.63
+    ],
+    "pcb": [
+      173,
+      149,
+      0
+    ],
+    "note": "Cathode/band at Pico VSYS; prevents Pico USB feeding board 5V."
+  },
+  "R1": {
+    "symbol": "R",
+    "value": "1k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "BOARD_5V",
+      "2": "CHLED_A"
+    },
+    "sheet": 1,
+    "sch": [
+      180.34,
+      151.13
+    ],
+    "pcb": [
+      141,
+      158,
+      0
+    ],
+    "note": ""
+  },
+  "D2": {
+    "symbol": "LED",
+    "value": "USB activity",
+    "footprint": "LED_THT:LED_D3.0mm",
+    "nets": {
+      "1": "CHLED_N",
+      "2": "CHLED_A"
+    },
+    "sheet": 1,
+    "sch": [
+      218.44,
+      151.13
+    ],
+    "pcb": [
+      132,
+      150,
+      0
+    ],
+    "note": ""
+  },
+  "C1": {
+    "symbol": "C",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "BOARD_5V",
+      "2": "GND"
+    },
+    "sheet": 1,
+    "sch": [
+      115.57,
+      248.92
+    ],
+    "pcb": [
+      180,
+      163,
+      90
+    ],
+    "note": ""
+  },
+  "C2": {
+    "symbol": "C",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "BOARD_5V",
+      "2": "GND"
+    },
+    "sheet": 1,
+    "sch": [
+      165.1,
+      248.92
+    ],
+    "pcb": [
+      184,
+      172,
+      0
+    ],
+    "note": ""
+  },
+  "C3": {
+    "symbol": "C",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "USB_5V",
+      "2": "GND"
+    },
+    "sheet": 1,
+    "sch": [
+      214.63,
+      248.92
+    ],
+    "pcb": [
+      110,
+      179,
+      0
+    ],
+    "note": ""
+  },
+  "C4": {
+    "symbol": "C_Polarized",
+    "value": "100uF / 10V",
+    "footprint": "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm",
+    "nets": {
+      "1": "USB_5V",
+      "2": "GND"
+    },
+    "sheet": 1,
+    "sch": [
+      264.16,
+      248.92
+    ],
+    "pcb": [
+      125,
+      151,
+      0
+    ],
+    "note": ""
+  },
+  "C5": {
+    "symbol": "C_Polarized",
+    "value": "47uF / 10V",
+    "footprint": "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm",
+    "nets": {
+      "1": "BOARD_5V",
+      "2": "GND"
+    },
+    "sheet": 1,
+    "sch": [
+      312.42,
+      240.03
+    ],
+    "pcb": [
+      132,
+      161,
+      0
+    ],
+    "note": ""
+  },
+  "#FLG1": {
+    "symbol": "PWR_FLAG",
+    "value": "PWR_FLAG",
+    "footprint": null,
+    "nets": {
+      "1": "GND"
+    },
+    "sheet": 1,
+    "sch": [
+      381.0,
+      105.41
+    ],
+    "pcb": null,
+    "note": ""
+  },
+  "#FLG2": {
+    "symbol": "PWR_FLAG",
+    "value": "PWR_FLAG",
+    "footprint": null,
+    "nets": {
+      "1": "CPC_5V"
+    },
+    "sheet": 1,
+    "sch": [
+      381.0,
+      130.81
+    ],
+    "pcb": null,
+    "note": ""
+  },
+  "#FLG3": {
+    "symbol": "PWR_FLAG",
+    "value": "PWR_FLAG",
+    "footprint": null,
+    "nets": {
+      "1": "EXT_5V"
+    },
+    "sheet": 1,
+    "sch": [
+      381.0,
+      156.21
+    ],
+    "pcb": null,
+    "note": ""
+  },
+  "#FLG4": {
+    "symbol": "PWR_FLAG",
+    "value": "PWR_FLAG",
+    "footprint": null,
+    "nets": {
+      "1": "BOARD_5V"
+    },
+    "sheet": 1,
+    "sch": [
+      381.0,
+      181.61
+    ],
+    "pcb": null,
+    "note": ""
+  },
+  "#FLG5": {
+    "symbol": "PWR_FLAG",
+    "value": "PWR_FLAG",
+    "footprint": null,
+    "nets": {
+      "1": "USB_5V"
+    },
+    "sheet": 1,
+    "sch": [
+      381.0,
+      207.01
+    ],
+    "pcb": null,
+    "note": ""
+  },
+  "#FLG6": {
+    "symbol": "PWR_FLAG",
+    "value": "PWR_FLAG",
+    "footprint": null,
+    "nets": {
+      "1": "PICO_VSYS"
+    },
+    "sheet": 1,
+    "sch": [
+      381.0,
+      232.41
+    ],
+    "pcb": null,
+    "note": ""
+  },
+  "U1": {
+    "symbol": "Pico2",
+    "value": "Raspberry Pi Pico 2",
+    "footprint": "Local:Pico2_Socketed",
+    "nets": {
+      "1": "P_A0",
+      "2": "P_A1",
+      "4": "P_A2",
+      "5": "P_A3",
+      "6": "P_A4",
+      "7": "P_A5",
+      "9": "P_A6",
+      "10": "P_A7",
+      "11": "P_A8",
+      "12": "P_A9",
+      "14": "P_A10",
+      "15": "P_A11",
+      "16": "P_A12",
+      "17": "P_A13",
+      "19": "P_D0",
+      "20": "P_D1",
+      "21": "P_D2",
+      "22": "P_D3",
+      "24": "P_D4",
+      "25": "P_D5",
+      "26": "P_D6",
+      "27": "P_D7",
+      "29": "P_ROMEN_N",
+      "31": "P_A15",
+      "32": "ROM_LATCH",
+      "34": "RESET_PULLDOWN",
+      "3": "GND",
+      "8": "GND",
+      "13": "GND",
+      "18": "GND",
+      "23": "GND",
+      "28": "GND",
+      "33": "GND",
+      "38": "GND",
+      "36": "PICO_3V3",
+      "39": "PICO_VSYS"
+    },
+    "sheet": 2,
+    "sch": [
+      326.39,
+      101.6
+    ],
+    "pcb": [
+      198,
+      105,
+      0
+    ],
+    "note": "Two 1x20 sockets, 17.78mm row spacing; USB faces top edge."
+  },
+  "U4": {
+    "symbol": "CB3T3245",
+    "value": "SN74CB3T3245DW",
+    "footprint": "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm",
+    "nets": {
+      "10": "GND",
+      "19": "INPUT_OE_N",
+      "20": "PICO_3V3",
+      "2": "A0",
+      "18": "P_A0",
+      "3": "A1",
+      "17": "P_A1",
+      "4": "A2",
+      "16": "P_A2",
+      "5": "A3",
+      "15": "P_A3",
+      "6": "A4",
+      "14": "P_A4",
+      "7": "A5",
+      "13": "P_A5",
+      "8": "A6",
+      "12": "P_A6",
+      "9": "A7",
+      "11": "P_A7"
+    },
+    "sheet": 2,
+    "sch": [
+      72.39,
+      74.93
+    ],
+    "pcb": [
+      174,
+      113,
+      0
+    ],
+    "note": "Exact CB3T level-translating part at 3.3V; not HC245 or CB3Q."
+  },
+  "C6": {
+    "symbol": "C",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "PICO_3V3",
+      "2": "GND"
+    },
+    "sheet": 2,
+    "sch": [
+      39.37,
+      250.19
+    ],
+    "pcb": [
+      174,
+      103,
+      0
+    ],
+    "note": ""
+  },
+  "U5": {
+    "symbol": "CB3T3245",
+    "value": "SN74CB3T3245DW",
+    "footprint": "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm",
+    "nets": {
+      "10": "GND",
+      "19": "INPUT_OE_N",
+      "20": "PICO_3V3",
+      "2": "A8",
+      "18": "P_A8",
+      "3": "A9",
+      "17": "P_A9",
+      "4": "A10",
+      "16": "P_A10",
+      "5": "A11",
+      "15": "P_A11",
+      "6": "A12",
+      "14": "P_A12",
+      "7": "A13",
+      "13": "P_A13",
+      "8": "A15",
+      "12": "P_A15"
+    },
+    "sheet": 2,
+    "sch": [
+      189.23,
+      74.93
+    ],
+    "pcb": [
+      174,
+      135,
+      0
+    ],
+    "note": "Exact CB3T level-translating part at 3.3V; not HC245 or CB3Q."
+  },
+  "C7": {
+    "symbol": "C",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "PICO_3V3",
+      "2": "GND"
+    },
+    "sheet": 2,
+    "sch": [
+      109.22,
+      250.19
+    ],
+    "pcb": [
+      174,
+      125,
+      0
+    ],
+    "note": ""
+  },
+  "U6": {
+    "symbol": "CB3T3245",
+    "value": "SN74CB3T3245DW",
+    "footprint": "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm",
+    "nets": {
+      "10": "GND",
+      "19": "DATA_OE_N",
+      "20": "PICO_3V3",
+      "2": "D0",
+      "18": "P_D0",
+      "3": "D1",
+      "17": "P_D1",
+      "4": "D2",
+      "16": "P_D2",
+      "5": "D3",
+      "15": "P_D3",
+      "6": "D4",
+      "14": "P_D4",
+      "7": "D5",
+      "13": "P_D5",
+      "8": "D6",
+      "12": "P_D6",
+      "9": "D7",
+      "11": "P_D7"
+    },
+    "sheet": 2,
+    "sch": [
+      72.39,
+      152.4
+    ],
+    "pcb": [
+      192,
+      165,
+      0
+    ],
+    "note": "Exact CB3T level-translating part at 3.3V; not HC245 or CB3Q."
+  },
+  "C8": {
+    "symbol": "C",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "PICO_3V3",
+      "2": "GND"
+    },
+    "sheet": 2,
+    "sch": [
+      179.07,
+      250.19
+    ],
+    "pcb": [
+      192,
+      155,
+      0
+    ],
+    "note": ""
+  },
+  "U7": {
+    "symbol": "CB3T3245",
+    "value": "SN74CB3T3245DW",
+    "footprint": "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm",
+    "nets": {
+      "10": "GND",
+      "19": "INPUT_OE_N",
+      "20": "PICO_3V3",
+      "2": "ROMEN_N",
+      "18": "P_ROMEN_N",
+      "3": "IORQ_N",
+      "17": "P_IORQ_N",
+      "4": "WR_N",
+      "16": "P_WR_N",
+      "5": "BUSRESET_N",
+      "15": "P_BUSRESET_N"
+    },
+    "sheet": 2,
+    "sch": [
+      189.23,
+      152.4
+    ],
+    "pcb": [
+      214,
+      165,
+      0
+    ],
+    "note": "Exact CB3T level-translating part at 3.3V; not HC245 or CB3Q."
+  },
+  "C9": {
+    "symbol": "C",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "PICO_3V3",
+      "2": "GND"
+    },
+    "sheet": 2,
+    "sch": [
+      248.92,
+      250.19
+    ],
+    "pcb": [
+      211,
+      175,
+      0
+    ],
+    "note": ""
+  },
+  "JP2": {
+    "symbol": "Conn_02x02_Odd_Even",
+    "value": "ROM ENABLE: fit BOTH shunts",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical",
+    "nets": {
+      "1": "INPUT_OE_N",
+      "2": "DATA_OE_N",
+      "3": "BOARD_5V",
+      "4": "ROMDIS"
+    },
+    "sheet": 2,
+    "sch": [
+      327.66,
+      181.61
+    ],
+    "pcb": [
+      234,
+      190,
+      0
+    ],
+    "note": "Both open: internal CPC ROMs and input-only monitor. Both fitted: RP2350 ROM firmware required."
+  },
+  "Q1": {
+    "symbol": "2N7002",
+    "value": "2N7002",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "nets": {
+      "1": "CPC_5V",
+      "2": "GND",
+      "3": "INPUT_OE_N"
+    },
+    "sheet": 2,
+    "sch": [
+      77.47,
+      204.47
+    ],
+    "pcb": [
+      190,
+      145,
+      0
+    ],
+    "note": "CPC power gates all bus switches; Pico USB alone cannot enable them."
+  },
+  "R31": {
+    "symbol": "R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "CPC_5V",
+      "2": "GND"
+    },
+    "sheet": 2,
+    "sch": [
+      21.59,
+      204.47
+    ],
+    "pcb": [
+      184,
+      137,
+      0
+    ],
+    "note": "Gate discharge when the CPC expansion cable is disconnected."
+  },
+  "R2": {
+    "symbol": "R",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "INPUT_OE_N",
+      "2": "PICO_3V3"
+    },
+    "sheet": 2,
+    "sch": [
+      144.78,
+      199.39
+    ],
+    "pcb": [
+      190,
+      139,
+      0
+    ],
+    "note": ""
+  },
+  "R3": {
+    "symbol": "R",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "DATA_OE_N",
+      "2": "PICO_3V3"
+    },
+    "sheet": 2,
+    "sch": [
+      195.58,
+      199.39
+    ],
+    "pcb": [
+      237,
+      184,
+      0
+    ],
+    "note": ""
+  },
+  "R4": {
+    "symbol": "R",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "ROMDIS",
+      "2": "GND"
+    },
+    "sheet": 2,
+    "sch": [
+      246.38,
+      199.39
+    ],
+    "pcb": [
+      243,
+      190,
+      0
+    ],
+    "note": ""
+  },
+  "D3": {
+    "symbol": "D_Schottky",
+    "value": "BAT43",
+    "footprint": "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    "nets": {
+      "1": "ROM_LATCH",
+      "2": "P_A13"
+    },
+    "sheet": 2,
+    "sch": [
+      69.85,
+      279.4
+    ],
+    "pcb": [
+      198,
+      195,
+      90
+    ],
+    "note": "Band at ROM_LATCH; active-low capture when all three inputs are low."
+  },
+  "D4": {
+    "symbol": "D_Schottky",
+    "value": "BAT43",
+    "footprint": "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    "nets": {
+      "1": "ROM_LATCH",
+      "2": "P_WR_N"
+    },
+    "sheet": 2,
+    "sch": [
+      144.78,
+      279.4
+    ],
+    "pcb": [
+      203,
+      195,
+      90
+    ],
+    "note": "Band at ROM_LATCH; active-low capture when all three inputs are low."
+  },
+  "D5": {
+    "symbol": "D_Schottky",
+    "value": "BAT43",
+    "footprint": "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    "nets": {
+      "1": "ROM_LATCH",
+      "2": "P_IORQ_N"
+    },
+    "sheet": 2,
+    "sch": [
+      219.71,
+      279.4
+    ],
+    "pcb": [
+      208,
+      195,
+      90
+    ],
+    "note": "Band at ROM_LATCH; active-low capture when all three inputs are low."
+  },
+  "R5": {
+    "symbol": "R",
+    "value": "2.2k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "ROM_LATCH",
+      "2": "GND"
+    },
+    "sheet": 2,
+    "sch": [
+      298.45,
+      250.19
+    ],
+    "pcb": [
+      213,
+      192,
+      0
+    ],
+    "note": ""
+  },
+  "D6": {
+    "symbol": "D_Schottky",
+    "value": "BAT43",
+    "footprint": "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    "nets": {
+      "1": "RESET_PULLDOWN",
+      "2": "P_BUSRESET_N"
+    },
+    "sheet": 2,
+    "sch": [
+      355.6,
+      250.19
+    ],
+    "pcb": [
+      226,
+      180,
+      90
+    ],
+    "note": "Band at GPIO28; firmware may only pull reset low or release it."
+  },
+  "R6": {
+    "symbol": "R",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "P_ROMEN_N",
+      "2": "PICO_3V3"
+    },
+    "sheet": 2,
+    "sch": [
+      359.41,
+      210.82
+    ],
+    "pcb": [
+      226,
+      155,
+      0
+    ],
+    "note": ""
+  },
+  "U8": {
+    "symbol": "W5100S_Module",
+    "value": "W5100S reference module",
+    "footprint": "Local:W5100S_Cyboard",
+    "nets": {
+      "27": "GND",
+      "26": "GND",
+      "25": "GND",
+      "30": "GND",
+      "21": "BOARD_5V",
+      "22": "BOARD_5V",
+      "28": "BOARD_5V",
+      "12": "RESET_N",
+      "31": "A0",
+      "32": "A1",
+      "29": "W5CS_N",
+      "3": "W51D0",
+      "4": "W51D1",
+      "5": "W51D2",
+      "6": "W51D3",
+      "7": "W51D4",
+      "8": "W51D5",
+      "9": "W51D6",
+      "10": "W51D7",
+      "2": "W51WR_N",
+      "1": "W51RD_N"
+    },
+    "sheet": 3,
+    "sch": [
+      72.39,
+      100.33
+    ],
+    "pcb": [
+      127,
+      125,
+      180
+    ],
+    "note": "Two 1x16 sockets, 25.4mm row spacing. Reference module has a 3.3V regulator. RJ45 faces top edge."
+  },
+  "R7": {
+    "symbol": "R",
+    "value": "470",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "D0",
+      "2": "W51D0"
+    },
+    "sheet": 3,
+    "sch": [
+      154.94,
+      54.61
+    ],
+    "pcb": [
+      147,
+      107,
+      0
+    ],
+    "note": ""
+  },
+  "R8": {
+    "symbol": "R",
+    "value": "470",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "D1",
+      "2": "W51D1"
+    },
+    "sheet": 3,
+    "sch": [
+      213.36,
+      54.61
+    ],
+    "pcb": [
+      147,
+      111,
+      0
+    ],
+    "note": ""
+  },
+  "R9": {
+    "symbol": "R",
+    "value": "470",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "D2",
+      "2": "W51D2"
+    },
+    "sheet": 3,
+    "sch": [
+      154.94,
+      82.55
+    ],
+    "pcb": [
+      147,
+      115,
+      0
+    ],
+    "note": ""
+  },
+  "R10": {
+    "symbol": "R",
+    "value": "470",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "D3",
+      "2": "W51D3"
+    },
+    "sheet": 3,
+    "sch": [
+      213.36,
+      82.55
+    ],
+    "pcb": [
+      147,
+      119,
+      0
+    ],
+    "note": ""
+  },
+  "R11": {
+    "symbol": "R",
+    "value": "470",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "D4",
+      "2": "W51D4"
+    },
+    "sheet": 3,
+    "sch": [
+      154.94,
+      110.49
+    ],
+    "pcb": [
+      147,
+      123,
+      0
+    ],
+    "note": ""
+  },
+  "R12": {
+    "symbol": "R",
+    "value": "470",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "D5",
+      "2": "W51D5"
+    },
+    "sheet": 3,
+    "sch": [
+      213.36,
+      110.49
+    ],
+    "pcb": [
+      147,
+      127,
+      0
+    ],
+    "note": ""
+  },
+  "R13": {
+    "symbol": "R",
+    "value": "470",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "D6",
+      "2": "W51D6"
+    },
+    "sheet": 3,
+    "sch": [
+      154.94,
+      138.43
+    ],
+    "pcb": [
+      147,
+      131,
+      0
+    ],
+    "note": ""
+  },
+  "R14": {
+    "symbol": "R",
+    "value": "470",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "D7",
+      "2": "W51D7"
+    },
+    "sheet": 3,
+    "sch": [
+      213.36,
+      138.43
+    ],
+    "pcb": [
+      147,
+      135,
+      0
+    ],
+    "note": ""
+  },
+  "D7": {
+    "symbol": "D",
+    "value": "1N4148",
+    "footprint": "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    "nets": {
+      "1": "RD_N",
+      "2": "W51RD_N"
+    },
+    "sheet": 3,
+    "sch": [
+      168.91,
+      176.53
+    ],
+    "pcb": [
+      148,
+      148,
+      90
+    ],
+    "note": "Cyboard read/write conditioning; cathode at CPC strobe."
+  },
+  "D8": {
+    "symbol": "D",
+    "value": "1N4148",
+    "footprint": "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    "nets": {
+      "1": "WR_N",
+      "2": "W51WR_N"
+    },
+    "sheet": 3,
+    "sch": [
+      228.6,
+      176.53
+    ],
+    "pcb": [
+      153,
+      148,
+      90
+    ],
+    "note": "Cyboard read/write conditioning; cathode at CPC strobe."
+  },
+  "U9": {
+    "symbol": "PIC16F84A",
+    "value": "PIC16F84A / Cyboard HEX",
+    "footprint": "Package_DIP:DIP-18_W7.62mm_Socket_LongPads",
+    "nets": {
+      "5": "GND",
+      "14": "BOARD_5V",
+      "4": "RESET_N",
+      "16": "PHI",
+      "10": "MOUSED4",
+      "11": "MOUSED5",
+      "12": "MOUSED6",
+      "13": "MOUSED7",
+      "6": "PINT_N",
+      "17": "MOUSE_CLK",
+      "18": "MOUSE_DATA",
+      "9": "MOUSED3",
+      "8": "MOUSED2",
+      "7": "MOUSED1",
+      "1": "MOUSED0"
+    },
+    "sheet": 3,
+    "sch": [
+      322.58,
+      81.28
+    ],
+    "pcb": [
+      230,
+      126,
+      0
+    ],
+    "note": "Retain original PIC firmware, config fuses and CPC PHI clock."
+  },
+  "U10": {
+    "symbol": "HCT244",
+    "value": "74HCT244",
+    "footprint": "Package_DIP:DIP-20_W7.62mm_Socket_LongPads",
+    "nets": {
+      "10": "GND",
+      "20": "BOARD_5V",
+      "8": "MOUSED4",
+      "6": "MOUSED5",
+      "4": "MOUSED6",
+      "2": "MOUSED7",
+      "1": "PINT_N",
+      "19": "PINT_N",
+      "3": "D0",
+      "5": "D1",
+      "7": "D2",
+      "9": "D3",
+      "12": "D4",
+      "14": "D5",
+      "16": "D6",
+      "18": "D7",
+      "11": "MOUSED3",
+      "13": "MOUSED2",
+      "15": "MOUSED1",
+      "17": "MOUSED0"
+    },
+    "sheet": 3,
+    "sch": [
+      322.58,
+      180.34
+    ],
+    "pcb": [
+      233,
+      153,
+      0
+    ],
+    "note": ""
+  },
+  "J4": {
+    "symbol": "USB_Mouse",
+    "value": "PS/2 MOUSE only",
+    "footprint": "Connector_USB:USB_A_TE_292303-7_Horizontal",
+    "nets": {
+      "1": "BOARD_5V",
+      "2": "MOUSE_DATA",
+      "3": "MOUSE_CLK",
+      "4": "GND",
+      "SH": "GND"
+    },
+    "sheet": 3,
+    "sch": [
+      76.2,
+      220.98
+    ],
+    "pcb": [
+      231,
+      108,
+      180
+    ],
+    "note": "USB-shaped socket carries PS/2 protocol; only a PS/2-capable mouse works."
+  },
+  "R15": {
+    "symbol": "R",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "MOUSE_CLK",
+      "2": "BOARD_5V"
+    },
+    "sheet": 3,
+    "sch": [
+      176.53,
+      222.25
+    ],
+    "pcb": [
+      222,
+      121,
+      0
+    ],
+    "note": ""
+  },
+  "R16": {
+    "symbol": "R",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "MOUSE_DATA",
+      "2": "BOARD_5V"
+    },
+    "sheet": 3,
+    "sch": [
+      237.49,
+      222.25
+    ],
+    "pcb": [
+      227,
+      121,
+      0
+    ],
+    "note": ""
+  },
+  "C10": {
+    "symbol": "C",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "BOARD_5V",
+      "2": "GND"
+    },
+    "sheet": 3,
+    "sch": [
+      152.4,
+      267.97
+    ],
+    "pcb": [
+      107,
+      120,
+      90
+    ],
+    "note": ""
+  },
+  "C11": {
+    "symbol": "C",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "BOARD_5V",
+      "2": "GND"
+    },
+    "sheet": 3,
+    "sch": [
+      214.63,
+      267.97
+    ],
+    "pcb": [
+      245,
+      136,
+      0
+    ],
+    "note": ""
+  },
+  "C12": {
+    "symbol": "C",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "BOARD_5V",
+      "2": "GND"
+    },
+    "sheet": 3,
+    "sch": [
+      275.59,
+      267.97
+    ],
+    "pcb": [
+      246,
+      153,
+      90
+    ],
+    "note": ""
+  },
+  "U11": {
+    "symbol": "RP5C01",
+    "value": "RP5C01 (original, DIP-18)",
+    "footprint": "Package_DIP:DIP-18_W7.62mm_Socket_LongPads",
+    "nets": {
+      "1": "RTCCS_N",
+      "2": "RTC_POWER_GOOD",
+      "3": "GND",
+      "4": "RTC_A0",
+      "5": "RTC_A1",
+      "6": "RTC_A2",
+      "7": "RTC_A3",
+      "8": "RTCRD_N",
+      "9": "GND",
+      "10": "RTCWR_N",
+      "11": "D0",
+      "12": "D1",
+      "13": "D2",
+      "14": "D3",
+      "15": "RTC_ALARM_TEST",
+      "16": "RTC_OSCIN",
+      "17": "RTC_OSCOUT",
+      "18": "RTC_BACKUP_VCC"
+    },
+    "sheet": 4,
+    "sch": [
+      194.31,
+      87.63
+    ],
+    "pcb": [
+      138,
+      171,
+      0
+    ],
+    "note": ""
+  },
+  "U12": {
+    "symbol": "HCT373",
+    "value": "74HCT373",
+    "footprint": "Package_DIP:DIP-20_W7.62mm_Socket_LongPads",
+    "nets": {
+      "1": "GND",
+      "2": "RTC_A0",
+      "3": "D0",
+      "4": "D1",
+      "5": "RTC_A1",
+      "6": "RTC_A2",
+      "7": "D2",
+      "8": "D3",
+      "9": "RTC_A3",
+      "10": "GND",
+      "11": "RTCAS",
+      "13": "GND",
+      "14": "GND",
+      "17": "GND",
+      "18": "GND",
+      "20": "BOARD_5V"
+    },
+    "sheet": 4,
+    "sch": [
+      68.58,
+      85.09
+    ],
+    "pcb": [
+      119,
+      169,
+      0
+    ],
+    "note": "LE high only on FD15 write; closes at end of write. Unused data inputs grounded."
+  },
+  "U13": {
+    "symbol": "MAX690A",
+    "value": "MAX690AESA+",
+    "footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+    "nets": {
+      "1": "RTC_BACKUP_VCC",
+      "2": "BOARD_5V",
+      "3": "GND",
+      "4": "GND",
+      "7": "RTC_POWER_GOOD",
+      "8": "VBAT"
+    },
+    "sheet": 4,
+    "sch": [
+      312.42,
+      74.93
+    ],
+    "pcb": [
+      151,
+      189,
+      0
+    ],
+    "note": "Pin 7 /RESET is HIGH when main power is valid, directly enabling RTC CS. WDI left open to disable watchdog."
+  },
+  "BT1": {
+    "symbol": "Battery_Cell",
+    "value": "CR2032 / Keystone 103",
+    "footprint": "Battery:BatteryHolder_Keystone_103_1x20mm",
+    "nets": {
+      "1": "VBAT",
+      "2": "GND"
+    },
+    "sheet": 4,
+    "sch": [
+      334.01,
+      130.81
+    ],
+    "pcb": [
+      112,
+      206,
+      0
+    ],
+    "note": "Single CR2032, positive face up. No charging circuit."
+  },
+  "#FLG7": {
+    "symbol": "PWR_FLAG",
+    "value": "PWR_FLAG",
+    "footprint": null,
+    "nets": {
+      "1": "VBAT"
+    },
+    "sheet": 4,
+    "sch": [
+      383.54,
+      132.08
+    ],
+    "pcb": null,
+    "note": ""
+  },
+  "R17": {
+    "symbol": "R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "RTC_POWER_GOOD",
+      "2": "GND"
+    },
+    "sheet": 4,
+    "sch": [
+      270.51,
+      128.27
+    ],
+    "pcb": [
+      151,
+      198,
+      0
+    ],
+    "note": "Defines disabled state below supervisor operating voltage."
+  },
+  "Y1": {
+    "symbol": "Crystal",
+    "value": "32.768kHz / AB38T",
+    "footprint": "Crystal:Crystal_C38-LF_D3.0mm_L8.0mm_Vertical",
+    "nets": {
+      "1": "RTC_OSCIN",
+      "2": "RTC_XOUT"
+    },
+    "sheet": 4,
+    "sch": [
+      154.94,
+      181.61
+    ],
+    "pcb": [
+      151,
+      173,
+      0
+    ],
+    "note": "AB38T-32.768KHZ, 12.5pF load; gently form leads from 0.8mm to 1.9mm pitch. Local pads enlarged to 0.7mm drill. Calibrate on PCB."
+  },
+  "R18": {
+    "symbol": "R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "RTC_XOUT",
+      "2": "RTC_OSCOUT"
+    },
+    "sheet": 4,
+    "sch": [
+      217.17,
+      181.61
+    ],
+    "pcb": [
+      151,
+      178,
+      0
+    ],
+    "note": ""
+  },
+  "CV1": {
+    "symbol": "C_Trim",
+    "value": "30pF trim / KKT330TR",
+    "footprint": "Capacitor_SMD:C_Trimmer_Murata_TZC3",
+    "nets": {
+      "1": "RTC_OSCIN",
+      "2": "GND"
+    },
+    "sheet": 4,
+    "sch": [
+      87.63,
+      181.61
+    ],
+    "pcb": [
+      160,
+      172,
+      0
+    ],
+    "note": "Kingtronics KKT330TR: minimum setting <=8pF, maximum >=28.5pF; TZC3-compatible geometry. Calibrate from ALARM output; verify trim range."
+  },
+  "C13": {
+    "symbol": "C",
+    "value": "30pF C0G",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "RTC_XOUT",
+      "2": "GND"
+    },
+    "sheet": 4,
+    "sch": [
+      154.94,
+      223.52
+    ],
+    "pcb": [
+      156,
+      178,
+      0
+    ],
+    "note": ""
+  },
+  "C14": {
+    "symbol": "C",
+    "value": "56pF C0G",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "RTC_OSCOUT",
+      "2": "GND"
+    },
+    "sheet": 4,
+    "sch": [
+      217.17,
+      223.52
+    ],
+    "pcb": [
+      151,
+      182,
+      0
+    ],
+    "note": ""
+  },
+  "C15": {
+    "symbol": "C",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "RTC_BACKUP_VCC",
+      "2": "GND"
+    },
+    "sheet": 4,
+    "sch": [
+      281.94,
+      181.61
+    ],
+    "pcb": [
+      150,
+      166,
+      0
+    ],
+    "note": ""
+  },
+  "C16": {
+    "symbol": "C",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "BOARD_5V",
+      "2": "GND"
+    },
+    "sheet": 4,
+    "sch": [
+      336.55,
+      181.61
+    ],
+    "pcb": [
+      132,
+      167,
+      0
+    ],
+    "note": ""
+  },
+  "C17": {
+    "symbol": "C",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "BOARD_5V",
+      "2": "GND"
+    },
+    "sheet": 4,
+    "sch": [
+      336.55,
+      223.52
+    ],
+    "pcb": [
+      158,
+      188,
+      0
+    ],
+    "note": ""
+  },
+  "R19": {
+    "symbol": "R",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "RTC_ALARM_TEST",
+      "2": "BOARD_5V"
+    },
+    "sheet": 4,
+    "sch": [
+      281.94,
+      223.52
+    ],
+    "pcb": [
+      141,
+      198,
+      0
+    ],
+    "note": ""
+  },
+  "TP1": {
+    "symbol": "TestPoint",
+    "value": "RTC ALARM / calibration",
+    "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "nets": {
+      "1": "RTC_ALARM_TEST"
+    },
+    "sheet": 4,
+    "sch": [
+      364.49,
+      222.25
+    ],
+    "pcb": [
+      144,
+      202,
+      0
+    ],
+    "note": ""
+  },
+  "R20": {
+    "symbol": "R",
+    "value": "220k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "RTCCS_N",
+      "2": "GND"
+    },
+    "sheet": 4,
+    "sch": [
+      27.94,
+      264.16
+    ],
+    "pcb": [
+      160,
+      196,
+      90
+    ],
+    "note": "RTC backup input bias; no pull-up to battery supply."
+  },
+  "R21": {
+    "symbol": "R",
+    "value": "220k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "RTCRD_N",
+      "2": "GND"
+    },
+    "sheet": 4,
+    "sch": [
+      53.34,
+      264.16
+    ],
+    "pcb": [
+      165,
+      196,
+      90
+    ],
+    "note": "RTC backup input bias; no pull-up to battery supply."
+  },
+  "R22": {
+    "symbol": "R",
+    "value": "220k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "RTCWR_N",
+      "2": "GND"
+    },
+    "sheet": 4,
+    "sch": [
+      78.74,
+      264.16
+    ],
+    "pcb": [
+      170,
+      196,
+      90
+    ],
+    "note": "RTC backup input bias; no pull-up to battery supply."
+  },
+  "R23": {
+    "symbol": "R",
+    "value": "220k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "RTC_A0",
+      "2": "GND"
+    },
+    "sheet": 4,
+    "sch": [
+      104.14,
+      264.16
+    ],
+    "pcb": [
+      175,
+      196,
+      90
+    ],
+    "note": "RTC backup input bias; no pull-up to battery supply."
+  },
+  "R24": {
+    "symbol": "R",
+    "value": "220k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "RTC_A1",
+      "2": "GND"
+    },
+    "sheet": 4,
+    "sch": [
+      129.54,
+      264.16
+    ],
+    "pcb": [
+      180,
+      196,
+      90
+    ],
+    "note": "RTC backup input bias; no pull-up to battery supply."
+  },
+  "R25": {
+    "symbol": "R",
+    "value": "220k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "RTC_A2",
+      "2": "GND"
+    },
+    "sheet": 4,
+    "sch": [
+      154.94,
+      264.16
+    ],
+    "pcb": [
+      185,
+      196,
+      90
+    ],
+    "note": "RTC backup input bias; no pull-up to battery supply."
+  },
+  "R26": {
+    "symbol": "R",
+    "value": "220k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "RTC_A3",
+      "2": "GND"
+    },
+    "sheet": 4,
+    "sch": [
+      180.34,
+      264.16
+    ],
+    "pcb": [
+      160,
+      202,
+      90
+    ],
+    "note": "RTC backup input bias; no pull-up to battery supply."
+  },
+  "R27": {
+    "symbol": "R",
+    "value": "220k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "D0",
+      "2": "GND"
+    },
+    "sheet": 4,
+    "sch": [
+      205.74,
+      264.16
+    ],
+    "pcb": [
+      165,
+      202,
+      90
+    ],
+    "note": "RTC backup input bias; no pull-up to battery supply."
+  },
+  "R28": {
+    "symbol": "R",
+    "value": "220k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "D1",
+      "2": "GND"
+    },
+    "sheet": 4,
+    "sch": [
+      231.14,
+      264.16
+    ],
+    "pcb": [
+      170,
+      202,
+      90
+    ],
+    "note": "RTC backup input bias; no pull-up to battery supply."
+  },
+  "R29": {
+    "symbol": "R",
+    "value": "220k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "D2",
+      "2": "GND"
+    },
+    "sheet": 4,
+    "sch": [
+      256.54,
+      264.16
+    ],
+    "pcb": [
+      175,
+      202,
+      90
+    ],
+    "note": "RTC backup input bias; no pull-up to battery supply."
+  },
+  "R30": {
+    "symbol": "R",
+    "value": "220k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "nets": {
+      "1": "D3",
+      "2": "GND"
+    },
+    "sheet": 4,
+    "sch": [
+      281.94,
+      264.16
+    ],
+    "pcb": [
+      180,
+      202,
+      90
+    ],
+    "note": "RTC backup input bias; no pull-up to battery supply."
+  },
+  "H1": {
+    "symbol": "MountingHole",
+    "value": "M3 NPTH",
+    "footprint": "MountingHole:MountingHole_3.2mm_M3",
+    "nets": {},
+    "sheet": 1,
+    "sch": [
+      39.37,
+      271.78
+    ],
+    "pcb": [
+      104,
+      104,
+      0
+    ],
+    "note": ""
+  },
+  "H2": {
+    "symbol": "MountingHole",
+    "value": "M3 NPTH",
+    "footprint": "MountingHole:MountingHole_3.2mm_M3",
+    "nets": {},
+    "sheet": 1,
+    "sch": [
+      100.33,
+      271.78
+    ],
+    "pcb": [
+      246,
+      104,
+      0
+    ],
+    "note": ""
+  },
+  "H3": {
+    "symbol": "MountingHole",
+    "value": "M3 NPTH",
+    "footprint": "MountingHole:MountingHole_3.2mm_M3",
+    "nets": {},
+    "sheet": 1,
+    "sch": [
+      160.02,
+      271.78
+    ],
+    "pcb": [
+      104,
+      216,
+      0
+    ],
+    "note": ""
+  },
+  "H4": {
+    "symbol": "MountingHole",
+    "value": "M3 NPTH",
+    "footprint": "MountingHole:MountingHole_3.2mm_M3",
+    "nets": {},
+    "sheet": 1,
+    "sch": [
+      219.71,
+      271.78
+    ],
+    "pcb": [
+      246,
+      216,
+      0
+    ],
+    "note": ""
+  }
+}

@@ -1,0 +1,86 @@
+Reference,Value,Footprint,Assembly note
+J1,CPC 50-pin expansion,Picolino:IDC-Header_2x25_P2.54mm_Vertical,CPC/Mother X4 contact numbers; short 50-way cable. Pin 1 marked on silk.
+U2,GAL20V8B / picolino.jed,Picolino:DIP-24_W7.62mm_Socket_LongPads,Program firmware/gal/picolino.pld before fitting.
+U3,74HCT21,Picolino:DIP-14_W7.62mm_Socket_LongPads,
+J2,CH376 parallel / short ribbon,Picolino:IDC-Header_2x08_P2.54mm_Vertical,CPC_PICOROM J2 pinout. External reference CH376 module; pin 7 unused.
+J3,EXT regulated 5V,Picolino:PinHeader_1x02_P2.54mm_Vertical,
+JP1,POWER: 1 CPC / 2 BOARD / 3 EXT,Picolino:PinHeader_1x03_P2.54mm_Vertical,Fit ONE shunt only; use 2-3 for external board power.
+F1,USB 500mA hold,Picolino:Fuse_1206_3216Metric,Example Bourns MF-NSMF050-2; validate inrush and voltage drop with chosen USB drive.
+D1,1N5817,Picolino:D_DO-41_SOD81_P10.16mm_Horizontal,Cathode/band at Pico VSYS; prevents Pico USB feeding board 5V.
+R1,1k,Picolino:R_0805_2012Metric,
+D2,USB activity,Picolino:LED_D3.0mm,
+C1,100nF,Picolino:C_0805_2012Metric,
+C2,100nF,Picolino:C_0805_2012Metric,
+C3,100nF,Picolino:C_0805_2012Metric,
+C4,100uF / 10V,Picolino:CP_Radial_D6.3mm_P2.50mm,
+C5,47uF / 10V,Picolino:CP_Radial_D5.0mm_P2.00mm,
+U1,Raspberry Pi Pico 2,Picolino:Pico2_Socketed,"Two 1x20 sockets, 17.78mm row spacing; USB faces top edge."
+U4,SN74CB3T3245DW,Picolino:SOIC-20W_7.5x12.8mm_P1.27mm,Exact CB3T level-translating part at 3.3V; not HC245 or CB3Q.
+C6,100nF,Picolino:C_0805_2012Metric,
+U5,SN74CB3T3245DW,Picolino:SOIC-20W_7.5x12.8mm_P1.27mm,Exact CB3T level-translating part at 3.3V; not HC245 or CB3Q.
+C7,100nF,Picolino:C_0805_2012Metric,
+U6,SN74CB3T3245DW,Picolino:SOIC-20W_7.5x12.8mm_P1.27mm,Exact CB3T level-translating part at 3.3V; not HC245 or CB3Q.
+C8,100nF,Picolino:C_0805_2012Metric,
+U7,SN74CB3T3245DW,Picolino:SOIC-20W_7.5x12.8mm_P1.27mm,Exact CB3T level-translating part at 3.3V; not HC245 or CB3Q.
+C9,100nF,Picolino:C_0805_2012Metric,
+JP2,ROM ENABLE: fit BOTH shunts,Picolino:PinHeader_2x02_P2.54mm_Vertical,Both open: internal CPC ROMs and input-only monitor. Both fitted: RP2350 ROM firmware required.
+Q1,2N7002,Picolino:SOT-23,CPC power gates all bus switches; Pico USB alone cannot enable them.
+R31,100k,Picolino:R_0805_2012Metric,Gate discharge when the CPC expansion cable is disconnected.
+R2,10k,Picolino:R_0805_2012Metric,
+R3,10k,Picolino:R_0805_2012Metric,
+R4,10k,Picolino:R_0805_2012Metric,
+D3,BAT43,Picolino:D_DO-35_SOD27_P7.62mm_Horizontal,Band at ROM_LATCH; active-low capture when all three inputs are low.
+D4,BAT43,Picolino:D_DO-35_SOD27_P7.62mm_Horizontal,Band at ROM_LATCH; active-low capture when all three inputs are low.
+D5,BAT43,Picolino:D_DO-35_SOD27_P7.62mm_Horizontal,Band at ROM_LATCH; active-low capture when all three inputs are low.
+R5,2.2k,Picolino:R_0805_2012Metric,
+D6,BAT43,Picolino:D_DO-35_SOD27_P7.62mm_Horizontal,Band at GPIO28; firmware may only pull reset low or release it.
+R6,10k,Picolino:R_0805_2012Metric,
+U8,W5100S reference module,Picolino:W5100S_Cyboard,"Two 1x16 sockets, 25.4mm row spacing. Reference module has a 3.3V regulator. RJ45 faces top edge."
+R7,470,Picolino:R_0805_2012Metric,
+R8,470,Picolino:R_0805_2012Metric,
+R9,470,Picolino:R_0805_2012Metric,
+R10,470,Picolino:R_0805_2012Metric,
+R11,470,Picolino:R_0805_2012Metric,
+R12,470,Picolino:R_0805_2012Metric,
+R13,470,Picolino:R_0805_2012Metric,
+R14,470,Picolino:R_0805_2012Metric,
+D7,1N4148,Picolino:D_DO-35_SOD27_P7.62mm_Horizontal,Cyboard read/write conditioning; cathode at CPC strobe.
+D8,1N4148,Picolino:D_DO-35_SOD27_P7.62mm_Horizontal,Cyboard read/write conditioning; cathode at CPC strobe.
+U9,PIC16F84A / Cyboard HEX,Picolino:DIP-18_W7.62mm_Socket_LongPads,"Retain original PIC firmware, config fuses and CPC PHI clock."
+U10,74HCT244,Picolino:DIP-20_W7.62mm_Socket_LongPads,
+J4,PS/2 MOUSE only,Picolino:USB_A_TE_292303-7_Horizontal,USB-shaped socket carries PS/2 protocol; only a PS/2-capable mouse works.
+R15,10k,Picolino:R_0805_2012Metric,
+R16,10k,Picolino:R_0805_2012Metric,
+C10,100nF,Picolino:C_0805_2012Metric,
+C11,100nF,Picolino:C_0805_2012Metric,
+C12,100nF,Picolino:C_0805_2012Metric,
+U11,"RP5C01 (original, DIP-18)",Picolino:DIP-18_W7.62mm_Socket_LongPads,
+U12,74HCT373,Picolino:DIP-20_W7.62mm_Socket_LongPads,LE high only on FD15 write; closes at end of write. Unused data inputs grounded.
+U13,MAX690AESA+,Picolino:SOIC-8_3.9x4.9mm_P1.27mm,"Pin 7 /RESET is HIGH when main power is valid, directly enabling RTC CS. WDI left open to disable watchdog."
+BT1,CR2032 / Keystone 103,Picolino:BatteryHolder_Keystone_103_1x20mm,"Single CR2032, positive face up. No charging circuit."
+R17,100k,Picolino:R_0805_2012Metric,Defines disabled state below supervisor operating voltage.
+Y1,32.768kHz / AB38T,Picolino:Crystal_C38-LF_D3.0mm_L8.0mm_Vertical,"AB38T-32.768KHZ, 12.5pF load; gently form leads from 0.8mm to 1.9mm pitch. Local pads enlarged to 0.7mm drill. Calibrate on PCB."
+R18,100k,Picolino:R_0805_2012Metric,
+CV1,30pF trim / KKT330TR,Picolino:C_Trimmer_Murata_TZC3,"Kingtronics KKT330TR: minimum setting <=8pF, maximum >=28.5pF; TZC3-compatible geometry. Calibrate from ALARM output; verify trim range."
+C13,30pF C0G,Picolino:C_0805_2012Metric,
+C14,56pF C0G,Picolino:C_0805_2012Metric,
+C15,100nF,Picolino:C_0805_2012Metric,
+C16,100nF,Picolino:C_0805_2012Metric,
+C17,100nF,Picolino:C_0805_2012Metric,
+R19,10k,Picolino:R_0805_2012Metric,
+TP1,RTC ALARM / calibration,Picolino:TestPoint_THTPad_D2.0mm_Drill1.0mm,
+R20,220k,Picolino:R_0805_2012Metric,RTC backup input bias; no pull-up to battery supply.
+R21,220k,Picolino:R_0805_2012Metric,RTC backup input bias; no pull-up to battery supply.
+R22,220k,Picolino:R_0805_2012Metric,RTC backup input bias; no pull-up to battery supply.
+R23,220k,Picolino:R_0805_2012Metric,RTC backup input bias; no pull-up to battery supply.
+R24,220k,Picolino:R_0805_2012Metric,RTC backup input bias; no pull-up to battery supply.
+R25,220k,Picolino:R_0805_2012Metric,RTC backup input bias; no pull-up to battery supply.
+R26,220k,Picolino:R_0805_2012Metric,RTC backup input bias; no pull-up to battery supply.
+R27,220k,Picolino:R_0805_2012Metric,RTC backup input bias; no pull-up to battery supply.
+R28,220k,Picolino:R_0805_2012Metric,RTC backup input bias; no pull-up to battery supply.
+R29,220k,Picolino:R_0805_2012Metric,RTC backup input bias; no pull-up to battery supply.
+R30,220k,Picolino:R_0805_2012Metric,RTC backup input bias; no pull-up to battery supply.
+H1,M3 NPTH,Picolino:MountingHole_3.2mm_M3,
+H2,M3 NPTH,Picolino:MountingHole_3.2mm_M3,
+H3,M3 NPTH,Picolino:MountingHole_3.2mm_M3,
+H4,M3 NPTH,Picolino:MountingHole_3.2mm_M3,

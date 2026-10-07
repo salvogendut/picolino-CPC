@@ -1,0 +1,142 @@
+[
+  {
+    "local": "BatteryHolder_Keystone_103_1x20mm",
+    "source": "Battery:BatteryHolder_Keystone_103_1x20mm",
+    "sha256": "69ccee75ccc6d0011aa4edf398e35c4e44684dda1b4ff772153280a2daf32727"
+  },
+  {
+    "local": "C_0805_2012Metric",
+    "source": "Capacitor_SMD:C_0805_2012Metric",
+    "sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb"
+  },
+  {
+    "local": "C_Trimmer_Murata_TZC3",
+    "source": "Capacitor_SMD:C_Trimmer_Murata_TZC3",
+    "sha256": "a431164a83b2ca5f0fa9f61532e7343eed93c756a7ad2542c5365e98aaad75c7"
+  },
+  {
+    "local": "CP_Radial_D5.0mm_P2.00mm",
+    "source": "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm",
+    "sha256": "fd0a251de515130de6e789ffb786d43c746b83178e437feb9fc4f39b6ea9ef39"
+  },
+  {
+    "local": "CP_Radial_D6.3mm_P2.50mm",
+    "source": "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm",
+    "sha256": "e81a44655d3a9e86e6745c01be07bb025069d56a88e72074fba35f4b042e25e0"
+  },
+  {
+    "local": "IDC-Header_2x08_P2.54mm_Vertical",
+    "source": "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical",
+    "sha256": "0c00fadc79e443c032fb621251557a751dfc0f5d8e62995b12a7fe30de7da12a"
+  },
+  {
+    "local": "IDC-Header_2x25_P2.54mm_Vertical",
+    "source": "Connector_IDC:IDC-Header_2x25_P2.54mm_Vertical",
+    "sha256": "b2d77f71c342872065704ee93bfa4a7d91aa3ecfdcd813d7a1f58d04709e4f94"
+  },
+  {
+    "local": "PinHeader_1x02_P2.54mm_Vertical",
+    "source": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "sha256": "5301303268f72ba9cc94b7fdbac355951933e6854272ce8d300b679b86b5d45d"
+  },
+  {
+    "local": "PinHeader_1x03_P2.54mm_Vertical",
+    "source": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+    "sha256": "e5f24b6fea852f86171042806da48490229c9c8025b6d266b8cad6485b26e79f"
+  },
+  {
+    "local": "PinHeader_2x02_P2.54mm_Vertical",
+    "source": "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical",
+    "sha256": "6c20ba536e6981b926336b1b8fbec1afd5f334537f403f64ace8463539308e0e"
+  },
+  {
+    "local": "USB_A_TE_292303-7_Horizontal",
+    "source": "Connector_USB:USB_A_TE_292303-7_Horizontal",
+    "sha256": "1fb89d7d76af4ce6b33547ab57c13c396a856cbbf67bbadabf9a58f1b44f1399"
+  },
+  {
+    "local": "Crystal_C38-LF_D3.0mm_L8.0mm_Vertical",
+    "source": "Crystal:Crystal_C38-LF_D3.0mm_L8.0mm_Vertical",
+    "sha256": "dc0cd21eb04263c37cbcc291b0fde5ff141b351714e9ba043234dd8663255641"
+  },
+  {
+    "local": "D_DO-35_SOD27_P7.62mm_Horizontal",
+    "source": "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    "sha256": "a053fbe6259d61a2f1c9a216214de690fddddfa9b2c8add5063bada8b33ff4c6"
+  },
+  {
+    "local": "D_DO-41_SOD81_P10.16mm_Horizontal",
+    "source": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+    "sha256": "f7a156e9b80a77d5d232d68b3f1b1e81b7bf99703017f9124da667d1d31af41e"
+  },
+  {
+    "local": "Fuse_1206_3216Metric",
+    "source": "Fuse:Fuse_1206_3216Metric",
+    "sha256": "8f4307d8c771db71526ed8ccf7c762824636660adec3635905932cc5e1d02280"
+  },
+  {
+    "local": "LED_D3.0mm",
+    "source": "LED_THT:LED_D3.0mm",
+    "sha256": "493343812829a676e4b8f663240f515a8c294600cb39f45a363916c7a034873d"
+  },
+  {
+    "local": "Pico2_Socketed",
+    "source": "Module:RaspberryPi_Pico_Common_THT",
+    "sha256": "5e9eaf236684e2284488f364555fa0b33d51a5404f88e4d6c89049add14d9dbe"
+  },
+  {
+    "local": "MountingHole_3.2mm_M3",
+    "source": "MountingHole:MountingHole_3.2mm_M3",
+    "sha256": "b83ec84428449465df3b459f1bc24b285045c812102a2052b1b7ce0f67e018f2"
+  },
+  {
+    "local": "DIP-14_W7.62mm_Socket_LongPads",
+    "source": "Package_DIP:DIP-14_W7.62mm_Socket_LongPads",
+    "sha256": "a5d0d7f1c3aec98ca74fd9978f80dc29286f339e080168e807ae6350072d3cde"
+  },
+  {
+    "local": "DIP-18_W7.62mm_Socket_LongPads",
+    "source": "Package_DIP:DIP-18_W7.62mm_Socket_LongPads",
+    "sha256": "8d8a00ef46809a24a69a0223b58a23acd6d8c57441013473f94873abb6c7af81"
+  },
+  {
+    "local": "DIP-20_W7.62mm_Socket_LongPads",
+    "source": "Package_DIP:DIP-20_W7.62mm_Socket_LongPads",
+    "sha256": "73beba6ec307b32559af11ddcaa68da50fba4478b00b0edf648d0549a9ee33a7"
+  },
+  {
+    "local": "DIP-24_W7.62mm_Socket_LongPads",
+    "source": "Package_DIP:DIP-24_W7.62mm_Socket_LongPads",
+    "sha256": "517dba47a80168a075de8a2ab0eb681a9b03c0fa05f0a055c19210efead2153e"
+  },
+  {
+    "local": "SOIC-20W_7.5x12.8mm_P1.27mm",
+    "source": "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm",
+    "sha256": "9783bc19f518a72442ddbfe6289e767a42c3d23358b65c3447b6a36bdd0e7dcf"
+  },
+  {
+    "local": "SOIC-8_3.9x4.9mm_P1.27mm",
+    "source": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+    "sha256": "074ecb2092b24fa4b4b9cdd7c926fc587b0d7d6d21e7341e57935fd42d36894f"
+  },
+  {
+    "local": "SOT-23",
+    "source": "Package_TO_SOT_SMD:SOT-23",
+    "sha256": "0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15"
+  },
+  {
+    "local": "R_0805_2012Metric",
+    "source": "Resistor_SMD:R_0805_2012Metric",
+    "sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794"
+  },
+  {
+    "local": "TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "source": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "sha256": "5dd1c13d2327afbd359025f456f0003188c17d91d2a3447f5d1aaaf6d3478386"
+  },
+  {
+    "local": "W5100S_Cyboard",
+    "source": "Cyboard EAGLE W5100S-NETWORK-MODULE",
+    "sha256": "942617d6089c9bb080703c15009175bfe0c9f9f942501c5c477cb1b37758c186"
+  }
+]

@@ -1,0 +1,1812 @@
+(kicad_sch (version 20250114) (generator "eeschema") (uuid "205cd8dd-43ab-5d6a-8fe8-b7b7d46ea1e0") (paper "A3")
+(title_block (title "Picolino CPC / rtc") (date "2026-10-07") (rev "A0") (comment 1 "Prototype: verify timing and power on hardware"))
+(lib_symbols
+(symbol "Picolino:R"
+  (pin_numbers
+    (hide yes))
+  (pin_names
+    (offset 0))
+  (exclude_from_sim no)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (duplicate_pin_numbers_are_jumpers no)
+  (property "Reference" "R"
+    (at 2.032 0 90)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Value" "R"
+    (at 0 0 90)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Footprint" ""
+    (at -1.778 0 90)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Datasheet" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" "Resistor"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_keywords" "R res resistor"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_fp_filters" "R_*"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (symbol "R_0_1"
+    (rectangle
+      (start -1.016 -2.54)
+      (end 1.016 2.54)
+      (stroke
+        (width 0.254)
+        (type default))
+      (fill
+        (type none))))
+  (symbol "R_1_1"
+    (pin passive line
+      (at 0 3.81 270)
+      (length 1.27)
+      (name ""
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "1"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin passive line
+      (at 0 -3.81 90)
+      (length 1.27)
+      (name ""
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "2"
+        (effects
+          (font
+            (size 1.27 1.27))))))
+  (embedded_fonts no))
+(symbol "Picolino:C"
+  (pin_numbers
+    (hide yes))
+  (pin_names
+    (offset 0.254))
+  (exclude_from_sim no)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (duplicate_pin_numbers_are_jumpers no)
+  (property "Reference" "C"
+    (at 0.635 2.54 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (property "Value" "C"
+    (at 0.635 -2.54 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (property "Footprint" ""
+    (at 0.9652 -3.81 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Datasheet" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" "Unpolarized capacitor"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_keywords" "cap capacitor"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_fp_filters" "C_*"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (symbol "C_0_1"
+    (polyline
+      (pts
+        (xy -2.032 0.762)
+        (xy 2.032 0.762))
+      (stroke
+        (width 0.508)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -2.032 -0.762)
+        (xy 2.032 -0.762))
+      (stroke
+        (width 0.508)
+        (type default))
+      (fill
+        (type none))))
+  (symbol "C_1_1"
+    (pin passive line
+      (at 0 3.81 270)
+      (length 2.794)
+      (name ""
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "1"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin passive line
+      (at 0 -3.81 90)
+      (length 2.794)
+      (name ""
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "2"
+        (effects
+          (font
+            (size 1.27 1.27))))))
+  (embedded_fonts no))
+(symbol "Picolino:C_Trim"
+  (pin_numbers
+    (hide yes))
+  (pin_names
+    (offset 0.254)
+    (hide yes))
+  (exclude_from_sim no)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (duplicate_pin_numbers_are_jumpers no)
+  (property "Reference" "C"
+    (at 1.524 -2.032 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Value" "C_Trim"
+    (at 3.048 -3.556 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Footprint" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Datasheet" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" "Trimmable capacitor"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_keywords" "trimmer variable capacitor"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (symbol "C_Trim_0_1"
+    (polyline
+      (pts
+        (xy -2.032 0.762)
+        (xy 2.032 0.762))
+      (stroke
+        (width 0.508)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -2.032 -0.762)
+        (xy 2.032 -0.762))
+      (stroke
+        (width 0.508)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 1.27 2.54)
+        (xy -1.27 -2.54))
+      (stroke
+        (width 0.3048)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 1.27 2.54)
+        (xy 0.381 3.048))
+      (stroke
+        (width 0.3048)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 1.27 2.54)
+        (xy 2.159 2.032))
+      (stroke
+        (width 0.3048)
+        (type default))
+      (fill
+        (type none))))
+  (symbol "C_Trim_1_1"
+    (pin passive line
+      (at 0 3.81 270)
+      (length 3.048)
+      (name ""
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "1"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin passive line
+      (at 0 -3.81 90)
+      (length 3.048)
+      (name ""
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "2"
+        (effects
+          (font
+            (size 1.27 1.27))))))
+  (embedded_fonts no))
+(symbol "Picolino:Crystal"
+  (pin_numbers
+    (hide yes))
+  (pin_names
+    (offset 1.016)
+    (hide yes))
+  (exclude_from_sim no)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (duplicate_pin_numbers_are_jumpers no)
+  (property "Reference" "Y"
+    (at 0 3.81 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Value" "Crystal"
+    (at 0 -3.81 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Footprint" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Datasheet" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" "Two pin crystal"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_keywords" "quartz ceramic resonator oscillator"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_fp_filters" "Crystal*"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (symbol "Crystal_0_1"
+    (polyline
+      (pts
+        (xy -2.54 0)
+        (xy -1.905 0))
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -1.905 -1.27)
+        (xy -1.905 1.27))
+      (stroke
+        (width 0.508)
+        (type default))
+      (fill
+        (type none)))
+    (rectangle
+      (start -1.143 2.54)
+      (end 1.143 -2.54)
+      (stroke
+        (width 0.3048)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 1.905 -1.27)
+        (xy 1.905 1.27))
+      (stroke
+        (width 0.508)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 2.54 0)
+        (xy 1.905 0))
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none))))
+  (symbol "Crystal_1_1"
+    (pin passive line
+      (at -3.81 0 0)
+      (length 1.27)
+      (name "1"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "1"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin passive line
+      (at 3.81 0 180)
+      (length 1.27)
+      (name "2"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "2"
+        (effects
+          (font
+            (size 1.27 1.27))))))
+  (embedded_fonts no))
+(symbol "Picolino:Battery_Cell"
+  (pin_numbers
+    (hide yes))
+  (pin_names
+    (offset 0)
+    (hide yes))
+  (exclude_from_sim no)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (duplicate_pin_numbers_are_jumpers no)
+  (property "Reference" "BT"
+    (at 2.54 2.54 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (property "Value" "Battery_Cell"
+    (at 2.54 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (property "Footprint" ""
+    (at 0 1.524 90)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Datasheet" ""
+    (at 0 1.524 90)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" "Single-cell battery"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Sim.Device" "V"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Sim.Type" "DC"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Sim.Pins" "1=+ 2=-"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_keywords" "battery cell"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (symbol "Battery_Cell_0_1"
+    (rectangle
+      (start -2.286 1.778)
+      (end 2.286 1.524)
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type outline)))
+    (rectangle
+      (start -1.524 1.016)
+      (end 1.524 0.508)
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type outline)))
+    (polyline
+      (pts
+        (xy 0 1.778)
+        (xy 0 2.54))
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0.762)
+        (xy 0 0))
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0.762 3.048)
+        (xy 1.778 3.048))
+      (stroke
+        (width 0.254)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 1.27 3.556)
+        (xy 1.27 2.54))
+      (stroke
+        (width 0.254)
+        (type default))
+      (fill
+        (type none))))
+  (symbol "Battery_Cell_1_1"
+    (pin passive line
+      (at 0 5.08 270)
+      (length 2.54)
+      (name "+"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "1"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin passive line
+      (at 0 -2.54 90)
+      (length 2.54)
+      (name "-"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "2"
+        (effects
+          (font
+            (size 1.27 1.27))))))
+  (embedded_fonts no))
+(symbol "Picolino:TestPoint"
+  (pin_numbers
+    (hide yes))
+  (pin_names
+    (offset 0.762)
+    (hide yes))
+  (exclude_from_sim no)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (duplicate_pin_numbers_are_jumpers no)
+  (property "Reference" "TP"
+    (at 0 6.858 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Value" "TestPoint"
+    (at 0 5.08 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Footprint" ""
+    (at 5.08 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Datasheet" ""
+    (at 5.08 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" "test point"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_keywords" "test point tp"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_fp_filters" "Pin* Test*"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (symbol "TestPoint_0_1"
+    (circle
+      (center 0 3.302)
+      (radius 0.762)
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none))))
+  (symbol "TestPoint_1_1"
+    (pin passive line
+      (at 0 0 90)
+      (length 2.54)
+      (name "1"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "1"
+        (effects
+          (font
+            (size 1.27 1.27))))))
+  (embedded_fonts no))
+(symbol "Picolino:PWR_FLAG"
+  (power global)
+  (pin_numbers
+    (hide yes))
+  (pin_names
+    (offset 0)
+    (hide yes))
+  (exclude_from_sim no)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (duplicate_pin_numbers_are_jumpers no)
+  (property "Reference" "#FLG"
+    (at 0 1.905 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Value" "PWR_FLAG"
+    (at 0 3.81 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Footprint" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Datasheet" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" "Special symbol for telling ERC where power comes from"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_keywords" "flag power"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (symbol "PWR_FLAG_0_0"
+    (pin power_out line
+      (at 0 0 90)
+      (length 0)
+      (name ""
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "1"
+        (effects
+          (font
+            (size 1.27 1.27))))))
+  (symbol "PWR_FLAG_0_1"
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.27)
+        (xy -1.016 1.905)
+        (xy 0 2.54)
+        (xy 1.016 1.905)
+        (xy 0 1.27))
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none))))
+  (embedded_fonts no))
+(symbol "Picolino:HCT373"
+  (pin_names
+    (offset 0.8))
+  (in_bom yes)
+  (on_board yes)
+  (property "Reference" "U"
+    (at 0 19.05 0)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Value" "HCT373"
+    (at 0 16.51 0)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Footprint" ""
+    (at 0 0 0)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (symbol "HCT373_0_1"
+    (rectangle
+      (start -17.78 13.97)
+      (end 17.78 -13.97)
+      (stroke
+        (width 0.254)
+        (type default))
+      (fill
+        (type background))))
+  (symbol "HCT373_1_1"
+    (pin input line
+      (at -22.86 11.4300 0)
+      (length 5.08)
+      (name "OE_N"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "1"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin tri_state line
+      (at -22.86 8.8900 0)
+      (length 5.08)
+      (name "Q0"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "2"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin input line
+      (at -22.86 6.3500 0)
+      (length 5.08)
+      (name "D0"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "3"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin input line
+      (at -22.86 3.8100 0)
+      (length 5.08)
+      (name "D1"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "4"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin tri_state line
+      (at -22.86 1.2700 0)
+      (length 5.08)
+      (name "Q1"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "5"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin tri_state line
+      (at -22.86 -1.2700 0)
+      (length 5.08)
+      (name "Q2"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "6"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin input line
+      (at -22.86 -3.8100 0)
+      (length 5.08)
+      (name "D2"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "7"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin input line
+      (at -22.86 -6.3500 0)
+      (length 5.08)
+      (name "D3"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "8"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin tri_state line
+      (at -22.86 -8.8900 0)
+      (length 5.08)
+      (name "Q3"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "9"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin power_in line
+      (at -22.86 -11.4300 0)
+      (length 5.08)
+      (name "GND"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "10"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin input line
+      (at 22.86 11.4300 180)
+      (length 5.08)
+      (name "LE"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "11"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin tri_state line
+      (at 22.86 8.8900 180)
+      (length 5.08)
+      (name "Q4"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "12"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin input line
+      (at 22.86 6.3500 180)
+      (length 5.08)
+      (name "D4"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "13"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin input line
+      (at 22.86 3.8100 180)
+      (length 5.08)
+      (name "D5"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "14"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin tri_state line
+      (at 22.86 1.2700 180)
+      (length 5.08)
+      (name "Q5"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "15"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin tri_state line
+      (at 22.86 -1.2700 180)
+      (length 5.08)
+      (name "Q6"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "16"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin input line
+      (at 22.86 -3.8100 180)
+      (length 5.08)
+      (name "D6"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "17"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin input line
+      (at 22.86 -6.3500 180)
+      (length 5.08)
+      (name "D7"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "18"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin tri_state line
+      (at 22.86 -8.8900 180)
+      (length 5.08)
+      (name "Q7"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "19"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin power_in line
+      (at 22.86 -11.4300 180)
+      (length 5.08)
+      (name "VCC"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "20"
+        (effects
+          (font
+            (size 1.1 1.1)))))))
+(symbol "Picolino:RP5C01"
+  (pin_names
+    (offset 0.8))
+  (in_bom yes)
+  (on_board yes)
+  (property "Reference" "U"
+    (at 0 17.78 0)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Value" "RP5C01"
+    (at 0 15.239999999999998 0)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Footprint" ""
+    (at 0 0 0)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (symbol "RP5C01_0_1"
+    (rectangle
+      (start -17.78 12.7)
+      (end 17.78 -12.7)
+      (stroke
+        (width 0.254)
+        (type default))
+      (fill
+        (type background))))
+  (symbol "RP5C01_1_1"
+    (pin input line
+      (at -22.86 10.1600 0)
+      (length 5.08)
+      (name "/CS"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "1"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin input line
+      (at -22.86 7.6200 0)
+      (length 5.08)
+      (name "CS"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "2"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin input line
+      (at -22.86 5.0800 0)
+      (length 5.08)
+      (name "ADJ"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "3"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin input line
+      (at -22.86 2.5400 0)
+      (length 5.08)
+      (name "A0"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "4"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin input line
+      (at -22.86 0.0000 0)
+      (length 5.08)
+      (name "A1"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "5"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin input line
+      (at -22.86 -2.5400 0)
+      (length 5.08)
+      (name "A2"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "6"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin input line
+      (at -22.86 -5.0800 0)
+      (length 5.08)
+      (name "A3"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "7"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin input line
+      (at -22.86 -7.6200 0)
+      (length 5.08)
+      (name "/RD"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "8"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin power_in line
+      (at -22.86 -10.1600 0)
+      (length 5.08)
+      (name "GND"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "9"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin input line
+      (at 22.86 10.1600 180)
+      (length 5.08)
+      (name "/WR"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "10"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin bidirectional line
+      (at 22.86 7.6200 180)
+      (length 5.08)
+      (name "D0"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "11"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin bidirectional line
+      (at 22.86 5.0800 180)
+      (length 5.08)
+      (name "D1"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "12"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin bidirectional line
+      (at 22.86 2.5400 180)
+      (length 5.08)
+      (name "D2"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "13"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin bidirectional line
+      (at 22.86 0.0000 180)
+      (length 5.08)
+      (name "D3"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "14"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin output line
+      (at 22.86 -2.5400 180)
+      (length 5.08)
+      (name "/ALARM"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "15"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin input line
+      (at 22.86 -5.0800 180)
+      (length 5.08)
+      (name "OSCIN"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "16"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin output line
+      (at 22.86 -7.6200 180)
+      (length 5.08)
+      (name "OSCOUT"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "17"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin power_in line
+      (at 22.86 -10.1600 180)
+      (length 5.08)
+      (name "VCC"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "18"
+        (effects
+          (font
+            (size 1.1 1.1)))))))
+(symbol "Picolino:MAX690A"
+  (pin_names
+    (offset 0.8))
+  (in_bom yes)
+  (on_board yes)
+  (property "Reference" "U"
+    (at 0 11.43 0)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Value" "MAX690A"
+    (at 0 8.89 0)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Footprint" ""
+    (at 0 0 0)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (symbol "MAX690A_0_1"
+    (rectangle
+      (start -17.78 6.35)
+      (end 17.78 -6.35)
+      (stroke
+        (width 0.254)
+        (type default))
+      (fill
+        (type background))))
+  (symbol "MAX690A_1_1"
+    (pin power_out line
+      (at -22.86 3.8100 0)
+      (length 5.08)
+      (name "VOUT"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "1"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin power_in line
+      (at -22.86 1.2700 0)
+      (length 5.08)
+      (name "VCC"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "2"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin power_in line
+      (at -22.86 -1.2700 0)
+      (length 5.08)
+      (name "GND"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "3"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin input line
+      (at -22.86 -3.8100 0)
+      (length 5.08)
+      (name "PFI"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "4"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin output line
+      (at 22.86 3.8100 180)
+      (length 5.08)
+      (name "PFO_N"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "5"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin input line
+      (at 22.86 1.2700 180)
+      (length 5.08)
+      (name "WDI"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "6"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin output line
+      (at 22.86 -1.2700 180)
+      (length 5.08)
+      (name "RESET_N"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "7"
+        (effects
+          (font
+            (size 1.1 1.1)))))
+    (pin power_in line
+      (at 22.86 -3.8100 180)
+      (length 5.08)
+      (name "VBATT"
+        (effects
+          (font
+            (size 1.1 1.1))))
+      (number "8"
+        (effects
+          (font
+            (size 1.1 1.1))))))))
+(wire (pts (xy 171.45 77.47) (xy 166.37 77.47)) (stroke (width 0) (type default)) (uuid "0dcb2311-c518-5d42-af1a-b93ea70c26f2"))
+(global_label "RTCCS_N" (shape bidirectional) (at 166.37 77.47 0) (effects (font (size 1 1)) (justify right)) (uuid "ea701653-82d3-5a9c-9ef2-8d8d6a8ef211"))
+(wire (pts (xy 171.45 80.01) (xy 166.37 80.01)) (stroke (width 0) (type default)) (uuid "3655cbaf-79bf-5053-bdc6-8085b2ac835c"))
+(global_label "RTC_POWER_GOOD" (shape bidirectional) (at 166.37 80.01 0) (effects (font (size 1 1)) (justify right)) (uuid "56e694ce-b74a-5689-bb13-6a61d0230d86"))
+(wire (pts (xy 171.45 82.55) (xy 166.37 82.55)) (stroke (width 0) (type default)) (uuid "edb6d273-c901-5786-ab3f-5069dffd7ecc"))
+(global_label "GND" (shape bidirectional) (at 166.37 82.55 0) (effects (font (size 1 1)) (justify right)) (uuid "463c09d9-8f0d-57d6-bb4d-2c1809d25b17"))
+(wire (pts (xy 171.45 85.09) (xy 166.37 85.09)) (stroke (width 0) (type default)) (uuid "ab606d64-0018-510d-94c4-a5542c262326"))
+(global_label "RTC_A0" (shape bidirectional) (at 166.37 85.09 0) (effects (font (size 1 1)) (justify right)) (uuid "e6961905-5d42-5530-abff-6c69d2ad09d1"))
+(wire (pts (xy 171.45 87.63) (xy 166.37 87.63)) (stroke (width 0) (type default)) (uuid "6c5a6b10-152b-52ba-bdc6-ec795ac224bf"))
+(global_label "RTC_A1" (shape bidirectional) (at 166.37 87.63 0) (effects (font (size 1 1)) (justify right)) (uuid "b88dbf64-af69-5279-87d7-6a3f79565aad"))
+(wire (pts (xy 171.45 90.17) (xy 166.37 90.17)) (stroke (width 0) (type default)) (uuid "a714d14c-240e-5fe6-a654-46b559e48c18"))
+(global_label "RTC_A2" (shape bidirectional) (at 166.37 90.17 0) (effects (font (size 1 1)) (justify right)) (uuid "7b1efee9-006c-564c-99c8-7bf9c6a4c203"))
+(wire (pts (xy 171.45 92.71) (xy 166.37 92.71)) (stroke (width 0) (type default)) (uuid "f15bec8b-07dc-5a81-b8a5-6a7d5e909e9a"))
+(global_label "RTC_A3" (shape bidirectional) (at 166.37 92.71 0) (effects (font (size 1 1)) (justify right)) (uuid "e4ae2e3c-7c5f-5efd-a278-01c995db02b7"))
+(wire (pts (xy 171.45 95.25) (xy 166.37 95.25)) (stroke (width 0) (type default)) (uuid "e0cc1eaa-ce27-59ce-814e-35f59fbb79c6"))
+(global_label "RTCRD_N" (shape bidirectional) (at 166.37 95.25 0) (effects (font (size 1 1)) (justify right)) (uuid "3099f545-96c5-5c9d-849d-7acd6a2b8b2c"))
+(wire (pts (xy 171.45 97.79) (xy 166.37 97.79)) (stroke (width 0) (type default)) (uuid "e4cc28e6-10c0-583f-86a2-f1650dc25e0a"))
+(global_label "GND" (shape bidirectional) (at 166.37 97.79 0) (effects (font (size 1 1)) (justify right)) (uuid "19f29eb6-2f5c-52db-a515-d913b3872174"))
+(wire (pts (xy 217.17 77.47) (xy 222.25 77.47)) (stroke (width 0) (type default)) (uuid "6ba0efc3-7572-5887-b8c4-d4be264fa749"))
+(global_label "RTCWR_N" (shape bidirectional) (at 222.25 77.47 180) (effects (font (size 1 1)) (justify left)) (uuid "a301848c-1161-5d8c-84ba-8fcd40bf0238"))
+(wire (pts (xy 217.17 80.01) (xy 222.25 80.01)) (stroke (width 0) (type default)) (uuid "17c4a1ce-5b46-587c-9f1e-25aa0b3b9284"))
+(global_label "D0" (shape bidirectional) (at 222.25 80.01 180) (effects (font (size 1 1)) (justify left)) (uuid "bc74a8ed-2880-519c-a1d0-338de49ac6fd"))
+(wire (pts (xy 217.17 82.55) (xy 222.25 82.55)) (stroke (width 0) (type default)) (uuid "cf4c9cda-c994-515e-97c1-9bac3d68f4f1"))
+(global_label "D1" (shape bidirectional) (at 222.25 82.55 180) (effects (font (size 1 1)) (justify left)) (uuid "6104969a-c0c0-5cc6-aacf-77b6e4d79b5c"))
+(wire (pts (xy 217.17 85.09) (xy 222.25 85.09)) (stroke (width 0) (type default)) (uuid "6ba3d792-383c-5592-8174-37021f81100e"))
+(global_label "D2" (shape bidirectional) (at 222.25 85.09 180) (effects (font (size 1 1)) (justify left)) (uuid "addc8443-a999-550b-93ff-b2b3e696825a"))
+(wire (pts (xy 217.17 87.63) (xy 222.25 87.63)) (stroke (width 0) (type default)) (uuid "bcc88a58-e3a1-5ff6-a0db-6d4fa465cb69"))
+(global_label "D3" (shape bidirectional) (at 222.25 87.63 180) (effects (font (size 1 1)) (justify left)) (uuid "6e4c64b6-5d5d-5cc1-bd09-f83d2f782a1a"))
+(wire (pts (xy 217.17 90.17) (xy 222.25 90.17)) (stroke (width 0) (type default)) (uuid "d507a7bf-fde8-535d-8a19-1a29b47efa24"))
+(global_label "RTC_ALARM_TEST" (shape bidirectional) (at 222.25 90.17 180) (effects (font (size 1 1)) (justify left)) (uuid "8ad48e9e-6f86-5862-8eed-2cd2a9fd6027"))
+(wire (pts (xy 217.17 92.71) (xy 222.25 92.71)) (stroke (width 0) (type default)) (uuid "f7b8d7ff-5a68-5631-8220-ae5e19b7bb55"))
+(global_label "RTC_OSCIN" (shape bidirectional) (at 222.25 92.71 180) (effects (font (size 1 1)) (justify left)) (uuid "7c8379cb-d296-5e46-8d6f-b79d95b3ba28"))
+(wire (pts (xy 217.17 95.25) (xy 222.25 95.25)) (stroke (width 0) (type default)) (uuid "2f5a7879-d3a4-5d87-90c4-711b59b6ee97"))
+(global_label "RTC_OSCOUT" (shape bidirectional) (at 222.25 95.25 180) (effects (font (size 1 1)) (justify left)) (uuid "a5d88296-2542-5179-b8ba-822014a916fa"))
+(wire (pts (xy 217.17 97.79) (xy 222.25 97.79)) (stroke (width 0) (type default)) (uuid "8732fcfb-d20c-57c6-b0b6-818246848ded"))
+(global_label "RTC_BACKUP_VCC" (shape bidirectional) (at 222.25 97.79 180) (effects (font (size 1 1)) (justify left)) (uuid "c3f7188f-c424-5ffd-837a-64e94e6c5f2d"))
+(symbol (lib_id "Picolino:RP5C01") (at 194.31 87.63 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "08baaca8-deb0-5298-9659-1c0163cf7e0a")
+(property "Reference" "U11" (at 194.3100 69.8500 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "RP5C01 (original, DIP-18)" (at 194.3100 72.3900 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:DIP-18_W7.62mm_Socket_LongPads" (at 194.3100 87.6300 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "d4154c95-dd27-5fd2-a9ca-f878a35584d6"))
+(pin "2" (uuid "fbe8d146-43b8-5266-9c82-7985208561f1"))
+(pin "3" (uuid "80aedaac-71a1-5b06-a9f2-75a0d60a44cc"))
+(pin "4" (uuid "b03bbde3-c936-5695-859d-c8cc6001c0d7"))
+(pin "5" (uuid "ac23f680-6176-58e2-9472-80c1d3edde8a"))
+(pin "6" (uuid "07943363-d9df-54cd-af6e-df4b7678a70b"))
+(pin "7" (uuid "0ea59407-08e3-5fad-bf6b-8f399e9bcde0"))
+(pin "8" (uuid "f87c9404-dbfb-5b73-836e-6dfbf0879487"))
+(pin "9" (uuid "8c98a9d5-ddc4-55f9-9ce8-78b5aaf947e6"))
+(pin "10" (uuid "c564d771-b59c-57db-b1b8-b79818dfc649"))
+(pin "11" (uuid "4f3198f0-296c-585e-b02b-b93134067cbf"))
+(pin "12" (uuid "793ef381-0c5c-5a49-9389-f5aa28b15a6d"))
+(pin "13" (uuid "60054f68-b2cc-5e03-a9f2-a3594deb3c63"))
+(pin "14" (uuid "a83ee5d0-1db2-5fb6-87a1-f52910e9c589"))
+(pin "15" (uuid "efade315-3fae-5020-8e8f-9093cfe5bc6a"))
+(pin "16" (uuid "2cdab531-bd9f-535a-8283-ac169bef179f"))
+(pin "17" (uuid "cb7255fb-462a-5d67-b83b-a070a9c3bd40"))
+(pin "18" (uuid "fd0f870e-3868-5cb8-b98e-b77a8d538d9c"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "U11") (unit 1)))))
+(wire (pts (xy 45.72 73.66) (xy 40.64 73.66)) (stroke (width 0) (type default)) (uuid "3b0a1488-2cc2-52a8-9c25-fcd7e989ab84"))
+(global_label "GND" (shape bidirectional) (at 40.64 73.66 0) (effects (font (size 1 1)) (justify right)) (uuid "bd9e9768-9fc6-5d50-9f36-80db2625f25d"))
+(wire (pts (xy 45.72 76.2) (xy 40.64 76.2)) (stroke (width 0) (type default)) (uuid "66cd3613-6511-56bd-a75b-40e05f1fd4b6"))
+(global_label "RTC_A0" (shape bidirectional) (at 40.64 76.2 0) (effects (font (size 1 1)) (justify right)) (uuid "cbee8e4d-4105-5b77-b8bc-d73a37734a06"))
+(wire (pts (xy 45.72 78.74) (xy 40.64 78.74)) (stroke (width 0) (type default)) (uuid "651464d9-0c36-5d1e-9cf9-13c14ece7293"))
+(global_label "D0" (shape bidirectional) (at 40.64 78.74 0) (effects (font (size 1 1)) (justify right)) (uuid "f06d1b40-b04b-5492-9c7a-799efea60954"))
+(wire (pts (xy 45.72 81.28) (xy 40.64 81.28)) (stroke (width 0) (type default)) (uuid "5ef8a7a6-0c0a-542f-86fe-fcbe7f84325f"))
+(global_label "D1" (shape bidirectional) (at 40.64 81.28 0) (effects (font (size 1 1)) (justify right)) (uuid "1e5cdc62-89a1-57ef-bf93-94a4f79bc5b7"))
+(wire (pts (xy 45.72 83.82) (xy 40.64 83.82)) (stroke (width 0) (type default)) (uuid "ea58c841-5b4f-5a52-9fea-895ccdaa5e66"))
+(global_label "RTC_A1" (shape bidirectional) (at 40.64 83.82 0) (effects (font (size 1 1)) (justify right)) (uuid "18a5c23a-7992-5eb7-a56b-219048e7889e"))
+(wire (pts (xy 45.72 86.36) (xy 40.64 86.36)) (stroke (width 0) (type default)) (uuid "6047ae7f-50e2-51db-86bd-88b39c31930a"))
+(global_label "RTC_A2" (shape bidirectional) (at 40.64 86.36 0) (effects (font (size 1 1)) (justify right)) (uuid "82d9699f-c4ec-5f33-b31c-d68966ba7880"))
+(wire (pts (xy 45.72 88.9) (xy 40.64 88.9)) (stroke (width 0) (type default)) (uuid "049eef35-3622-549f-b0fe-d4f1fe4671a3"))
+(global_label "D2" (shape bidirectional) (at 40.64 88.9 0) (effects (font (size 1 1)) (justify right)) (uuid "935633c6-a027-57d5-a3a7-4b6111565501"))
+(wire (pts (xy 45.72 91.44) (xy 40.64 91.44)) (stroke (width 0) (type default)) (uuid "f3622fed-c84c-5454-a7b4-29f87d626697"))
+(global_label "D3" (shape bidirectional) (at 40.64 91.44 0) (effects (font (size 1 1)) (justify right)) (uuid "956674f1-2a96-576e-839c-56ac7b586de6"))
+(wire (pts (xy 45.72 93.98) (xy 40.64 93.98)) (stroke (width 0) (type default)) (uuid "e7cb08ab-ab47-5930-920f-ed3e7d1dc7d0"))
+(global_label "RTC_A3" (shape bidirectional) (at 40.64 93.98 0) (effects (font (size 1 1)) (justify right)) (uuid "3b6d0a33-1020-5d79-97ea-acaa4e7d2157"))
+(wire (pts (xy 45.72 96.52) (xy 40.64 96.52)) (stroke (width 0) (type default)) (uuid "50bfe04c-84c5-50f7-885e-8a8784378323"))
+(global_label "GND" (shape bidirectional) (at 40.64 96.52 0) (effects (font (size 1 1)) (justify right)) (uuid "f7503100-2834-5e62-bd82-0d40201caf2b"))
+(wire (pts (xy 91.44 73.66) (xy 96.52 73.66)) (stroke (width 0) (type default)) (uuid "ea6c1065-27ff-53c2-81ff-b39bb34a57ab"))
+(global_label "RTCAS" (shape bidirectional) (at 96.52 73.66 180) (effects (font (size 1 1)) (justify left)) (uuid "aa411bed-1486-573b-98a7-184f4d0c620d"))
+(no_connect (at 91.44 76.2) (uuid "8c2da704-b3c4-5e7b-bcd9-321ded568f69"))
+(wire (pts (xy 91.44 78.74) (xy 96.52 78.74)) (stroke (width 0) (type default)) (uuid "0ffa648d-a2d6-57c9-9b30-bb6ca8aa3726"))
+(global_label "GND" (shape bidirectional) (at 96.52 78.74 180) (effects (font (size 1 1)) (justify left)) (uuid "23c13011-aecd-5a71-9e41-72a6c9a744a7"))
+(wire (pts (xy 91.44 81.28) (xy 96.52 81.28)) (stroke (width 0) (type default)) (uuid "2d132e04-6f72-5b90-83fe-e5f116b37e9b"))
+(global_label "GND" (shape bidirectional) (at 96.52 81.28 180) (effects (font (size 1 1)) (justify left)) (uuid "b2b15d8a-bb27-511c-9445-b375cf46e22f"))
+(no_connect (at 91.44 83.82) (uuid "eab9da2f-e6eb-57e2-b7bd-8c5f43f36ffe"))
+(no_connect (at 91.44 86.36) (uuid "51e6d7c7-7437-537d-a5e6-43a6786115aa"))
+(wire (pts (xy 91.44 88.9) (xy 96.52 88.9)) (stroke (width 0) (type default)) (uuid "3a735a27-df93-51b2-a207-754c221d1328"))
+(global_label "GND" (shape bidirectional) (at 96.52 88.9 180) (effects (font (size 1 1)) (justify left)) (uuid "4286b6b4-43bf-5065-889b-0cd780e20c38"))
+(wire (pts (xy 91.44 91.44) (xy 96.52 91.44)) (stroke (width 0) (type default)) (uuid "9505e2dd-e838-5b38-b56d-d8533e41c5a1"))
+(global_label "GND" (shape bidirectional) (at 96.52 91.44 180) (effects (font (size 1 1)) (justify left)) (uuid "dfe39a1f-0d4d-50bc-b999-3e25b61ddc35"))
+(no_connect (at 91.44 93.98) (uuid "828df2ad-7e0e-5c87-a8cb-a0709e59eefb"))
+(wire (pts (xy 91.44 96.52) (xy 96.52 96.52)) (stroke (width 0) (type default)) (uuid "8a0f3515-2a46-5238-bb54-e6ace5ca7c1b"))
+(global_label "BOARD_5V" (shape bidirectional) (at 96.52 96.52 180) (effects (font (size 1 1)) (justify left)) (uuid "4dbbcd69-f386-577b-b512-f59783e94c08"))
+(symbol (lib_id "Picolino:HCT373") (at 68.58 85.09 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "222eb528-a3aa-5a73-b11d-d920994945a7")
+(property "Reference" "U12" (at 68.5800 66.0400 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "74HCT373" (at 68.5800 68.5800 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:DIP-20_W7.62mm_Socket_LongPads" (at 68.5800 85.0900 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "aadd0f62-6828-5ca4-8d37-2724e573ce9f"))
+(pin "2" (uuid "2e8ee4d8-1a1b-5bb5-998c-c5c95453262b"))
+(pin "3" (uuid "3062bfc6-fd83-585f-ad1b-6529f49c22fb"))
+(pin "4" (uuid "179da80b-ed29-58aa-ac0b-eb3a911d26ce"))
+(pin "5" (uuid "a27b6c42-4bde-55cd-b15b-a175831a102d"))
+(pin "6" (uuid "7b3a94fb-3281-5b90-99ca-f7191ab85c58"))
+(pin "7" (uuid "4051d47c-c0b0-5d22-80dc-cfdd94f06f6f"))
+(pin "8" (uuid "329488c1-a2a9-5f83-b06d-4e3c8cc3d2b8"))
+(pin "9" (uuid "c20441a5-3321-5ae3-9914-1ca8df965920"))
+(pin "10" (uuid "1edb7957-ca52-5bd5-8c90-107c6dbfc997"))
+(pin "11" (uuid "7ecdfe48-c603-51d9-b3eb-11acc17ceefe"))
+(pin "12" (uuid "888cc052-57f1-5160-a6b8-ef7f220be484"))
+(pin "13" (uuid "f82f1062-daff-5697-b503-0834ce4a8416"))
+(pin "14" (uuid "8971abc8-5096-5ccc-b552-6a26ed3050a6"))
+(pin "15" (uuid "77ec40ca-6c24-506c-b6b0-bb1604386115"))
+(pin "16" (uuid "ebe03f99-2435-533e-a8e2-ff3d70f163d9"))
+(pin "17" (uuid "7f851fd6-f128-52ad-888d-69af41fe7b05"))
+(pin "18" (uuid "89d6246d-db08-562f-8aaa-61e9e7fecc3b"))
+(pin "19" (uuid "785c58df-2051-58b9-ba71-9d9d9f97c300"))
+(pin "20" (uuid "75528bb7-cbcd-5eec-8ab9-dfebf44e051c"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "U12") (unit 1)))))
+(wire (pts (xy 289.56 71.12) (xy 284.48 71.12)) (stroke (width 0) (type default)) (uuid "90a2efc9-03d2-5189-b217-963f9d51d638"))
+(global_label "RTC_BACKUP_VCC" (shape bidirectional) (at 284.48 71.12 0) (effects (font (size 1 1)) (justify right)) (uuid "b963c78e-53f0-52e6-8be4-c54f4aba646b"))
+(wire (pts (xy 289.56 73.66) (xy 284.48 73.66)) (stroke (width 0) (type default)) (uuid "6f517a53-0fc4-5b88-8724-d47f1cafb35e"))
+(global_label "BOARD_5V" (shape bidirectional) (at 284.48 73.66 0) (effects (font (size 1 1)) (justify right)) (uuid "17d6ecc7-3927-50c4-9229-86da3e71d216"))
+(wire (pts (xy 289.56 76.2) (xy 284.48 76.2)) (stroke (width 0) (type default)) (uuid "1e11b874-0887-5e8b-b19c-b54e9945897c"))
+(global_label "GND" (shape bidirectional) (at 284.48 76.2 0) (effects (font (size 1 1)) (justify right)) (uuid "a5b77ef8-b2d6-5ebd-91a0-6dee49d0c45b"))
+(wire (pts (xy 289.56 78.74) (xy 284.48 78.74)) (stroke (width 0) (type default)) (uuid "7c2ccd5d-8922-50d6-a242-f631d478a153"))
+(global_label "GND" (shape bidirectional) (at 284.48 78.74 0) (effects (font (size 1 1)) (justify right)) (uuid "a8b9dc1b-0bd9-5215-ba13-e8a8641d2ac2"))
+(no_connect (at 335.28 71.12) (uuid "c67198c7-f059-5e8d-96e3-d7d6fdd1870c"))
+(no_connect (at 335.28 73.66) (uuid "aa500aa7-5616-5379-9b84-5188d3dc555e"))
+(wire (pts (xy 335.28 76.2) (xy 340.36 76.2)) (stroke (width 0) (type default)) (uuid "f985cfd8-7a5e-5232-89f2-4b55903a85f5"))
+(global_label "RTC_POWER_GOOD" (shape bidirectional) (at 340.36 76.2 180) (effects (font (size 1 1)) (justify left)) (uuid "d5951ee9-7a0d-5acd-a489-7104180ae240"))
+(wire (pts (xy 335.28 78.74) (xy 340.36 78.74)) (stroke (width 0) (type default)) (uuid "20c97426-24be-5a5b-8b2c-e7cc48e98885"))
+(global_label "VBAT" (shape bidirectional) (at 340.36 78.74 180) (effects (font (size 1 1)) (justify left)) (uuid "411e1273-57f8-51e2-9586-5c6578111333"))
+(symbol (lib_id "Picolino:MAX690A") (at 312.42 74.93 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "96bf1673-a93d-582e-82a2-09a0c796a8ff")
+(property "Reference" "U13" (at 312.4200 63.5000 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "MAX690AESA+" (at 312.4200 66.0400 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:SOIC-8_3.9x4.9mm_P1.27mm" (at 312.4200 74.9300 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "6b17be83-329b-5c2f-bcf9-231800286cc4"))
+(pin "2" (uuid "5dd8b47e-02cb-52a2-a7c5-d0f082662332"))
+(pin "3" (uuid "1c96882d-780f-5849-ac51-d6305e469b08"))
+(pin "4" (uuid "f25864df-cc19-56ef-bf99-1ec3532a996d"))
+(pin "5" (uuid "3126b5f9-418f-5795-baad-fd778e74bde5"))
+(pin "6" (uuid "fdb149cb-101d-5bbb-84c8-f81dbe22a985"))
+(pin "7" (uuid "52d2e77e-967b-536d-b19f-383b56acc0a8"))
+(pin "8" (uuid "833334e1-1581-5f48-8a52-3871f4276594"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "U13") (unit 1)))))
+(wire (pts (xy 334.01 125.73) (xy 334.01 120.65)) (stroke (width 0) (type default)) (uuid "78bf7bee-30a4-5f28-a2d2-64839a6dfed6"))
+(global_label "VBAT" (shape bidirectional) (at 334.01 120.65 270.0) (effects (font (size 1 1)) (justify left)) (uuid "83ae2515-5ea5-5ac4-bcf1-0def3edc8516"))
+(wire (pts (xy 334.01 133.35) (xy 334.01 138.43)) (stroke (width 0) (type default)) (uuid "758ec590-7ea3-532a-a4af-3ec7a60aae6b"))
+(global_label "GND" (shape bidirectional) (at 334.01 138.43 90.0) (effects (font (size 1 1)) (justify left)) (uuid "ae1f9893-b54a-53f0-bedb-76c278faab42"))
+(symbol (lib_id "Picolino:Battery_Cell") (at 334.01 130.81 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "d7cfdd9a-085e-5f71-ab58-4f98430199a6")
+(property "Reference" "BT1" (at 336.5500 129.5400 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "CR2032 / Keystone 103" (at 336.5500 132.0800 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:BatteryHolder_Keystone_103_1x20mm" (at 334.0100 129.2860 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "e347791a-5ca0-5761-82d3-39e79106276a"))
+(pin "2" (uuid "b4d9f445-ab6f-5078-9f72-6d37801332e9"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "BT1") (unit 1)))))
+(wire (pts (xy 383.54 132.08) (xy 383.54 137.16)) (stroke (width 0) (type default)) (uuid "6ffa3c2f-ba8d-5cc4-88de-aa36a23fba83"))
+(global_label "VBAT" (shape bidirectional) (at 383.54 137.16 90.0) (effects (font (size 1 1)) (justify left)) (uuid "587b8603-8b9b-5cdc-bd8e-b4ca6d9a1634"))
+(symbol (lib_id "Picolino:PWR_FLAG") (at 383.54 132.08 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "3f841d4e-030d-51e4-b5b0-5cea86ee58ac")
+(property "Reference" "#FLG7" (at 383.5400 130.1750 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "PWR_FLAG" (at 383.5400 128.2700 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "" (at 383.5400 132.0800 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "bd9643c2-eee2-5c74-ae1c-935b5f4dcfc1"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "#FLG7") (unit 1)))))
+(wire (pts (xy 270.51 124.46) (xy 270.51 119.38)) (stroke (width 0) (type default)) (uuid "916dc8ad-c683-5855-b7fa-7322b8f48f61"))
+(global_label "RTC_POWER_GOOD" (shape bidirectional) (at 270.51 119.38 270.0) (effects (font (size 1 1)) (justify left)) (uuid "e9f50ed9-a999-51e3-82cf-793e92d60340"))
+(wire (pts (xy 270.51 132.08) (xy 270.51 137.16)) (stroke (width 0) (type default)) (uuid "bf0898c5-52ac-56cf-9a18-7096d7102d4e"))
+(global_label "GND" (shape bidirectional) (at 270.51 137.16 90.0) (effects (font (size 1 1)) (justify left)) (uuid "262db21c-3839-5e03-b34b-67147e92c152"))
+(symbol (lib_id "Picolino:R") (at 270.51 128.27 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "4b5e47d7-4980-55a9-8bcb-ce4608adbdf0")
+(property "Reference" "R17" (at 273.0500 127.0000 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "100k" (at 273.0500 129.5400 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:R_0805_2012Metric" (at 268.7320 128.2700 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "a140d94b-540d-53f6-9f1d-187f10c6d943"))
+(pin "2" (uuid "085ada1b-0f04-55ae-a3f1-7a12b2b48922"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "R17") (unit 1)))))
+(wire (pts (xy 151.13 181.61) (xy 146.05 181.61)) (stroke (width 0) (type default)) (uuid "6d39eeea-9ed6-5b83-9ece-ace8c71fc9df"))
+(global_label "RTC_OSCIN" (shape bidirectional) (at 146.05 181.61 0) (effects (font (size 1 1)) (justify right)) (uuid "32ee88da-26f4-5dbf-a2f2-9a74089f3c61"))
+(wire (pts (xy 158.75 181.61) (xy 163.83 181.61)) (stroke (width 0) (type default)) (uuid "84d89f85-9386-5a15-8fd5-730901b71ef1"))
+(global_label "RTC_XOUT" (shape bidirectional) (at 163.83 181.61 180) (effects (font (size 1 1)) (justify left)) (uuid "be2cd888-d32a-5b93-87bb-60bc1d7678bc"))
+(symbol (lib_id "Picolino:Crystal") (at 154.94 181.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "34e33e9d-643e-55be-9901-7a9002d8d1a8")
+(property "Reference" "Y1" (at 154.9400 177.8000 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "32.768kHz / AB38T" (at 154.9400 185.4200 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:Crystal_C38-LF_D3.0mm_L8.0mm_Vertical" (at 154.9400 181.6100 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "9101ca58-6405-595f-87fb-ee593042a0b2"))
+(pin "2" (uuid "4a9e0209-c4a3-5baf-927e-5ea7f006f371"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "Y1") (unit 1)))))
+(wire (pts (xy 217.17 177.8) (xy 217.17 172.72)) (stroke (width 0) (type default)) (uuid "be0bf95d-66fc-57c2-bf9c-957778f74cc6"))
+(global_label "RTC_XOUT" (shape bidirectional) (at 217.17 172.72 270.0) (effects (font (size 1 1)) (justify left)) (uuid "9665fcab-5d25-56ad-a3de-a52233692f7e"))
+(wire (pts (xy 217.17 185.42) (xy 217.17 190.5)) (stroke (width 0) (type default)) (uuid "734d1f8e-eb64-59a4-bf3e-f2bfcc9c1308"))
+(global_label "RTC_OSCOUT" (shape bidirectional) (at 217.17 190.5 90.0) (effects (font (size 1 1)) (justify left)) (uuid "c2b0d1b7-0262-5806-b3c2-6c202b76c596"))
+(symbol (lib_id "Picolino:R") (at 217.17 181.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "a4fa4a09-8a51-59ca-8420-848cf0a4933f")
+(property "Reference" "R18" (at 219.7100 180.3400 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "100k" (at 219.7100 182.8800 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:R_0805_2012Metric" (at 215.3920 181.6100 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "b502cd52-549f-50a9-ad1f-d3ff13ee515b"))
+(pin "2" (uuid "78df7c40-6d63-54a3-8368-c886ec5f0e3a"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "R18") (unit 1)))))
+(wire (pts (xy 87.63 177.8) (xy 87.63 172.72)) (stroke (width 0) (type default)) (uuid "868292ab-c895-5c80-9c0f-cda201e897f9"))
+(global_label "RTC_OSCIN" (shape bidirectional) (at 87.63 172.72 270.0) (effects (font (size 1 1)) (justify left)) (uuid "63cb840f-d2ae-53c5-b668-4b9e0e83f34e"))
+(wire (pts (xy 87.63 185.42) (xy 87.63 190.5)) (stroke (width 0) (type default)) (uuid "f1e7b3a0-81b5-5ef8-8038-3ef4a33f2197"))
+(global_label "GND" (shape bidirectional) (at 87.63 190.5 90.0) (effects (font (size 1 1)) (justify left)) (uuid "2f627f2f-eb18-58c1-88ee-bbe72d3bd3fd"))
+(symbol (lib_id "Picolino:C_Trim") (at 87.63 181.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "ca2dfc82-eae5-5ea2-a2b8-0a2b6999f29c")
+(property "Reference" "CV1" (at 90.1700 180.3400 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "30pF trim / KKT330TR" (at 90.1700 182.8800 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:C_Trimmer_Murata_TZC3" (at 87.6300 181.6100 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "b7cb1901-2778-5184-a37b-c8bad55a1c03"))
+(pin "2" (uuid "7b8a517e-ee15-53f4-ae02-1fe8def85936"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "CV1") (unit 1)))))
+(wire (pts (xy 154.94 219.71) (xy 154.94 214.63)) (stroke (width 0) (type default)) (uuid "3b22d179-3397-5882-95fb-b62979b4d6fd"))
+(global_label "RTC_XOUT" (shape bidirectional) (at 154.94 214.63 270.0) (effects (font (size 1 1)) (justify left)) (uuid "67e3eb04-2fdd-5c3d-822e-c09c8e98f98f"))
+(wire (pts (xy 154.94 227.33) (xy 154.94 232.41)) (stroke (width 0) (type default)) (uuid "e5682555-3781-5cda-b02d-f82f56d28d7c"))
+(global_label "GND" (shape bidirectional) (at 154.94 232.41 90.0) (effects (font (size 1 1)) (justify left)) (uuid "3f44883d-bd4a-520d-8274-480f98b8f8dd"))
+(symbol (lib_id "Picolino:C") (at 154.94 223.52 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "342f551c-a4d2-5492-81e8-6fe1a8613f4c")
+(property "Reference" "C13" (at 157.4800 222.2500 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "30pF C0G" (at 157.4800 224.7900 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:C_0805_2012Metric" (at 155.9052 227.3300 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "5580de21-6934-5cc8-aa69-4218796d2e5a"))
+(pin "2" (uuid "964e4f43-44ef-59a9-a193-ef77ea2f52d5"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "C13") (unit 1)))))
+(wire (pts (xy 217.17 219.71) (xy 217.17 214.63)) (stroke (width 0) (type default)) (uuid "260ca64d-4bb1-55a5-8a26-ba816956b9ac"))
+(global_label "RTC_OSCOUT" (shape bidirectional) (at 217.17 214.63 270.0) (effects (font (size 1 1)) (justify left)) (uuid "8bac0f2e-8406-5718-86ab-70e13334b446"))
+(wire (pts (xy 217.17 227.33) (xy 217.17 232.41)) (stroke (width 0) (type default)) (uuid "328b7c13-b88b-5ccb-a1a8-1e7f96049d7e"))
+(global_label "GND" (shape bidirectional) (at 217.17 232.41 90.0) (effects (font (size 1 1)) (justify left)) (uuid "4328aa4e-c4d3-5a1a-8380-7c9ccdcded29"))
+(symbol (lib_id "Picolino:C") (at 217.17 223.52 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "6e224048-02a5-5a7d-ac34-8be2b9d79daa")
+(property "Reference" "C14" (at 219.7100 222.2500 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "56pF C0G" (at 219.7100 224.7900 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:C_0805_2012Metric" (at 218.1352 227.3300 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "c98715d2-0a21-5368-869f-ccd464509002"))
+(pin "2" (uuid "99d646de-4026-5ed4-b5f2-09a6cbb4fe31"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "C14") (unit 1)))))
+(wire (pts (xy 281.94 177.8) (xy 281.94 172.72)) (stroke (width 0) (type default)) (uuid "e7e57968-c543-53cf-b878-4210cd04d21d"))
+(global_label "RTC_BACKUP_VCC" (shape bidirectional) (at 281.94 172.72 270.0) (effects (font (size 1 1)) (justify left)) (uuid "150cca5c-c04f-5984-a231-bafe618a0879"))
+(wire (pts (xy 281.94 185.42) (xy 281.94 190.5)) (stroke (width 0) (type default)) (uuid "4cb81491-69d3-56a7-9b23-677bc445c967"))
+(global_label "GND" (shape bidirectional) (at 281.94 190.5 90.0) (effects (font (size 1 1)) (justify left)) (uuid "71546068-6798-57d8-960d-e28e4e961561"))
+(symbol (lib_id "Picolino:C") (at 281.94 181.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "472c04c1-f012-5983-8fd8-588f508ed5f0")
+(property "Reference" "C15" (at 284.4800 180.3400 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "100nF" (at 284.4800 182.8800 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:C_0805_2012Metric" (at 282.9052 185.4200 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "dce3e274-d3af-5b1d-9ade-bfcff7eed25e"))
+(pin "2" (uuid "acd5825d-8484-53f2-ae39-a7c7ef0d50e6"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "C15") (unit 1)))))
+(wire (pts (xy 336.55 177.8) (xy 336.55 172.72)) (stroke (width 0) (type default)) (uuid "9a5bdc49-d5cd-5989-8cce-38609d58afa5"))
+(global_label "BOARD_5V" (shape bidirectional) (at 336.55 172.72 270.0) (effects (font (size 1 1)) (justify left)) (uuid "ba2b5bc0-0169-5203-91ba-92f550e915d5"))
+(wire (pts (xy 336.55 185.42) (xy 336.55 190.5)) (stroke (width 0) (type default)) (uuid "957e9fc6-e223-5b4d-ade8-a9bba59e6eb7"))
+(global_label "GND" (shape bidirectional) (at 336.55 190.5 90.0) (effects (font (size 1 1)) (justify left)) (uuid "aa35e811-e70b-556f-936d-8312db1a4070"))
+(symbol (lib_id "Picolino:C") (at 336.55 181.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "f5d3423c-263d-53e5-a4fd-fbac13392576")
+(property "Reference" "C16" (at 339.0900 180.3400 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "100nF" (at 339.0900 182.8800 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:C_0805_2012Metric" (at 337.5152 185.4200 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "42b640b6-0359-5475-8501-a0cdf6b02a10"))
+(pin "2" (uuid "69feb046-8a64-514f-84d0-bba4eac416c4"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "C16") (unit 1)))))
+(wire (pts (xy 336.55 219.71) (xy 336.55 214.63)) (stroke (width 0) (type default)) (uuid "0bf00cb0-2a67-538b-a795-ad3e26bcf9ca"))
+(global_label "BOARD_5V" (shape bidirectional) (at 336.55 214.63 270.0) (effects (font (size 1 1)) (justify left)) (uuid "019d9d87-9b1c-5b2d-a3fa-271c0208e30d"))
+(wire (pts (xy 336.55 227.33) (xy 336.55 232.41)) (stroke (width 0) (type default)) (uuid "d77acb55-5bf9-5b31-82ee-d5e616d647fd"))
+(global_label "GND" (shape bidirectional) (at 336.55 232.41 90.0) (effects (font (size 1 1)) (justify left)) (uuid "0ec5c870-2337-5d1d-9020-ec45d78e9b57"))
+(symbol (lib_id "Picolino:C") (at 336.55 223.52 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "f13ae59f-db9d-5047-a0a3-1512bebb35fc")
+(property "Reference" "C17" (at 339.0900 222.2500 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "100nF" (at 339.0900 224.7900 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:C_0805_2012Metric" (at 337.5152 227.3300 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "8eaf9a2d-7bd4-5abc-bd68-e817e4b5a3d8"))
+(pin "2" (uuid "b9ff7875-2ff8-5b9d-852a-1cf0543789ea"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "C17") (unit 1)))))
+(wire (pts (xy 281.94 219.71) (xy 281.94 214.63)) (stroke (width 0) (type default)) (uuid "9c7f345d-4981-574b-ad6b-8adf1d0705d7"))
+(global_label "RTC_ALARM_TEST" (shape bidirectional) (at 281.94 214.63 270.0) (effects (font (size 1 1)) (justify left)) (uuid "6301bde1-52a9-57cf-b67c-f60d85057c4b"))
+(wire (pts (xy 281.94 227.33) (xy 281.94 232.41)) (stroke (width 0) (type default)) (uuid "c64c9312-85de-5b74-b390-ee43c3680913"))
+(global_label "BOARD_5V" (shape bidirectional) (at 281.94 232.41 90.0) (effects (font (size 1 1)) (justify left)) (uuid "2abcd5eb-be18-5cff-8b8c-46eedd9536ee"))
+(symbol (lib_id "Picolino:R") (at 281.94 223.52 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "a63c907c-12cc-5e85-a413-85c62dd4c9a3")
+(property "Reference" "R19" (at 284.4800 222.2500 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "10k" (at 284.4800 224.7900 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:R_0805_2012Metric" (at 280.1620 223.5200 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "02754ee8-4e06-526a-b0de-e88055b25c47"))
+(pin "2" (uuid "35134d1a-06eb-5658-a564-6a8d65cc6902"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "R19") (unit 1)))))
+(wire (pts (xy 364.49 222.25) (xy 364.49 227.33)) (stroke (width 0) (type default)) (uuid "88e64c5f-3ad8-51e0-9c67-e268acd589b4"))
+(global_label "RTC_ALARM_TEST" (shape bidirectional) (at 364.49 227.33 90.0) (effects (font (size 1 1)) (justify left)) (uuid "855e39f1-0984-56c1-82f8-c1a203409be5"))
+(symbol (lib_id "Picolino:TestPoint") (at 364.49 222.25 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "77a2d748-06a1-5c3a-b63b-1fd78d327ed9")
+(property "Reference" "TP1" (at 364.4900 215.3920 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "RTC ALARM / calibration" (at 364.4900 217.1700 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:TestPoint_THTPad_D2.0mm_Drill1.0mm" (at 369.5700 222.2500 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "dfbbb03e-c9e8-5dd2-b4f9-9febe692c42c"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "TP1") (unit 1)))))
+(wire (pts (xy 27.94 260.35) (xy 27.94 255.27)) (stroke (width 0) (type default)) (uuid "fa86ede7-98fc-53b6-b07b-f57bafc68253"))
+(global_label "RTCCS_N" (shape bidirectional) (at 27.94 255.27 270.0) (effects (font (size 1 1)) (justify left)) (uuid "43cf8e62-394c-5eb0-8a3a-564c9e6b4827"))
+(wire (pts (xy 27.94 267.97) (xy 27.94 273.05)) (stroke (width 0) (type default)) (uuid "1beac5d5-c652-5d04-b475-a23154472c24"))
+(global_label "GND" (shape bidirectional) (at 27.94 273.05 90.0) (effects (font (size 1 1)) (justify left)) (uuid "eb902acc-544a-5f78-a9a6-ad988285c7d3"))
+(symbol (lib_id "Picolino:R") (at 27.94 264.16 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "1528de75-2e08-5b91-b638-8603e99fb003")
+(property "Reference" "R20" (at 30.4800 262.8900 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "220k" (at 30.4800 265.4300 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:R_0805_2012Metric" (at 26.1620 264.1600 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "48a2da07-6479-5b25-abb5-58d3f8279046"))
+(pin "2" (uuid "b07dd723-e443-583f-a062-c1506f26d8bf"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "R20") (unit 1)))))
+(wire (pts (xy 53.34 260.35) (xy 53.34 255.27)) (stroke (width 0) (type default)) (uuid "85aed5e8-fc93-532b-a045-937cf878b0f9"))
+(global_label "RTCRD_N" (shape bidirectional) (at 53.34 255.27 270.0) (effects (font (size 1 1)) (justify left)) (uuid "45bb7166-0771-5cb4-b196-113c0df28ac4"))
+(wire (pts (xy 53.34 267.97) (xy 53.34 273.05)) (stroke (width 0) (type default)) (uuid "17ab9c1b-d04c-5f0b-bc3c-e0dd1d552fe3"))
+(global_label "GND" (shape bidirectional) (at 53.34 273.05 90.0) (effects (font (size 1 1)) (justify left)) (uuid "a3b2c622-6441-5c5d-b1f3-8f28cf403e4a"))
+(symbol (lib_id "Picolino:R") (at 53.34 264.16 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "9f8742ee-6869-58e9-b996-d5a45b062c80")
+(property "Reference" "R21" (at 55.8800 262.8900 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "220k" (at 55.8800 265.4300 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:R_0805_2012Metric" (at 51.5620 264.1600 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "e236a03b-5da3-5729-899d-0dcc7db3cdb6"))
+(pin "2" (uuid "d2be30c9-2d21-558e-91cf-19463218a1bc"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "R21") (unit 1)))))
+(wire (pts (xy 78.74 260.35) (xy 78.74 255.27)) (stroke (width 0) (type default)) (uuid "770882fe-f21f-5b2e-9000-ccdf2fb0331e"))
+(global_label "RTCWR_N" (shape bidirectional) (at 78.74 255.27 270.0) (effects (font (size 1 1)) (justify left)) (uuid "41579ba3-b61a-5bb5-bed5-7b43639f0be4"))
+(wire (pts (xy 78.74 267.97) (xy 78.74 273.05)) (stroke (width 0) (type default)) (uuid "3bfacd55-2b5d-5590-b789-fcc5ea04963e"))
+(global_label "GND" (shape bidirectional) (at 78.74 273.05 90.0) (effects (font (size 1 1)) (justify left)) (uuid "7fa05f67-614c-5ec9-8c72-dbc814a452f7"))
+(symbol (lib_id "Picolino:R") (at 78.74 264.16 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "00da917e-8a66-518c-a579-57b8ba65b8a3")
+(property "Reference" "R22" (at 81.2800 262.8900 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "220k" (at 81.2800 265.4300 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:R_0805_2012Metric" (at 76.9620 264.1600 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "f49f4761-b1a6-50ff-828c-f75ff2daee75"))
+(pin "2" (uuid "a730703a-2a0b-5793-b78b-7c32a7823ec4"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "R22") (unit 1)))))
+(wire (pts (xy 104.14 260.35) (xy 104.14 255.27)) (stroke (width 0) (type default)) (uuid "4e7d1c0c-c1bd-55ae-bcf4-e8431607369f"))
+(global_label "RTC_A0" (shape bidirectional) (at 104.14 255.27 270.0) (effects (font (size 1 1)) (justify left)) (uuid "af16c79b-99c7-5589-a72c-40aba9757228"))
+(wire (pts (xy 104.14 267.97) (xy 104.14 273.05)) (stroke (width 0) (type default)) (uuid "7bc603a8-23a8-5d3f-b610-abbe3c32b534"))
+(global_label "GND" (shape bidirectional) (at 104.14 273.05 90.0) (effects (font (size 1 1)) (justify left)) (uuid "c1d9a4d6-43ef-5375-af87-d1b11d9cee4c"))
+(symbol (lib_id "Picolino:R") (at 104.14 264.16 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "60790c59-f974-5ed0-a488-5f3ef753249d")
+(property "Reference" "R23" (at 106.6800 262.8900 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "220k" (at 106.6800 265.4300 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:R_0805_2012Metric" (at 102.3620 264.1600 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "d80af29d-1300-5ad2-b57b-0f3a11708419"))
+(pin "2" (uuid "e82e5c4c-c7d4-5f56-8dba-c9c7ea2b463d"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "R23") (unit 1)))))
+(wire (pts (xy 129.54 260.35) (xy 129.54 255.27)) (stroke (width 0) (type default)) (uuid "a3d8441e-ddcb-5c72-af1a-69e7c7474e3b"))
+(global_label "RTC_A1" (shape bidirectional) (at 129.54 255.27 270.0) (effects (font (size 1 1)) (justify left)) (uuid "aca9ce53-b9c0-501f-b8cb-51f8ba17bae8"))
+(wire (pts (xy 129.54 267.97) (xy 129.54 273.05)) (stroke (width 0) (type default)) (uuid "204e9cfb-deb5-5505-bc24-83575bf57da6"))
+(global_label "GND" (shape bidirectional) (at 129.54 273.05 90.0) (effects (font (size 1 1)) (justify left)) (uuid "188f146f-7833-5d14-a22e-75e5ad026551"))
+(symbol (lib_id "Picolino:R") (at 129.54 264.16 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "2ff44a87-fbe1-5827-92b9-b7b7695e6db2")
+(property "Reference" "R24" (at 132.0800 262.8900 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "220k" (at 132.0800 265.4300 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:R_0805_2012Metric" (at 127.7620 264.1600 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "80be4832-5f52-523a-a32b-cebf0e9e015f"))
+(pin "2" (uuid "27031a83-225e-5703-ba8e-54d02a59f70c"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "R24") (unit 1)))))
+(wire (pts (xy 154.94 260.35) (xy 154.94 255.27)) (stroke (width 0) (type default)) (uuid "341f9691-07f0-5505-aea8-b6d3cbafa131"))
+(global_label "RTC_A2" (shape bidirectional) (at 154.94 255.27 270.0) (effects (font (size 1 1)) (justify left)) (uuid "9fc448da-1173-5f06-9561-bc111359948b"))
+(wire (pts (xy 154.94 267.97) (xy 154.94 273.05)) (stroke (width 0) (type default)) (uuid "71f4a637-2f4d-5611-b63c-f8085f09cf27"))
+(global_label "GND" (shape bidirectional) (at 154.94 273.05 90.0) (effects (font (size 1 1)) (justify left)) (uuid "08c59242-895f-5423-a8d9-6dd106f0d19d"))
+(symbol (lib_id "Picolino:R") (at 154.94 264.16 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "6505aea8-9a4f-57f3-ac0a-343bd35d20b5")
+(property "Reference" "R25" (at 157.4800 262.8900 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "220k" (at 157.4800 265.4300 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:R_0805_2012Metric" (at 153.1620 264.1600 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "b812c1da-ec9d-51e1-ad11-49bfadb2388b"))
+(pin "2" (uuid "9273663e-26b1-51c4-bbae-e5367fc9ea2d"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "R25") (unit 1)))))
+(wire (pts (xy 180.34 260.35) (xy 180.34 255.27)) (stroke (width 0) (type default)) (uuid "224c4559-5ed0-5602-a69f-b2003b1a76bb"))
+(global_label "RTC_A3" (shape bidirectional) (at 180.34 255.27 270.0) (effects (font (size 1 1)) (justify left)) (uuid "c1af9816-9f2f-5cf3-9481-977ddd7afe20"))
+(wire (pts (xy 180.34 267.97) (xy 180.34 273.05)) (stroke (width 0) (type default)) (uuid "e66a8d6c-f5ae-5e9d-a858-e46d2fcc5979"))
+(global_label "GND" (shape bidirectional) (at 180.34 273.05 90.0) (effects (font (size 1 1)) (justify left)) (uuid "6afc6902-2d91-592c-9501-9c00f7f0706b"))
+(symbol (lib_id "Picolino:R") (at 180.34 264.16 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "fd2d1d34-92af-55ca-b7d5-39c539cf41f7")
+(property "Reference" "R26" (at 182.8800 262.8900 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "220k" (at 182.8800 265.4300 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:R_0805_2012Metric" (at 178.5620 264.1600 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "81edc316-70eb-59c5-8349-8a83ec4d2eb4"))
+(pin "2" (uuid "82b4dea1-f056-5972-9373-3bfaa33442cf"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "R26") (unit 1)))))
+(wire (pts (xy 205.74 260.35) (xy 205.74 255.27)) (stroke (width 0) (type default)) (uuid "364f44b3-5edc-57c8-a845-57842ae8dde3"))
+(global_label "D0" (shape bidirectional) (at 205.74 255.27 270.0) (effects (font (size 1 1)) (justify left)) (uuid "f27041db-55e3-54aa-ab5e-89d6079ff7ec"))
+(wire (pts (xy 205.74 267.97) (xy 205.74 273.05)) (stroke (width 0) (type default)) (uuid "6d025809-a2f8-53af-9d30-1cc1cd3113d9"))
+(global_label "GND" (shape bidirectional) (at 205.74 273.05 90.0) (effects (font (size 1 1)) (justify left)) (uuid "a6f32d60-96b4-55a9-9117-2889e143ff58"))
+(symbol (lib_id "Picolino:R") (at 205.74 264.16 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "7193774c-6bda-5007-a5ef-1d69438a6ec2")
+(property "Reference" "R27" (at 208.2800 262.8900 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "220k" (at 208.2800 265.4300 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:R_0805_2012Metric" (at 203.9620 264.1600 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "ab917110-821d-577e-87c2-78a50439d002"))
+(pin "2" (uuid "dd696a2f-321b-5755-89f9-193aeb71da11"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "R27") (unit 1)))))
+(wire (pts (xy 231.14 260.35) (xy 231.14 255.27)) (stroke (width 0) (type default)) (uuid "53e8370e-de05-50be-8d54-536ef59b247c"))
+(global_label "D1" (shape bidirectional) (at 231.14 255.27 270.0) (effects (font (size 1 1)) (justify left)) (uuid "f18c2cdd-fa14-589e-95d4-1f41ffb8e49b"))
+(wire (pts (xy 231.14 267.97) (xy 231.14 273.05)) (stroke (width 0) (type default)) (uuid "715c2bb8-1365-5221-bc98-3907d6e0c96d"))
+(global_label "GND" (shape bidirectional) (at 231.14 273.05 90.0) (effects (font (size 1 1)) (justify left)) (uuid "fc7a3c78-5abb-58f2-8224-89866692440e"))
+(symbol (lib_id "Picolino:R") (at 231.14 264.16 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "ac45475a-0174-5218-844f-675009c8a90d")
+(property "Reference" "R28" (at 233.6800 262.8900 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "220k" (at 233.6800 265.4300 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:R_0805_2012Metric" (at 229.3620 264.1600 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "a1e0919b-2155-597d-9f34-79440c447abf"))
+(pin "2" (uuid "cc6ee2dd-72f6-5dd1-871b-afb33986cf4d"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "R28") (unit 1)))))
+(wire (pts (xy 256.54 260.35) (xy 256.54 255.27)) (stroke (width 0) (type default)) (uuid "74320380-b5ac-552c-a346-975869b40cc3"))
+(global_label "D2" (shape bidirectional) (at 256.54 255.27 270.0) (effects (font (size 1 1)) (justify left)) (uuid "8f5d84f9-03d1-59ad-b848-5b0904729db0"))
+(wire (pts (xy 256.54 267.97) (xy 256.54 273.05)) (stroke (width 0) (type default)) (uuid "82a8dc71-86ee-5c96-893b-9f02fccba04d"))
+(global_label "GND" (shape bidirectional) (at 256.54 273.05 90.0) (effects (font (size 1 1)) (justify left)) (uuid "2810ffc5-1e86-5190-acc6-a4ebdabe472a"))
+(symbol (lib_id "Picolino:R") (at 256.54 264.16 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "c129279d-3aff-51ec-862e-7a50bca9e89e")
+(property "Reference" "R29" (at 259.0800 262.8900 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "220k" (at 259.0800 265.4300 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:R_0805_2012Metric" (at 254.7620 264.1600 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "e38346dd-5019-5f27-b61a-6fb7c6786bbc"))
+(pin "2" (uuid "33d68ad1-b427-59a3-82ba-284683242a82"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "R29") (unit 1)))))
+(wire (pts (xy 281.94 260.35) (xy 281.94 255.27)) (stroke (width 0) (type default)) (uuid "e5e8df83-3f98-5784-898a-eaca5e9d7a3d"))
+(global_label "D3" (shape bidirectional) (at 281.94 255.27 270.0) (effects (font (size 1 1)) (justify left)) (uuid "b91b2e81-c810-5b02-856f-004499ec4372"))
+(wire (pts (xy 281.94 267.97) (xy 281.94 273.05)) (stroke (width 0) (type default)) (uuid "2e504eca-ca14-5471-927b-9bd1ff622f6a"))
+(global_label "GND" (shape bidirectional) (at 281.94 273.05 90.0) (effects (font (size 1 1)) (justify left)) (uuid "0b02609d-6321-55f2-bf06-74fb1052a032"))
+(symbol (lib_id "Picolino:R") (at 281.94 264.16 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "e785d6d6-71d3-562a-8432-8213ec3e7f07")
+(property "Reference" "R30" (at 284.4800 262.8900 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Value" "220k" (at 284.4800 265.4300 0)  (effects (font (size 1.1 1.1)) (justify left)))
+(property "Footprint" "Picolino:R_0805_2012Metric" (at 280.1620 264.1600 0) (hide yes) (effects (font (size 1.1 1.1)) (justify left)))
+(pin "1" (uuid "33e5c411-748d-5817-8dbc-f7e225bf1ee5"))
+(pin "2" (uuid "70372d23-3451-55f1-b89d-42dab8d9af17"))
+(instances (project "picolino-cpc" (path "/e94079db-13ea-5729-aa98-5d967ec6032c/07b6efb0-e847-54c2-aab8-9d39df9806f9" (reference "R30") (unit 1)))))
+(text "RP5C01 RTC — 4-BIT REGISTERS, CR2032 BACKUP" (at 20 15 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "4c5b8add-e380-5e1f-b2c6-9a34387e5275"))
+(text "U11 pin 1 /CS: GAL decode. Pin 2 CS: main-power-good (LOW in backup).\nFD15 selects an index; FD14 reads/writes the low nibble. This differs from DS12887 software." (at 20 33 0) (effects (font (size 1.2 1.2)) (justify left top)) (uuid "1b855e57-e7ae-55a8-b6b4-6871e3d24a88"))
+(text "Oscillator follows original Ricoh RP5C01 databook page 3-6, including 56pF on OSCOUT.\nCrystal load and trimmer require calibration. Keep oscillator components together, away from digital clocks.\nMAX690A powers only U11 from CR2032. WDI is intentionally open; PFI grounded; PFO unused." (at 20 132 0) (effects (font (size 1.2 1.2)) (justify left top)) (uuid "d1401800-aec7-5595-b524-aa1cc58b2d34"))
+(text "R20-R30 bias RTC inputs during backup. Measure battery current, time retention and supply switching on the prototype." (at 20 239 0) (effects (font (size 1.2 1.2)) (justify left top)) (uuid "2b8180a7-b401-5046-b9fa-f8e7b5132a4b"))
+(embedded_fonts no))

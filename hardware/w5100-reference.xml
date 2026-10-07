@@ -1,0 +1,76 @@
+<package name="W5100S-NETWORK-MODULE">
+<description>W5100S Module TCP/IP Ethernet Module SPI / Parallel Control Interface</description>
+<pad name="1" x="-12.7" y="19.05" drill="1.016" />
+<pad name="2" x="-12.7" y="16.51" drill="1.016" />
+<pad name="3" x="-12.7" y="13.97" drill="1.016" />
+<pad name="4" x="-12.7" y="11.43" drill="1.016" />
+<pad name="5" x="-12.7" y="8.89" drill="1.016" />
+<pad name="6" x="-12.7" y="6.35" drill="1.016" />
+<pad name="7" x="-12.7" y="3.81" drill="1.016" />
+<pad name="8" x="-12.7" y="1.27" drill="1.016" />
+<pad name="9" x="-12.7" y="-1.27" drill="1.016" />
+<pad name="10" x="-12.7" y="-3.81" drill="1.016" />
+<pad name="11" x="-12.7" y="-6.35" drill="1.016" />
+<pad name="12" x="-12.7" y="-8.89" drill="1.016" shape="square" />
+<pad name="13" x="-12.7" y="-11.43" drill="1.016" />
+<pad name="14" x="-12.7" y="-13.97" drill="1.016" />
+<pad name="15" x="-12.7" y="-16.51" drill="1.016" />
+<pad name="16" x="-12.7" y="-19.05" drill="1.016" shape="square" />
+<pad name="17" x="12.7" y="-19.05" drill="1.016" shape="square" />
+<pad name="18" x="12.7" y="-16.51" drill="1.016" />
+<pad name="19" x="12.7" y="-13.97" drill="1.016" />
+<pad name="20" x="12.7" y="-11.43" drill="1.016" />
+<pad name="21" x="12.7" y="-8.89" drill="1.016" shape="square" />
+<pad name="22" x="12.7" y="-6.35" drill="1.016" />
+<pad name="23" x="12.7" y="-3.81" drill="1.016" />
+<pad name="24" x="12.7" y="-1.27" drill="1.016" />
+<pad name="25" x="12.7" y="1.27" drill="1.016" />
+<pad name="26" x="12.7" y="3.81" drill="1.016" />
+<pad name="27" x="12.7" y="6.35" drill="1.016" />
+<pad name="28" x="12.7" y="8.89" drill="1.016" />
+<pad name="29" x="12.7" y="11.43" drill="1.016" />
+<pad name="30" x="12.7" y="13.97" drill="1.016" />
+<pad name="31" x="12.7" y="16.51" drill="1.016" />
+<pad name="32" x="12.7" y="19.05" drill="1.016" />
+<wire x1="-13.808" y1="20.158" x2="13.808" y2="20.158" width="0.127" layer="21" />
+<wire x1="13.808" y1="20.158" x2="13.808" y2="-22.698" width="0.127" layer="21" />
+<wire x1="13.808" y1="-22.698" x2="-13.808" y2="-22.698" width="0.127" layer="21" />
+<wire x1="-13.808" y1="-22.698" x2="-13.808" y2="20.158" width="0.127" layer="21" />
+<text x="-13.808" y="20.369665625" size="1.27" layer="25">&gt;NAME</text>
+<text x="-13.808" y="-24.179665625" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-6.35" y1="-22.86" x2="-6.35" y2="-7.62" width="0.127" layer="21" style="shortdash" />
+<wire x1="-6.35" y1="-7.62" x2="7.62" y2="-7.62" width="0.127" layer="21" style="shortdash" />
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="-22.86" width="0.127" layer="21" style="shortdash" />
+<wire x1="-5.08" y1="0" x2="2.54" y2="0" width="0.127" layer="21" />
+<wire x1="2.54" y1="0" x2="2.54" y2="7.62" width="0.127" layer="21" />
+<wire x1="2.54" y1="7.62" x2="-5.08" y2="7.62" width="0.127" layer="21" />
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="0" width="0.127" layer="21" />
+<text x="-11.43" y="19.05" size="1.27" layer="21" align="center-left">nRD</text>
+<text x="-11.43" y="16.51" size="1.27" layer="21" align="center-left">nWR</text>
+<text x="-11.43" y="13.97" size="1.27" layer="21" align="center-left">D0</text>
+<text x="-11.43" y="11.43" size="1.27" layer="21" align="center-left">D1</text>
+<text x="-11.43" y="8.89" size="1.27" layer="21" align="center-left">D2</text>
+<text x="-11.43" y="6.35" size="1.27" layer="21" align="center-left">D3</text>
+<text x="-11.43" y="3.81" size="1.27" layer="21" align="center-left">D4</text>
+<text x="-11.43" y="1.27" size="1.27" layer="21" align="center-left">D5</text>
+<text x="-11.43" y="-1.27" size="1.27" layer="21" align="center-left">D6</text>
+<text x="-11.43" y="-3.81" size="1.27" layer="21" align="center-left">D7</text>
+<text x="-11.43" y="-6.35" size="1.27" layer="21" align="center-left">nINT</text>
+<text x="-11.43" y="-8.89" size="1.27" layer="21" align="center-left">nRST</text>
+<text x="-11.43" y="-11.43" size="1.27" layer="21" align="center-left">J2</text>
+<text x="-11.43" y="-19.05" size="1.27" layer="21" align="center-left">J4</text>
+<text x="11.43" y="-19.05" size="1.27" layer="21" align="center-right">J3</text>
+<text x="11.43" y="-11.43" size="1.27" layer="21" align="center-right">J1</text>
+<text x="11.43" y="19.05" size="1.27" layer="21" align="center-right">MOSO/A1</text>
+<text x="11.43" y="13.97" size="1.27" layer="21" align="center-right">SCLK</text>
+<text x="11.43" y="11.43" size="1.27" layer="21" align="center-right">nCS</text>
+<text x="11.43" y="8.89" size="1.27" layer="21" align="center-right">MOD2</text>
+<text x="11.43" y="6.35" size="1.27" layer="21" align="center-right">GND</text>
+<text x="11.43" y="3.81" size="1.27" layer="21" align="center-right">GND</text>
+<text x="11.43" y="1.27" size="1.27" layer="21" align="center-right">GND</text>
+<text x="11.43" y="-1.27" size="1.27" layer="21" align="center-right">+3.3V</text>
+<text x="11.43" y="-3.81" size="1.27" layer="21" align="center-right">+3.3V</text>
+<text x="11.43" y="-6.35" size="1.27" layer="21" align="center-right">+5V</text>
+<text x="11.43" y="-8.89" size="1.27" layer="21" align="center-right">+5V</text>
+<text x="11.43" y="16.51" size="1.27" layer="21" align="center-right">MOSI/A0</text>
+</package>

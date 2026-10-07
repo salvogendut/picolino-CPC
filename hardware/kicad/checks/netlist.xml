@@ -1,0 +1,3940 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/var/home/salvogendut/Dev/picolino-CPC/hardware/kicad/picolino-cpc.kicad_sch</source>
+    <date>2026-10-07T15:07:12</date>
+    <tool>Eeschema 10.0.6-1.fc44app2</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Picolino CPC — Pico 2 multifunction expansion</title>
+        <company/>
+        <rev>A0</rev>
+        <date>2026-10-07</date>
+        <source>picolino-cpc.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/CPC bus, address decoding and power/" tstamps="/8a75ade2-499d-5f51-a808-4f932a16d611/">
+      <title_block>
+        <title>Picolino CPC / bus-power</title>
+        <company/>
+        <rev>A0</rev>
+        <date>2026-10-07</date>
+        <source>bus-power.kicad_sch</source>
+        <comment number="1" value="Prototype: verify timing and power on hardware"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Pico 2 ROM interface and level translation/" tstamps="/cbe3bae3-813a-55d7-be85-2a9af1fd2c91/">
+      <title_block>
+        <title>Picolino CPC / pico-rom</title>
+        <company/>
+        <rev>A0</rev>
+        <date>2026-10-07</date>
+        <source>pico-rom.kicad_sch</source>
+        <comment number="1" value="Prototype: verify timing and power on hardware"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/W5100S Ethernet and PIC PS/2 mouse/" tstamps="/4cbd2e22-8ba3-5e02-a071-b505aee4240d/">
+      <title_block>
+        <title>Picolino CPC / ethernet-mouse</title>
+        <company/>
+        <rev>A0</rev>
+        <date>2026-10-07</date>
+        <source>ethernet-mouse.kicad_sch</source>
+        <comment number="1" value="Prototype: verify timing and power on hardware"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/">
+      <title_block>
+        <title>Picolino CPC / rtc</title>
+        <company/>
+        <rev>A0</rev>
+        <date>2026-10-07</date>
+        <source>rtc.kicad_sch</source>
+        <comment number="1" value="Prototype: verify timing and power on hardware"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100nF</value>
+      <footprint>Picolino:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="CPC bus, address decoding and power"/>
+      <property name="Sheetfile" value="bus-power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/CPC bus, address decoding and power/" tstamps="/8a75ade2-499d-5f51-a808-4f932a16d611/"/>
+      <tstamps>e4d75a4c-f83e-5d67-9ae2-e2025012315e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <footprint>Picolino:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="CPC bus, address decoding and power"/>
+      <property name="Sheetfile" value="bus-power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/CPC bus, address decoding and power/" tstamps="/8a75ade2-499d-5f51-a808-4f932a16d611/"/>
+      <tstamps>d67e3a15-d9b1-596b-b72d-7073de78f412</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>100nF</value>
+      <footprint>Picolino:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="CPC bus, address decoding and power"/>
+      <property name="Sheetfile" value="bus-power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/CPC bus, address decoding and power/" tstamps="/8a75ade2-499d-5f51-a808-4f932a16d611/"/>
+      <tstamps>6e9e2771-9f43-553b-bfa6-5052291df470</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>100uF / 10V</value>
+      <footprint>Picolino:CP_Radial_D6.3mm_P2.50mm</footprint>
+      <fields>
+        <field name="Footprint">Picolino:CP_Radial_D6.3mm_P2.50mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Sheetname" value="CPC bus, address decoding and power"/>
+      <property name="Sheetfile" value="bus-power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/CPC bus, address decoding and power/" tstamps="/8a75ade2-499d-5f51-a808-4f932a16d611/"/>
+      <tstamps>34d55e9f-f86e-5696-9594-a829135db29d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>47uF / 10V</value>
+      <footprint>Picolino:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <fields>
+        <field name="Footprint">Picolino:CP_Radial_D5.0mm_P2.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Sheetname" value="CPC bus, address decoding and power"/>
+      <property name="Sheetfile" value="bus-power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/CPC bus, address decoding and power/" tstamps="/8a75ade2-499d-5f51-a808-4f932a16d611/"/>
+      <tstamps>48f31673-c254-5bb2-a47d-1aa3520f3ce9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>1N5817</value>
+      <footprint>Picolino:D_DO-41_SOD81_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Picolino:D_DO-41_SOD81_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="D_Schottky" description="Schottky diode"/>
+      <property name="Sheetname" value="CPC bus, address decoding and power"/>
+      <property name="Sheetfile" value="bus-power.kicad_sch"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/CPC bus, address decoding and power/" tstamps="/8a75ade2-499d-5f51-a808-4f932a16d611/"/>
+      <tstamps>8ff681aa-a360-5399-b490-8ad1255a7709</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D2">
+      <value>USB activity</value>
+      <footprint>Picolino:LED_D3.0mm</footprint>
+      <fields>
+        <field name="Footprint">Picolino:LED_D3.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="CPC bus, address decoding and power"/>
+      <property name="Sheetfile" value="bus-power.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/CPC bus, address decoding and power/" tstamps="/8a75ade2-499d-5f51-a808-4f932a16d611/"/>
+      <tstamps>0b1c5fcf-61f4-54f5-88cd-74512e3d47fe</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="F1">
+      <value>USB 500mA hold</value>
+      <footprint>Picolino:Fuse_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:Fuse_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="Polyfuse" description="Resettable fuse, polymeric positive temperature coefficient"/>
+      <property name="Sheetname" value="CPC bus, address decoding and power"/>
+      <property name="Sheetfile" value="bus-power.kicad_sch"/>
+      <property name="ki_keywords" value="resettable fuse PTC PPTC polyfuse polyswitch"/>
+      <property name="ki_fp_filters" value="*polyfuse* *PTC*"/>
+      <sheetpath names="/CPC bus, address decoding and power/" tstamps="/8a75ade2-499d-5f51-a808-4f932a16d611/"/>
+      <tstamps>012fcced-90f3-5110-a82a-e15ab76498f8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="H1">
+      <value>M3 NPTH</value>
+      <footprint>Picolino:MountingHole_3.2mm_M3</footprint>
+      <fields>
+        <field name="Footprint">Picolino:MountingHole_3.2mm_M3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value="CPC bus, address decoding and power"/>
+      <property name="Sheetfile" value="bus-power.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
+      <sheetpath names="/CPC bus, address decoding and power/" tstamps="/8a75ade2-499d-5f51-a808-4f932a16d611/"/>
+      <tstamps>59a797aa-c539-5fe2-9424-290e781ba313</tstamps>
+      <units>
+        <unit name="A">
+          <pins/>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="H2">
+      <value>M3 NPTH</value>
+      <footprint>Picolino:MountingHole_3.2mm_M3</footprint>
+      <fields>
+        <field name="Footprint">Picolino:MountingHole_3.2mm_M3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value="CPC bus, address decoding and power"/>
+      <property name="Sheetfile" value="bus-power.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
+      <sheetpath names="/CPC bus, address decoding and power/" tstamps="/8a75ade2-499d-5f51-a808-4f932a16d611/"/>
+      <tstamps>2840ce22-60ca-5760-9f00-169067151476</tstamps>
+      <units>
+        <unit name="A">
+          <pins/>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="H3">
+      <value>M3 NPTH</value>
+      <footprint>Picolino:MountingHole_3.2mm_M3</footprint>
+      <fields>
+        <field name="Footprint">Picolino:MountingHole_3.2mm_M3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value="CPC bus, address decoding and power"/>
+      <property name="Sheetfile" value="bus-power.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
+      <sheetpath names="/CPC bus, address decoding and power/" tstamps="/8a75ade2-499d-5f51-a808-4f932a16d611/"/>
+      <tstamps>40ff815e-c0e1-5e68-b10d-76480833e4db</tstamps>
+      <units>
+        <unit name="A">
+          <pins/>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="H4">
+      <value>M3 NPTH</value>
+      <footprint>Picolino:MountingHole_3.2mm_M3</footprint>
+      <fields>
+        <field name="Footprint">Picolino:MountingHole_3.2mm_M3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value="CPC bus, address decoding and power"/>
+      <property name="Sheetfile" value="bus-power.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
+      <sheetpath names="/CPC bus, address decoding and power/" tstamps="/8a75ade2-499d-5f51-a808-4f932a16d611/"/>
+      <tstamps>df0c594b-c671-5a65-8264-2146a23d6e1d</tstamps>
+      <units>
+        <unit name="A">
+          <pins/>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>CPC 50-pin expansion</value>
+      <footprint>Picolino:IDC-Header_2x25_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Picolino:IDC-Header_2x25_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="CPC_BUS" description=""/>
+      <property name="Sheetname" value="CPC bus, address decoding and power"/>
+      <property name="Sheetfile" value="bus-power.kicad_sch"/>
+      <sheetpath names="/CPC bus, address decoding and power/" tstamps="/8a75ade2-499d-5f51-a808-4f932a16d611/"/>
+      <tstamps>abe13370-0e02-5f26-b75d-49beffcfeca6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="26"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="29"/>
+            <pin num="30"/>
+            <pin num="31"/>
+            <pin num="32"/>
+            <pin num="33"/>
+            <pin num="34"/>
+            <pin num="35"/>
+            <pin num="36"/>
+            <pin num="37"/>
+            <pin num="38"/>
+            <pin num="39"/>
+            <pin num="40"/>
+            <pin num="41"/>
+            <pin num="42"/>
+            <pin num="43"/>
+            <pin num="44"/>
+            <pin num="45"/>
+            <pin num="46"/>
+            <pin num="47"/>
+            <pin num="48"/>
+            <pin num="49"/>
+            <pin num="50"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>CH376 parallel / short ribbon</value>
+      <footprint>Picolino:IDC-Header_2x08_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Picolino:IDC-Header_2x08_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="CH376_HEADER" description=""/>
+      <property name="Sheetname" value="CPC bus, address decoding and power"/>
+      <property name="Sheetfile" value="bus-power.kicad_sch"/>
+      <sheetpath names="/CPC bus, address decoding and power/" tstamps="/8a75ade2-499d-5f51-a808-4f932a16d611/"/>
+      <tstamps>f15e8d27-ec1d-5a42-b373-1ded1c330f8e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>EXT regulated 5V</value>
+      <footprint>Picolino:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Picolino:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="CPC bus, address decoding and power"/>
+      <property name="Sheetfile" value="bus-power.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/CPC bus, address decoding and power/" tstamps="/8a75ade2-499d-5f51-a808-4f932a16d611/"/>
+      <tstamps>52c068e0-6d1d-50fa-93f3-03673faca62e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="JP1">
+      <value>POWER: 1 CPC / 2 BOARD / 3 EXT</value>
+      <footprint>Picolino:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Picolino:PinHeader_1x03_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="CPC bus, address decoding and power"/>
+      <property name="Sheetfile" value="bus-power.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/CPC bus, address decoding and power/" tstamps="/8a75ade2-499d-5f51-a808-4f932a16d611/"/>
+      <tstamps>5145dfbf-4f36-52a5-bf99-d84d5c4b2482</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>1k</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="CPC bus, address decoding and power"/>
+      <property name="Sheetfile" value="bus-power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/CPC bus, address decoding and power/" tstamps="/8a75ade2-499d-5f51-a808-4f932a16d611/"/>
+      <tstamps>51c440f5-814b-555e-9e8d-310d538295a9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>GAL20V8B / picolino.jed</value>
+      <footprint>Picolino:DIP-24_W7.62mm_Socket_LongPads</footprint>
+      <fields>
+        <field name="Footprint">Picolino:DIP-24_W7.62mm_Socket_LongPads</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="GAL20V8" description=""/>
+      <property name="Sheetname" value="CPC bus, address decoding and power"/>
+      <property name="Sheetfile" value="bus-power.kicad_sch"/>
+      <sheetpath names="/CPC bus, address decoding and power/" tstamps="/8a75ade2-499d-5f51-a808-4f932a16d611/"/>
+      <tstamps>78e60659-d43c-5a67-9347-25b04acc715d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="24"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>74HCT21</value>
+      <footprint>Picolino:DIP-14_W7.62mm_Socket_LongPads</footprint>
+      <fields>
+        <field name="Footprint">Picolino:DIP-14_W7.62mm_Socket_LongPads</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="HCT21" description=""/>
+      <property name="Sheetname" value="CPC bus, address decoding and power"/>
+      <property name="Sheetfile" value="bus-power.kicad_sch"/>
+      <sheetpath names="/CPC bus, address decoding and power/" tstamps="/8a75ade2-499d-5f51-a808-4f932a16d611/"/>
+      <tstamps>f4c387a1-f61d-531c-b034-5d31da375f83</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>100nF</value>
+      <footprint>Picolino:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Pico 2 ROM interface and level translation"/>
+      <property name="Sheetfile" value="pico-rom.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Pico 2 ROM interface and level translation/" tstamps="/cbe3bae3-813a-55d7-be85-2a9af1fd2c91/"/>
+      <tstamps>d89e68e9-a15b-5f4c-96bb-311d2b69b16a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>100nF</value>
+      <footprint>Picolino:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Pico 2 ROM interface and level translation"/>
+      <property name="Sheetfile" value="pico-rom.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Pico 2 ROM interface and level translation/" tstamps="/cbe3bae3-813a-55d7-be85-2a9af1fd2c91/"/>
+      <tstamps>b72d7e65-27ec-5872-a45d-37c07d705136</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>100nF</value>
+      <footprint>Picolino:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Pico 2 ROM interface and level translation"/>
+      <property name="Sheetfile" value="pico-rom.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Pico 2 ROM interface and level translation/" tstamps="/cbe3bae3-813a-55d7-be85-2a9af1fd2c91/"/>
+      <tstamps>084fff7e-3cef-541e-ad05-80086ffb8fd0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>100nF</value>
+      <footprint>Picolino:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Pico 2 ROM interface and level translation"/>
+      <property name="Sheetfile" value="pico-rom.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Pico 2 ROM interface and level translation/" tstamps="/cbe3bae3-813a-55d7-be85-2a9af1fd2c91/"/>
+      <tstamps>4cf56c0b-3781-5f19-a86b-35d091d36a51</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D3">
+      <value>BAT43</value>
+      <footprint>Picolino:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Picolino:D_DO-35_SOD27_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="D_Schottky" description="Schottky diode"/>
+      <property name="Sheetname" value="Pico 2 ROM interface and level translation"/>
+      <property name="Sheetfile" value="pico-rom.kicad_sch"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/Pico 2 ROM interface and level translation/" tstamps="/cbe3bae3-813a-55d7-be85-2a9af1fd2c91/"/>
+      <tstamps>f452dfb6-ee4d-577c-8f4c-49bbadd4e034</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D4">
+      <value>BAT43</value>
+      <footprint>Picolino:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Picolino:D_DO-35_SOD27_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="D_Schottky" description="Schottky diode"/>
+      <property name="Sheetname" value="Pico 2 ROM interface and level translation"/>
+      <property name="Sheetfile" value="pico-rom.kicad_sch"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/Pico 2 ROM interface and level translation/" tstamps="/cbe3bae3-813a-55d7-be85-2a9af1fd2c91/"/>
+      <tstamps>aa89aaa0-67d3-5aa6-85b0-88c98c4e0014</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D5">
+      <value>BAT43</value>
+      <footprint>Picolino:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Picolino:D_DO-35_SOD27_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="D_Schottky" description="Schottky diode"/>
+      <property name="Sheetname" value="Pico 2 ROM interface and level translation"/>
+      <property name="Sheetfile" value="pico-rom.kicad_sch"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/Pico 2 ROM interface and level translation/" tstamps="/cbe3bae3-813a-55d7-be85-2a9af1fd2c91/"/>
+      <tstamps>5683377d-6397-5737-8403-2256a860fdc1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D6">
+      <value>BAT43</value>
+      <footprint>Picolino:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Picolino:D_DO-35_SOD27_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="D_Schottky" description="Schottky diode"/>
+      <property name="Sheetname" value="Pico 2 ROM interface and level translation"/>
+      <property name="Sheetfile" value="pico-rom.kicad_sch"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/Pico 2 ROM interface and level translation/" tstamps="/cbe3bae3-813a-55d7-be85-2a9af1fd2c91/"/>
+      <tstamps>42ff3d40-8180-5714-aa25-222d71549ffd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="JP2">
+      <value>ROM ENABLE: fit BOTH shunts</value>
+      <footprint>Picolino:PinHeader_2x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Picolino:PinHeader_2x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="Conn_02x02_Odd_Even" description="Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="Pico 2 ROM interface and level translation"/>
+      <property name="Sheetfile" value="pico-rom.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_2x??_*"/>
+      <sheetpath names="/Pico 2 ROM interface and level translation/" tstamps="/cbe3bae3-813a-55d7-be85-2a9af1fd2c91/"/>
+      <tstamps>9e090ee4-0d1f-5fef-9be1-535d711b8af4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q1">
+      <value>2N7002</value>
+      <footprint>Picolino:SOT-23</footprint>
+      <fields>
+        <field name="Footprint">Picolino:SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="2N7002" description=""/>
+      <property name="Sheetname" value="Pico 2 ROM interface and level translation"/>
+      <property name="Sheetfile" value="pico-rom.kicad_sch"/>
+      <sheetpath names="/Pico 2 ROM interface and level translation/" tstamps="/cbe3bae3-813a-55d7-be85-2a9af1fd2c91/"/>
+      <tstamps>90e95902-98b5-52a3-a0f8-96e880115cd9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Pico 2 ROM interface and level translation"/>
+      <property name="Sheetfile" value="pico-rom.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Pico 2 ROM interface and level translation/" tstamps="/cbe3bae3-813a-55d7-be85-2a9af1fd2c91/"/>
+      <tstamps>b98c421b-5f77-555f-9d9f-02a00c18bc5f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Pico 2 ROM interface and level translation"/>
+      <property name="Sheetfile" value="pico-rom.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Pico 2 ROM interface and level translation/" tstamps="/cbe3bae3-813a-55d7-be85-2a9af1fd2c91/"/>
+      <tstamps>8839322a-f8a2-5b6c-a297-7eebdd3e3cc2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>10k</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Pico 2 ROM interface and level translation"/>
+      <property name="Sheetfile" value="pico-rom.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Pico 2 ROM interface and level translation/" tstamps="/cbe3bae3-813a-55d7-be85-2a9af1fd2c91/"/>
+      <tstamps>a4bb2121-0c81-5675-84cb-35965c8a3c80</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>2.2k</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Pico 2 ROM interface and level translation"/>
+      <property name="Sheetfile" value="pico-rom.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Pico 2 ROM interface and level translation/" tstamps="/cbe3bae3-813a-55d7-be85-2a9af1fd2c91/"/>
+      <tstamps>b1d21056-9960-5fdc-bec9-56cd3f14d006</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>10k</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Pico 2 ROM interface and level translation"/>
+      <property name="Sheetfile" value="pico-rom.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Pico 2 ROM interface and level translation/" tstamps="/cbe3bae3-813a-55d7-be85-2a9af1fd2c91/"/>
+      <tstamps>5ed2bf71-fccf-5846-bd2f-8d657113bdf8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R31">
+      <value>100k</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Pico 2 ROM interface and level translation"/>
+      <property name="Sheetfile" value="pico-rom.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Pico 2 ROM interface and level translation/" tstamps="/cbe3bae3-813a-55d7-be85-2a9af1fd2c91/"/>
+      <tstamps>77e90936-e5a7-57d0-a942-3f5fd9f7cbd7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>Raspberry Pi Pico 2</value>
+      <footprint>Picolino:Pico2_Socketed</footprint>
+      <fields>
+        <field name="Footprint">Picolino:Pico2_Socketed</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="Pico2" description=""/>
+      <property name="Sheetname" value="Pico 2 ROM interface and level translation"/>
+      <property name="Sheetfile" value="pico-rom.kicad_sch"/>
+      <sheetpath names="/Pico 2 ROM interface and level translation/" tstamps="/cbe3bae3-813a-55d7-be85-2a9af1fd2c91/"/>
+      <tstamps>25e90cdc-e410-55c3-9f6d-260d689da21c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="26"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="29"/>
+            <pin num="30"/>
+            <pin num="31"/>
+            <pin num="32"/>
+            <pin num="33"/>
+            <pin num="34"/>
+            <pin num="35"/>
+            <pin num="36"/>
+            <pin num="37"/>
+            <pin num="38"/>
+            <pin num="39"/>
+            <pin num="40"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>SN74CB3T3245DW</value>
+      <footprint>Picolino:SOIC-20W_7.5x12.8mm_P1.27mm</footprint>
+      <fields>
+        <field name="Footprint">Picolino:SOIC-20W_7.5x12.8mm_P1.27mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="CB3T3245" description=""/>
+      <property name="Sheetname" value="Pico 2 ROM interface and level translation"/>
+      <property name="Sheetfile" value="pico-rom.kicad_sch"/>
+      <sheetpath names="/Pico 2 ROM interface and level translation/" tstamps="/cbe3bae3-813a-55d7-be85-2a9af1fd2c91/"/>
+      <tstamps>649ff65e-0f26-5e58-bcb6-4db76cd6e147</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>SN74CB3T3245DW</value>
+      <footprint>Picolino:SOIC-20W_7.5x12.8mm_P1.27mm</footprint>
+      <fields>
+        <field name="Footprint">Picolino:SOIC-20W_7.5x12.8mm_P1.27mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="CB3T3245" description=""/>
+      <property name="Sheetname" value="Pico 2 ROM interface and level translation"/>
+      <property name="Sheetfile" value="pico-rom.kicad_sch"/>
+      <sheetpath names="/Pico 2 ROM interface and level translation/" tstamps="/cbe3bae3-813a-55d7-be85-2a9af1fd2c91/"/>
+      <tstamps>1b06595d-8ca4-5e8d-87a1-248ab590b84e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U6">
+      <value>SN74CB3T3245DW</value>
+      <footprint>Picolino:SOIC-20W_7.5x12.8mm_P1.27mm</footprint>
+      <fields>
+        <field name="Footprint">Picolino:SOIC-20W_7.5x12.8mm_P1.27mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="CB3T3245" description=""/>
+      <property name="Sheetname" value="Pico 2 ROM interface and level translation"/>
+      <property name="Sheetfile" value="pico-rom.kicad_sch"/>
+      <sheetpath names="/Pico 2 ROM interface and level translation/" tstamps="/cbe3bae3-813a-55d7-be85-2a9af1fd2c91/"/>
+      <tstamps>ea93d62c-677b-56f8-9575-d88552647f3d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U7">
+      <value>SN74CB3T3245DW</value>
+      <footprint>Picolino:SOIC-20W_7.5x12.8mm_P1.27mm</footprint>
+      <fields>
+        <field name="Footprint">Picolino:SOIC-20W_7.5x12.8mm_P1.27mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="CB3T3245" description=""/>
+      <property name="Sheetname" value="Pico 2 ROM interface and level translation"/>
+      <property name="Sheetfile" value="pico-rom.kicad_sch"/>
+      <sheetpath names="/Pico 2 ROM interface and level translation/" tstamps="/cbe3bae3-813a-55d7-be85-2a9af1fd2c91/"/>
+      <tstamps>aa45ad3b-9ccc-598a-834b-f6827c0e39fa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>100nF</value>
+      <footprint>Picolino:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="W5100S Ethernet and PIC PS/2 mouse"/>
+      <property name="Sheetfile" value="ethernet-mouse.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/W5100S Ethernet and PIC PS/2 mouse/" tstamps="/4cbd2e22-8ba3-5e02-a071-b505aee4240d/"/>
+      <tstamps>361df9d5-9f55-5adb-990f-39929753791c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>100nF</value>
+      <footprint>Picolino:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="W5100S Ethernet and PIC PS/2 mouse"/>
+      <property name="Sheetfile" value="ethernet-mouse.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/W5100S Ethernet and PIC PS/2 mouse/" tstamps="/4cbd2e22-8ba3-5e02-a071-b505aee4240d/"/>
+      <tstamps>5ab23ce1-a288-5acd-9827-3ef9729c074a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>100nF</value>
+      <footprint>Picolino:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="W5100S Ethernet and PIC PS/2 mouse"/>
+      <property name="Sheetfile" value="ethernet-mouse.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/W5100S Ethernet and PIC PS/2 mouse/" tstamps="/4cbd2e22-8ba3-5e02-a071-b505aee4240d/"/>
+      <tstamps>f6b98946-e6ed-56ef-ae4d-fd64b7a27369</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D7">
+      <value>1N4148</value>
+      <footprint>Picolino:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Picolino:D_DO-35_SOD27_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="D" description="Diode"/>
+      <property name="Sheetname" value="W5100S Ethernet and PIC PS/2 mouse"/>
+      <property name="Sheetfile" value="ethernet-mouse.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/W5100S Ethernet and PIC PS/2 mouse/" tstamps="/4cbd2e22-8ba3-5e02-a071-b505aee4240d/"/>
+      <tstamps>541f7722-f2ef-5e8a-85f2-2f3359cde142</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D8">
+      <value>1N4148</value>
+      <footprint>Picolino:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Picolino:D_DO-35_SOD27_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="D" description="Diode"/>
+      <property name="Sheetname" value="W5100S Ethernet and PIC PS/2 mouse"/>
+      <property name="Sheetfile" value="ethernet-mouse.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/W5100S Ethernet and PIC PS/2 mouse/" tstamps="/4cbd2e22-8ba3-5e02-a071-b505aee4240d/"/>
+      <tstamps>dff008ce-4ff4-5c62-80c0-23a4c141f459</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J4">
+      <value>PS/2 MOUSE only</value>
+      <footprint>Picolino:USB_A_TE_292303-7_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Picolino:USB_A_TE_292303-7_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="USB_Mouse" description=""/>
+      <property name="Sheetname" value="W5100S Ethernet and PIC PS/2 mouse"/>
+      <property name="Sheetfile" value="ethernet-mouse.kicad_sch"/>
+      <sheetpath names="/W5100S Ethernet and PIC PS/2 mouse/" tstamps="/4cbd2e22-8ba3-5e02-a071-b505aee4240d/"/>
+      <tstamps>9ab90809-db72-5e7f-a5d2-6dc143cad8ad</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="SH"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>470</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="W5100S Ethernet and PIC PS/2 mouse"/>
+      <property name="Sheetfile" value="ethernet-mouse.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/W5100S Ethernet and PIC PS/2 mouse/" tstamps="/4cbd2e22-8ba3-5e02-a071-b505aee4240d/"/>
+      <tstamps>eb146c1a-df84-5d8d-b84d-18db4270075d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>470</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="W5100S Ethernet and PIC PS/2 mouse"/>
+      <property name="Sheetfile" value="ethernet-mouse.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/W5100S Ethernet and PIC PS/2 mouse/" tstamps="/4cbd2e22-8ba3-5e02-a071-b505aee4240d/"/>
+      <tstamps>50293159-a1ac-51db-9adb-778ba37e7b67</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>470</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="W5100S Ethernet and PIC PS/2 mouse"/>
+      <property name="Sheetfile" value="ethernet-mouse.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/W5100S Ethernet and PIC PS/2 mouse/" tstamps="/4cbd2e22-8ba3-5e02-a071-b505aee4240d/"/>
+      <tstamps>4ffec508-ac8c-56a0-8995-6cb140b59697</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>470</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="W5100S Ethernet and PIC PS/2 mouse"/>
+      <property name="Sheetfile" value="ethernet-mouse.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/W5100S Ethernet and PIC PS/2 mouse/" tstamps="/4cbd2e22-8ba3-5e02-a071-b505aee4240d/"/>
+      <tstamps>2eff07be-be0d-5f7f-9212-222b84a0ee98</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>470</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="W5100S Ethernet and PIC PS/2 mouse"/>
+      <property name="Sheetfile" value="ethernet-mouse.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/W5100S Ethernet and PIC PS/2 mouse/" tstamps="/4cbd2e22-8ba3-5e02-a071-b505aee4240d/"/>
+      <tstamps>6fe62099-dc5e-51a2-9cd8-8766d37b435c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R12">
+      <value>470</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="W5100S Ethernet and PIC PS/2 mouse"/>
+      <property name="Sheetfile" value="ethernet-mouse.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/W5100S Ethernet and PIC PS/2 mouse/" tstamps="/4cbd2e22-8ba3-5e02-a071-b505aee4240d/"/>
+      <tstamps>9db3d572-2cfb-5864-a682-90c16c4e24d5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R13">
+      <value>470</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="W5100S Ethernet and PIC PS/2 mouse"/>
+      <property name="Sheetfile" value="ethernet-mouse.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/W5100S Ethernet and PIC PS/2 mouse/" tstamps="/4cbd2e22-8ba3-5e02-a071-b505aee4240d/"/>
+      <tstamps>0194fa3c-26d4-5d74-8cf1-c715f4dce49d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R14">
+      <value>470</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="W5100S Ethernet and PIC PS/2 mouse"/>
+      <property name="Sheetfile" value="ethernet-mouse.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/W5100S Ethernet and PIC PS/2 mouse/" tstamps="/4cbd2e22-8ba3-5e02-a071-b505aee4240d/"/>
+      <tstamps>2c728291-5002-5582-85f9-a6cd8d41d2f9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R15">
+      <value>10k</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="W5100S Ethernet and PIC PS/2 mouse"/>
+      <property name="Sheetfile" value="ethernet-mouse.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/W5100S Ethernet and PIC PS/2 mouse/" tstamps="/4cbd2e22-8ba3-5e02-a071-b505aee4240d/"/>
+      <tstamps>b9a4b8fb-574d-525e-a74b-2224799127ee</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R16">
+      <value>10k</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="W5100S Ethernet and PIC PS/2 mouse"/>
+      <property name="Sheetfile" value="ethernet-mouse.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/W5100S Ethernet and PIC PS/2 mouse/" tstamps="/4cbd2e22-8ba3-5e02-a071-b505aee4240d/"/>
+      <tstamps>f52b968d-b17a-5cf2-8243-6db6edcaa09f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U8">
+      <value>W5100S reference module</value>
+      <footprint>Picolino:W5100S_Cyboard</footprint>
+      <fields>
+        <field name="Footprint">Picolino:W5100S_Cyboard</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="W5100S_Module" description=""/>
+      <property name="Sheetname" value="W5100S Ethernet and PIC PS/2 mouse"/>
+      <property name="Sheetfile" value="ethernet-mouse.kicad_sch"/>
+      <sheetpath names="/W5100S Ethernet and PIC PS/2 mouse/" tstamps="/4cbd2e22-8ba3-5e02-a071-b505aee4240d/"/>
+      <tstamps>8d97d0a9-0269-52c1-afb1-26c6c4ef426c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="26"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="29"/>
+            <pin num="30"/>
+            <pin num="31"/>
+            <pin num="32"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U9">
+      <value>PIC16F84A / Cyboard HEX</value>
+      <footprint>Picolino:DIP-18_W7.62mm_Socket_LongPads</footprint>
+      <fields>
+        <field name="Footprint">Picolino:DIP-18_W7.62mm_Socket_LongPads</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="PIC16F84A" description=""/>
+      <property name="Sheetname" value="W5100S Ethernet and PIC PS/2 mouse"/>
+      <property name="Sheetfile" value="ethernet-mouse.kicad_sch"/>
+      <sheetpath names="/W5100S Ethernet and PIC PS/2 mouse/" tstamps="/4cbd2e22-8ba3-5e02-a071-b505aee4240d/"/>
+      <tstamps>d99049a0-e16c-5aea-be53-42161ae2d88c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U10">
+      <value>74HCT244</value>
+      <footprint>Picolino:DIP-20_W7.62mm_Socket_LongPads</footprint>
+      <fields>
+        <field name="Footprint">Picolino:DIP-20_W7.62mm_Socket_LongPads</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="HCT244" description=""/>
+      <property name="Sheetname" value="W5100S Ethernet and PIC PS/2 mouse"/>
+      <property name="Sheetfile" value="ethernet-mouse.kicad_sch"/>
+      <sheetpath names="/W5100S Ethernet and PIC PS/2 mouse/" tstamps="/4cbd2e22-8ba3-5e02-a071-b505aee4240d/"/>
+      <tstamps>6561031b-67dd-5391-be0d-ebd2ea55d126</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="BT1">
+      <value>CR2032 / Keystone 103</value>
+      <footprint>Picolino:BatteryHolder_Keystone_103_1x20mm</footprint>
+      <fields>
+        <field name="Footprint">Picolino:BatteryHolder_Keystone_103_1x20mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="Battery_Cell" description="Single-cell battery"/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <property name="ki_keywords" value="battery cell"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>d7cfdd9a-085e-5f71-ab58-4f98430199a6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>30pF C0G</value>
+      <footprint>Picolino:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>342f551c-a4d2-5492-81e8-6fe1a8613f4c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C14">
+      <value>56pF C0G</value>
+      <footprint>Picolino:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>6e224048-02a5-5a7d-ac34-8be2b9d79daa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C15">
+      <value>100nF</value>
+      <footprint>Picolino:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>472c04c1-f012-5983-8fd8-588f508ed5f0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C16">
+      <value>100nF</value>
+      <footprint>Picolino:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>f5d3423c-263d-53e5-a4fd-fbac13392576</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C17">
+      <value>100nF</value>
+      <footprint>Picolino:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>f13ae59f-db9d-5047-a0a3-1512bebb35fc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="CV1">
+      <value>30pF trim / KKT330TR</value>
+      <footprint>Picolino:C_Trimmer_Murata_TZC3</footprint>
+      <fields>
+        <field name="Footprint">Picolino:C_Trimmer_Murata_TZC3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="C_Trim" description="Trimmable capacitor"/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <property name="ki_keywords" value="trimmer variable capacitor"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>ca2dfc82-eae5-5ea2-a2b8-0a2b6999f29c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R17">
+      <value>100k</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>4b5e47d7-4980-55a9-8bcb-ce4608adbdf0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R18">
+      <value>100k</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>a4fa4a09-8a51-59ca-8420-848cf0a4933f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R19">
+      <value>10k</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>a63c907c-12cc-5e85-a413-85c62dd4c9a3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R20">
+      <value>220k</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>1528de75-2e08-5b91-b638-8603e99fb003</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R21">
+      <value>220k</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>9f8742ee-6869-58e9-b996-d5a45b062c80</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R22">
+      <value>220k</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>00da917e-8a66-518c-a579-57b8ba65b8a3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R23">
+      <value>220k</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>60790c59-f974-5ed0-a488-5f3ef753249d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R24">
+      <value>220k</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>2ff44a87-fbe1-5827-92b9-b7b7695e6db2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R25">
+      <value>220k</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>6505aea8-9a4f-57f3-ac0a-343bd35d20b5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R26">
+      <value>220k</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>fd2d1d34-92af-55ca-b7d5-39c539cf41f7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R27">
+      <value>220k</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>7193774c-6bda-5007-a5ef-1d69438a6ec2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R28">
+      <value>220k</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>ac45475a-0174-5218-844f-675009c8a90d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R29">
+      <value>220k</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>c129279d-3aff-51ec-862e-7a50bca9e89e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R30">
+      <value>220k</value>
+      <footprint>Picolino:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Picolino:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="R" description="Resistor"/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>e785d6d6-71d3-562a-8432-8213ec3e7f07</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP1">
+      <value>RTC ALARM / calibration</value>
+      <footprint>Picolino:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <fields>
+        <field name="Footprint">Picolino:TestPoint_THTPad_D2.0mm_Drill1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>77a2d748-06a1-5c3a-b63b-1fd78d327ed9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U11">
+      <value>RP5C01 (original, DIP-18)</value>
+      <footprint>Picolino:DIP-18_W7.62mm_Socket_LongPads</footprint>
+      <fields>
+        <field name="Footprint">Picolino:DIP-18_W7.62mm_Socket_LongPads</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="RP5C01" description=""/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>08baaca8-deb0-5298-9659-1c0163cf7e0a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U12">
+      <value>74HCT373</value>
+      <footprint>Picolino:DIP-20_W7.62mm_Socket_LongPads</footprint>
+      <fields>
+        <field name="Footprint">Picolino:DIP-20_W7.62mm_Socket_LongPads</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="HCT373" description=""/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>222eb528-a3aa-5a73-b11d-d920994945a7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U13">
+      <value>MAX690AESA+</value>
+      <footprint>Picolino:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <fields>
+        <field name="Footprint">Picolino:SOIC-8_3.9x4.9mm_P1.27mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="MAX690A" description=""/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>96bf1673-a93d-582e-82a2-09a0c796a8ff</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Y1">
+      <value>32.768kHz / AB38T</value>
+      <footprint>Picolino:Crystal_C38-LF_D3.0mm_L8.0mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Picolino:Crystal_C38-LF_D3.0mm_L8.0mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Picolino" part="Crystal" description="Two pin crystal"/>
+      <property name="Sheetname" value="RP5C01 RTC and CR2032 battery backup"/>
+      <property name="Sheetfile" value="rtc.kicad_sch"/>
+      <property name="ki_keywords" value="quartz ceramic resonator oscillator"/>
+      <property name="ki_fp_filters" value="Crystal*"/>
+      <sheetpath names="/RP5C01 RTC and CR2032 battery backup/" tstamps="/07b6efb0-e847-54c2-aab8-9d39df9806f9/"/>
+      <tstamps>34e33e9d-643e-55be-9901-7a9002d8d1a8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Picolino" part="2N7002">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">2N7002</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="Battery_Cell">
+      <description>Single-cell battery</description>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery_Cell</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Single-cell battery</field>
+        <field name="Sim.Device">V</field>
+        <field name="Sim.Type">DC</field>
+        <field name="Sim.Pins">1=+ 2=-</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="CB3T3245">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CB3T3245</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="no_connect"/>
+        <pin num="2" name="A1" type="bidirectional"/>
+        <pin num="3" name="A2" type="bidirectional"/>
+        <pin num="4" name="A3" type="bidirectional"/>
+        <pin num="5" name="A4" type="bidirectional"/>
+        <pin num="6" name="A5" type="bidirectional"/>
+        <pin num="7" name="A6" type="bidirectional"/>
+        <pin num="8" name="A7" type="bidirectional"/>
+        <pin num="9" name="A8" type="bidirectional"/>
+        <pin num="10" name="GND" type="power_in"/>
+        <pin num="11" name="B8" type="bidirectional"/>
+        <pin num="12" name="B7" type="bidirectional"/>
+        <pin num="13" name="B6" type="bidirectional"/>
+        <pin num="14" name="B5" type="bidirectional"/>
+        <pin num="15" name="B4" type="bidirectional"/>
+        <pin num="16" name="B3" type="bidirectional"/>
+        <pin num="17" name="B2" type="bidirectional"/>
+        <pin num="18" name="B1" type="bidirectional"/>
+        <pin num="19" name="OE_N" type="input"/>
+        <pin num="20" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="CH376_HEADER">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CH376_HEADER</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+        <pin num="2" name="D0" type="passive"/>
+        <pin num="3" name="GND" type="passive"/>
+        <pin num="4" name="D1" type="passive"/>
+        <pin num="5" name="USB_5V" type="passive"/>
+        <pin num="6" name="D2" type="passive"/>
+        <pin num="7" name="NC" type="passive"/>
+        <pin num="8" name="D3" type="passive"/>
+        <pin num="9" name="A0" type="passive"/>
+        <pin num="10" name="D4" type="passive"/>
+        <pin num="11" name="CHCS_N" type="passive"/>
+        <pin num="12" name="D5" type="passive"/>
+        <pin num="13" name="RD_N" type="passive"/>
+        <pin num="14" name="D6" type="passive"/>
+        <pin num="15" name="WR_N" type="passive"/>
+        <pin num="16" name="D7" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="CPC_BUS">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CPC_BUS</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="UNUSED" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="A15" type="passive"/>
+        <pin num="4" name="A14" type="passive"/>
+        <pin num="5" name="A13" type="passive"/>
+        <pin num="6" name="A12" type="passive"/>
+        <pin num="7" name="A11" type="passive"/>
+        <pin num="8" name="A10" type="passive"/>
+        <pin num="9" name="A9" type="passive"/>
+        <pin num="10" name="A8" type="passive"/>
+        <pin num="11" name="A7" type="passive"/>
+        <pin num="12" name="A6" type="passive"/>
+        <pin num="13" name="A5" type="passive"/>
+        <pin num="14" name="A4" type="passive"/>
+        <pin num="15" name="A3" type="passive"/>
+        <pin num="16" name="A2" type="passive"/>
+        <pin num="17" name="A1" type="passive"/>
+        <pin num="18" name="A0" type="passive"/>
+        <pin num="19" name="D7" type="passive"/>
+        <pin num="20" name="D6" type="passive"/>
+        <pin num="21" name="D5" type="passive"/>
+        <pin num="22" name="D4" type="passive"/>
+        <pin num="23" name="D3" type="passive"/>
+        <pin num="24" name="D2" type="passive"/>
+        <pin num="25" name="D1" type="passive"/>
+        <pin num="26" name="D0" type="passive"/>
+        <pin num="27" name="CPC_5V" type="passive"/>
+        <pin num="28" name="UNUSED" type="passive"/>
+        <pin num="29" name="UNUSED" type="passive"/>
+        <pin num="30" name="UNUSED" type="passive"/>
+        <pin num="31" name="IORQ_N" type="passive"/>
+        <pin num="32" name="RD_N" type="passive"/>
+        <pin num="33" name="WR_N" type="passive"/>
+        <pin num="34" name="UNUSED" type="passive"/>
+        <pin num="35" name="UNUSED" type="passive"/>
+        <pin num="36" name="UNUSED" type="passive"/>
+        <pin num="37" name="UNUSED" type="passive"/>
+        <pin num="38" name="UNUSED" type="passive"/>
+        <pin num="39" name="UNUSED" type="passive"/>
+        <pin num="40" name="BUSRESET_N" type="passive"/>
+        <pin num="41" name="RESET_N" type="passive"/>
+        <pin num="42" name="ROMEN_N" type="passive"/>
+        <pin num="43" name="ROMDIS" type="passive"/>
+        <pin num="44" name="UNUSED" type="passive"/>
+        <pin num="45" name="UNUSED" type="passive"/>
+        <pin num="46" name="UNUSED" type="passive"/>
+        <pin num="47" name="UNUSED" type="passive"/>
+        <pin num="48" name="UNUSED" type="passive"/>
+        <pin num="49" name="GND" type="passive"/>
+        <pin num="50" name="PHI" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="C_Polarized">
+      <description>Polarized capacitor</description>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Polarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="C_Trim">
+      <description>Trimmable capacitor</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Trim</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Trimmable capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="Conn_01x03">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="Conn_02x02_Odd_Even">
+      <description>Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x02_Odd_Even</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="Crystal">
+      <description>Two pin crystal</description>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Two pin crystal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="D">
+      <description>Diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Diode</field>
+        <field name="Sim.Device">D</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="D_Schottky">
+      <description>Schottky diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Schottky diode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="GAL20V8">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">GAL20V8</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="A0" type="input"/>
+        <pin num="2" name="A1" type="input"/>
+        <pin num="3" name="A2" type="input"/>
+        <pin num="4" name="A3" type="input"/>
+        <pin num="5" name="A4" type="input"/>
+        <pin num="6" name="A5" type="input"/>
+        <pin num="7" name="A6" type="input"/>
+        <pin num="8" name="A7" type="input"/>
+        <pin num="9" name="A8" type="input"/>
+        <pin num="10" name="A9" type="input"/>
+        <pin num="11" name="A1X" type="input"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="IORQ_N" type="input"/>
+        <pin num="14" name="RD_N" type="input"/>
+        <pin num="15" name="RTCCS_N" type="output"/>
+        <pin num="16" name="W5CS_N" type="output"/>
+        <pin num="17" name="PINT_N" type="output"/>
+        <pin num="18" name="RTCAS" type="output"/>
+        <pin num="19" name="RTCWR_N" type="output"/>
+        <pin num="20" name="RTCRD_N" type="output"/>
+        <pin num="21" name="CHLED_N" type="output"/>
+        <pin num="22" name="CHCS_N" type="output"/>
+        <pin num="23" name="WR_N" type="input"/>
+        <pin num="24" name="BOARD_5V" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="HCT21">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">HCT21</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="A10" type="input"/>
+        <pin num="2" name="A11" type="input"/>
+        <pin num="3" name="NC" type="no_connect"/>
+        <pin num="4" name="A12" type="input"/>
+        <pin num="5" name="A13" type="input"/>
+        <pin num="6" name="A10_13" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="A1X" type="output"/>
+        <pin num="9" name="A10_13" type="input"/>
+        <pin num="10" name="A14" type="input"/>
+        <pin num="11" name="NC" type="no_connect"/>
+        <pin num="12" name="A15" type="input"/>
+        <pin num="13" name="A15" type="input"/>
+        <pin num="14" name="BOARD_5V" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="HCT244">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">HCT244</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="PINT_N" type="input"/>
+        <pin num="2" name="MOUSED7" type="input"/>
+        <pin num="3" name="D0" type="tri_state"/>
+        <pin num="4" name="MOUSED6" type="input"/>
+        <pin num="5" name="D1" type="tri_state"/>
+        <pin num="6" name="MOUSED5" type="input"/>
+        <pin num="7" name="D2" type="tri_state"/>
+        <pin num="8" name="MOUSED4" type="input"/>
+        <pin num="9" name="D3" type="tri_state"/>
+        <pin num="10" name="GND" type="power_in"/>
+        <pin num="11" name="MOUSED3" type="input"/>
+        <pin num="12" name="D4" type="tri_state"/>
+        <pin num="13" name="MOUSED2" type="input"/>
+        <pin num="14" name="D5" type="tri_state"/>
+        <pin num="15" name="MOUSED1" type="input"/>
+        <pin num="16" name="D6" type="tri_state"/>
+        <pin num="17" name="MOUSED0" type="input"/>
+        <pin num="18" name="D7" type="tri_state"/>
+        <pin num="19" name="PINT_N" type="input"/>
+        <pin num="20" name="BOARD_5V" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="HCT373">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">HCT373</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OE_N" type="input"/>
+        <pin num="2" name="Q0" type="tri_state"/>
+        <pin num="3" name="D0" type="input"/>
+        <pin num="4" name="D1" type="input"/>
+        <pin num="5" name="Q1" type="tri_state"/>
+        <pin num="6" name="Q2" type="tri_state"/>
+        <pin num="7" name="D2" type="input"/>
+        <pin num="8" name="D3" type="input"/>
+        <pin num="9" name="Q3" type="tri_state"/>
+        <pin num="10" name="GND" type="power_in"/>
+        <pin num="11" name="LE" type="input"/>
+        <pin num="12" name="Q4" type="tri_state"/>
+        <pin num="13" name="D4" type="input"/>
+        <pin num="14" name="D5" type="input"/>
+        <pin num="15" name="Q5" type="tri_state"/>
+        <pin num="16" name="Q6" type="tri_state"/>
+        <pin num="17" name="D6" type="input"/>
+        <pin num="18" name="D7" type="input"/>
+        <pin num="19" name="Q7" type="tri_state"/>
+        <pin num="20" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="LED">
+      <description>Light emitting diode</description>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Light emitting diode</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="MAX690A">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MAX690A</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VOUT" type="power_out"/>
+        <pin num="2" name="VCC" type="power_in"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="PFI" type="input"/>
+        <pin num="5" name="PFO_N" type="output"/>
+        <pin num="6" name="WDI" type="input"/>
+        <pin num="7" name="RESET_N" type="output"/>
+        <pin num="8" name="VBATT" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Mounting Hole without connection</field>
+      </fields>
+    </libpart>
+    <libpart lib="Picolino" part="PIC16F84A">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PIC16F84A</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="RA2" type="bidirectional"/>
+        <pin num="2" name="RA3" type="bidirectional"/>
+        <pin num="3" name="RA4" type="bidirectional"/>
+        <pin num="4" name="MCLR_N" type="input"/>
+        <pin num="5" name="VSS" type="power_in"/>
+        <pin num="6" name="RB0" type="bidirectional"/>
+        <pin num="7" name="RB1" type="bidirectional"/>
+        <pin num="8" name="RB2" type="bidirectional"/>
+        <pin num="9" name="RB3" type="bidirectional"/>
+        <pin num="10" name="RB4" type="bidirectional"/>
+        <pin num="11" name="RB5" type="bidirectional"/>
+        <pin num="12" name="RB6" type="bidirectional"/>
+        <pin num="13" name="RB7" type="bidirectional"/>
+        <pin num="14" name="VDD" type="power_in"/>
+        <pin num="15" name="OSC2" type="output"/>
+        <pin num="16" name="OSC1" type="input"/>
+        <pin num="17" name="RA0" type="bidirectional"/>
+        <pin num="18" name="RA1" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="Pico2">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Pico2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GPIO0" type="bidirectional"/>
+        <pin num="2" name="GPIO1" type="bidirectional"/>
+        <pin num="3" name="GND" type="passive"/>
+        <pin num="4" name="GPIO2" type="bidirectional"/>
+        <pin num="5" name="GPIO3" type="bidirectional"/>
+        <pin num="6" name="GPIO4" type="bidirectional"/>
+        <pin num="7" name="GPIO5" type="bidirectional"/>
+        <pin num="8" name="GND" type="passive"/>
+        <pin num="9" name="GPIO6" type="bidirectional"/>
+        <pin num="10" name="GPIO7" type="bidirectional"/>
+        <pin num="11" name="GPIO8" type="bidirectional"/>
+        <pin num="12" name="GPIO9" type="bidirectional"/>
+        <pin num="13" name="GND" type="passive"/>
+        <pin num="14" name="GPIO10" type="bidirectional"/>
+        <pin num="15" name="GPIO11" type="bidirectional"/>
+        <pin num="16" name="GPIO12" type="bidirectional"/>
+        <pin num="17" name="GPIO13" type="bidirectional"/>
+        <pin num="18" name="GND" type="passive"/>
+        <pin num="19" name="GPIO14" type="bidirectional"/>
+        <pin num="20" name="GPIO15" type="bidirectional"/>
+        <pin num="21" name="GPIO16" type="bidirectional"/>
+        <pin num="22" name="GPIO17" type="bidirectional"/>
+        <pin num="23" name="GND" type="passive"/>
+        <pin num="24" name="GPIO18" type="bidirectional"/>
+        <pin num="25" name="GPIO19" type="bidirectional"/>
+        <pin num="26" name="GPIO20" type="bidirectional"/>
+        <pin num="27" name="GPIO21" type="bidirectional"/>
+        <pin num="28" name="GND" type="passive"/>
+        <pin num="29" name="GPIO22" type="bidirectional"/>
+        <pin num="30" name="RUN" type="input"/>
+        <pin num="31" name="GPIO26" type="bidirectional"/>
+        <pin num="32" name="GPIO27" type="bidirectional"/>
+        <pin num="33" name="GND" type="passive"/>
+        <pin num="34" name="GPIO28" type="bidirectional"/>
+        <pin num="35" name="ADC_VREF" type="passive"/>
+        <pin num="36" name="3V3_OUT" type="power_out"/>
+        <pin num="37" name="3V3_EN" type="input"/>
+        <pin num="38" name="GND" type="passive"/>
+        <pin num="39" name="VSYS" type="power_in"/>
+        <pin num="40" name="VBUS" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="Polyfuse">
+      <description>Resettable fuse, polymeric positive temperature coefficient</description>
+      <footprints>
+        <fp>*polyfuse*</fp>
+        <fp>*PTC*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Polyfuse</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resettable fuse, polymeric positive temperature coefficient</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="RP5C01">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">RP5C01</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="/CS" type="input"/>
+        <pin num="2" name="CS" type="input"/>
+        <pin num="3" name="ADJ" type="input"/>
+        <pin num="4" name="A0" type="input"/>
+        <pin num="5" name="A1" type="input"/>
+        <pin num="6" name="A2" type="input"/>
+        <pin num="7" name="A3" type="input"/>
+        <pin num="8" name="/RD" type="input"/>
+        <pin num="9" name="GND" type="power_in"/>
+        <pin num="10" name="/WR" type="input"/>
+        <pin num="11" name="D0" type="bidirectional"/>
+        <pin num="12" name="D1" type="bidirectional"/>
+        <pin num="13" name="D2" type="bidirectional"/>
+        <pin num="14" name="D3" type="bidirectional"/>
+        <pin num="15" name="/ALARM" type="output"/>
+        <pin num="16" name="OSCIN" type="input"/>
+        <pin num="17" name="OSCOUT" type="output"/>
+        <pin num="18" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="TestPoint">
+      <description>test point</description>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="USB_Mouse">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">USB_Mouse</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="passive"/>
+        <pin num="2" name="D-_/_PS2_DATA" type="passive"/>
+        <pin num="3" name="D+_/_PS2_CLK" type="passive"/>
+        <pin num="4" name="GND" type="passive"/>
+        <pin num="SH" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Picolino" part="W5100S_Module">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">W5100S_Module</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="W51RD_N" type="input"/>
+        <pin num="2" name="W51WR_N" type="input"/>
+        <pin num="3" name="W51D0" type="bidirectional"/>
+        <pin num="4" name="W51D1" type="bidirectional"/>
+        <pin num="5" name="W51D2" type="bidirectional"/>
+        <pin num="6" name="W51D3" type="bidirectional"/>
+        <pin num="7" name="W51D4" type="bidirectional"/>
+        <pin num="8" name="W51D5" type="bidirectional"/>
+        <pin num="9" name="W51D6" type="bidirectional"/>
+        <pin num="10" name="W51D7" type="bidirectional"/>
+        <pin num="11" name="NC" type="passive"/>
+        <pin num="12" name="RESET_N" type="input"/>
+        <pin num="13" name="NC" type="passive"/>
+        <pin num="14" name="NC" type="passive"/>
+        <pin num="15" name="NC" type="passive"/>
+        <pin num="16" name="NC" type="passive"/>
+        <pin num="17" name="NC" type="passive"/>
+        <pin num="18" name="NC" type="passive"/>
+        <pin num="19" name="NC" type="passive"/>
+        <pin num="20" name="NC" type="passive"/>
+        <pin num="21" name="BOARD_5V" type="power_in"/>
+        <pin num="22" name="BOARD_5V" type="power_in"/>
+        <pin num="23" name="3V3_OUT_2" type="power_out"/>
+        <pin num="24" name="3V3_OUT_1" type="power_out"/>
+        <pin num="25" name="GND" type="power_in"/>
+        <pin num="26" name="GND" type="power_in"/>
+        <pin num="27" name="GND" type="power_in"/>
+        <pin num="28" name="BOARD_5V" type="input"/>
+        <pin num="29" name="W5CS_N" type="input"/>
+        <pin num="30" name="GND" type="input"/>
+        <pin num="31" name="A0" type="input"/>
+        <pin num="32" name="A1" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Picolino">
+      <uri>${KIPRJMOD}/libraries/Picolino.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="A0" class="Default">
+      <node ref="J1" pin="18" pinfunction="A0_18" pintype="passive"/>
+      <node ref="J2" pin="9" pinfunction="A0_9" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="A0_1" pintype="input"/>
+      <node ref="U4" pin="2" pinfunction="A1_2" pintype="bidirectional"/>
+      <node ref="U8" pin="31" pinfunction="A0_31" pintype="input"/>
+    </net>
+    <net code="2" name="A1" class="Default">
+      <node ref="J1" pin="17" pinfunction="A1_17" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="A1_2" pintype="input"/>
+      <node ref="U4" pin="3" pinfunction="A2_3" pintype="bidirectional"/>
+      <node ref="U8" pin="32" pinfunction="A1_32" pintype="input"/>
+    </net>
+    <net code="3" name="A1X" class="Default">
+      <node ref="U2" pin="11" pinfunction="A1X_11" pintype="input"/>
+      <node ref="U3" pin="8" pinfunction="A1X_8" pintype="output"/>
+    </net>
+    <net code="4" name="A2" class="Default">
+      <node ref="J1" pin="16" pinfunction="A2_16" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="A2_3" pintype="input"/>
+      <node ref="U4" pin="4" pinfunction="A3_4" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="A3" class="Default">
+      <node ref="J1" pin="15" pinfunction="A3_15" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="A3_4" pintype="input"/>
+      <node ref="U4" pin="5" pinfunction="A4_5" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="A4" class="Default">
+      <node ref="J1" pin="14" pinfunction="A4_14" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="A4_5" pintype="input"/>
+      <node ref="U4" pin="6" pinfunction="A5_6" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="A5" class="Default">
+      <node ref="J1" pin="13" pinfunction="A5_13" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="A5_6" pintype="input"/>
+      <node ref="U4" pin="7" pinfunction="A6_7" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="A6" class="Default">
+      <node ref="J1" pin="12" pinfunction="A6_12" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="A6_7" pintype="input"/>
+      <node ref="U4" pin="8" pinfunction="A7_8" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="A7" class="Default">
+      <node ref="J1" pin="11" pinfunction="A7_11" pintype="passive"/>
+      <node ref="U2" pin="8" pinfunction="A7_8" pintype="input"/>
+      <node ref="U4" pin="9" pinfunction="A8_9" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="A8" class="Default">
+      <node ref="J1" pin="10" pinfunction="A8_10" pintype="passive"/>
+      <node ref="U2" pin="9" pinfunction="A8_9" pintype="input"/>
+      <node ref="U5" pin="2" pinfunction="A1_2" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="A9" class="Default">
+      <node ref="J1" pin="9" pinfunction="A9_9" pintype="passive"/>
+      <node ref="U2" pin="10" pinfunction="A9_10" pintype="input"/>
+      <node ref="U5" pin="3" pinfunction="A2_3" pintype="bidirectional"/>
+    </net>
+    <net code="12" name="A10" class="Default">
+      <node ref="J1" pin="8" pinfunction="A10_8" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="A10_1" pintype="input"/>
+      <node ref="U5" pin="4" pinfunction="A3_4" pintype="bidirectional"/>
+    </net>
+    <net code="13" name="A10_13" class="Default">
+      <node ref="U3" pin="6" pinfunction="A10_13_6" pintype="output"/>
+      <node ref="U3" pin="9" pinfunction="A10_13_9" pintype="input"/>
+    </net>
+    <net code="14" name="A11" class="Default">
+      <node ref="J1" pin="7" pinfunction="A11_7" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="A11_2" pintype="input"/>
+      <node ref="U5" pin="5" pinfunction="A4_5" pintype="bidirectional"/>
+    </net>
+    <net code="15" name="A12" class="Default">
+      <node ref="J1" pin="6" pinfunction="A12_6" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="A12_4" pintype="input"/>
+      <node ref="U5" pin="6" pinfunction="A5_6" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="A13" class="Default">
+      <node ref="J1" pin="5" pinfunction="A13_5" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="A13_5" pintype="input"/>
+      <node ref="U5" pin="7" pinfunction="A6_7" pintype="bidirectional"/>
+    </net>
+    <net code="17" name="A14" class="Default">
+      <node ref="J1" pin="4" pinfunction="A14_4" pintype="passive"/>
+      <node ref="U3" pin="10" pinfunction="A14_10" pintype="input"/>
+    </net>
+    <net code="18" name="A15" class="Default">
+      <node ref="J1" pin="3" pinfunction="A15_3" pintype="passive"/>
+      <node ref="U3" pin="12" pinfunction="A15_12" pintype="input"/>
+      <node ref="U3" pin="13" pinfunction="A15_13" pintype="input"/>
+      <node ref="U5" pin="8" pinfunction="A7_8" pintype="bidirectional"/>
+    </net>
+    <net code="19" name="BOARD_5V" class="Power,Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="F1" pin="1" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="VBUS_1" pintype="passive"/>
+      <node ref="JP1" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="JP2" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="U10" pin="20" pinfunction="BOARD_5V_20" pintype="power_in"/>
+      <node ref="U12" pin="20" pinfunction="VCC_20" pintype="power_in"/>
+      <node ref="U13" pin="2" pinfunction="VCC_2" pintype="power_in"/>
+      <node ref="U2" pin="24" pinfunction="BOARD_5V_24" pintype="power_in"/>
+      <node ref="U3" pin="14" pinfunction="BOARD_5V_14" pintype="power_in"/>
+      <node ref="U8" pin="21" pinfunction="BOARD_5V_21" pintype="power_in"/>
+      <node ref="U8" pin="22" pinfunction="BOARD_5V_22" pintype="power_in"/>
+      <node ref="U8" pin="28" pinfunction="BOARD_5V_28" pintype="input"/>
+      <node ref="U9" pin="14" pinfunction="VDD_14" pintype="power_in"/>
+    </net>
+    <net code="20" name="BUSRESET_N" class="Default">
+      <node ref="J1" pin="40" pinfunction="BUSRESET_N_40" pintype="passive"/>
+      <node ref="U7" pin="5" pinfunction="A4_5" pintype="bidirectional"/>
+    </net>
+    <net code="21" name="CHCS_N" class="Default">
+      <node ref="J2" pin="11" pinfunction="CHCS_N_11" pintype="passive"/>
+      <node ref="U2" pin="22" pinfunction="CHCS_N_22" pintype="output"/>
+    </net>
+    <net code="22" name="CHLED_A" class="Default">
+      <node ref="D2" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="23" name="CHLED_N" class="Default">
+      <node ref="D2" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="U2" pin="21" pinfunction="CHLED_N_21" pintype="output"/>
+    </net>
+    <net code="24" name="CPC_5V" class="Power,Default">
+      <node ref="J1" pin="27" pinfunction="CPC_5V_27" pintype="passive"/>
+      <node ref="JP1" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="Q1" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="R31" pin="1" pintype="passive"/>
+    </net>
+    <net code="25" name="D0" class="Default">
+      <node ref="J1" pin="26" pinfunction="D0_26" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="D0_2" pintype="passive"/>
+      <node ref="R27" pin="1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U10" pin="3" pinfunction="D0_3" pintype="tri_state"/>
+      <node ref="U11" pin="11" pinfunction="D0_11" pintype="bidirectional"/>
+      <node ref="U12" pin="3" pinfunction="D0_3" pintype="input"/>
+      <node ref="U6" pin="2" pinfunction="A1_2" pintype="bidirectional"/>
+    </net>
+    <net code="26" name="D1" class="Default">
+      <node ref="J1" pin="25" pinfunction="D1_25" pintype="passive"/>
+      <node ref="J2" pin="4" pinfunction="D1_4" pintype="passive"/>
+      <node ref="R28" pin="1" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="U10" pin="5" pinfunction="D1_5" pintype="tri_state"/>
+      <node ref="U11" pin="12" pinfunction="D1_12" pintype="bidirectional"/>
+      <node ref="U12" pin="4" pinfunction="D1_4" pintype="input"/>
+      <node ref="U6" pin="3" pinfunction="A2_3" pintype="bidirectional"/>
+    </net>
+    <net code="27" name="D2" class="Default">
+      <node ref="J1" pin="24" pinfunction="D2_24" pintype="passive"/>
+      <node ref="J2" pin="6" pinfunction="D2_6" pintype="passive"/>
+      <node ref="R29" pin="1" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U10" pin="7" pinfunction="D2_7" pintype="tri_state"/>
+      <node ref="U11" pin="13" pinfunction="D2_13" pintype="bidirectional"/>
+      <node ref="U12" pin="7" pinfunction="D2_7" pintype="input"/>
+      <node ref="U6" pin="4" pinfunction="A3_4" pintype="bidirectional"/>
+    </net>
+    <net code="28" name="D3" class="Default">
+      <node ref="J1" pin="23" pinfunction="D3_23" pintype="passive"/>
+      <node ref="J2" pin="8" pinfunction="D3_8" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R30" pin="1" pintype="passive"/>
+      <node ref="U10" pin="9" pinfunction="D3_9" pintype="tri_state"/>
+      <node ref="U11" pin="14" pinfunction="D3_14" pintype="bidirectional"/>
+      <node ref="U12" pin="8" pinfunction="D3_8" pintype="input"/>
+      <node ref="U6" pin="5" pinfunction="A4_5" pintype="bidirectional"/>
+    </net>
+    <net code="29" name="D4" class="Default">
+      <node ref="J1" pin="22" pinfunction="D4_22" pintype="passive"/>
+      <node ref="J2" pin="10" pinfunction="D4_10" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="U10" pin="12" pinfunction="D4_12" pintype="tri_state"/>
+      <node ref="U6" pin="6" pinfunction="A5_6" pintype="bidirectional"/>
+    </net>
+    <net code="30" name="D5" class="Default">
+      <node ref="J1" pin="21" pinfunction="D5_21" pintype="passive"/>
+      <node ref="J2" pin="12" pinfunction="D5_12" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="U10" pin="14" pinfunction="D5_14" pintype="tri_state"/>
+      <node ref="U6" pin="7" pinfunction="A6_7" pintype="bidirectional"/>
+    </net>
+    <net code="31" name="D6" class="Default">
+      <node ref="J1" pin="20" pinfunction="D6_20" pintype="passive"/>
+      <node ref="J2" pin="14" pinfunction="D6_14" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="U10" pin="16" pinfunction="D6_16" pintype="tri_state"/>
+      <node ref="U6" pin="8" pinfunction="A7_8" pintype="bidirectional"/>
+    </net>
+    <net code="32" name="D7" class="Default">
+      <node ref="J1" pin="19" pinfunction="D7_19" pintype="passive"/>
+      <node ref="J2" pin="16" pinfunction="D7_16" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="U10" pin="18" pinfunction="D7_18" pintype="tri_state"/>
+      <node ref="U6" pin="9" pinfunction="A8_9" pintype="bidirectional"/>
+    </net>
+    <net code="33" name="DATA_OE_N" class="Default">
+      <node ref="JP2" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U6" pin="19" pinfunction="OE_N_19" pintype="input"/>
+    </net>
+    <net code="34" name="EXT_5V" class="Power,Default">
+      <node ref="J3" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="JP1" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+    </net>
+    <net code="35" name="GND" class="Default">
+      <node ref="BT1" pin="2" pinfunction="-_2" pintype="passive"/>
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="CV1" pin="2" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="GND_2" pintype="passive"/>
+      <node ref="J1" pin="49" pinfunction="GND_49" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="GND_1" pintype="passive"/>
+      <node ref="J2" pin="3" pinfunction="GND_3" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J4" pin="4" pinfunction="GND_4" pintype="passive"/>
+      <node ref="J4" pin="SH" pinfunction="SHIELD_SH" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="R21" pin="2" pintype="passive"/>
+      <node ref="R22" pin="2" pintype="passive"/>
+      <node ref="R23" pin="2" pintype="passive"/>
+      <node ref="R24" pin="2" pintype="passive"/>
+      <node ref="R25" pin="2" pintype="passive"/>
+      <node ref="R26" pin="2" pintype="passive"/>
+      <node ref="R27" pin="2" pintype="passive"/>
+      <node ref="R28" pin="2" pintype="passive"/>
+      <node ref="R29" pin="2" pintype="passive"/>
+      <node ref="R30" pin="2" pintype="passive"/>
+      <node ref="R31" pin="2" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="GND_13" pintype="passive"/>
+      <node ref="U1" pin="18" pinfunction="GND_18" pintype="passive"/>
+      <node ref="U1" pin="23" pinfunction="GND_23" pintype="passive"/>
+      <node ref="U1" pin="28" pinfunction="GND_28" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="GND_3" pintype="passive"/>
+      <node ref="U1" pin="33" pinfunction="GND_33" pintype="passive"/>
+      <node ref="U1" pin="38" pinfunction="GND_38" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="GND_8" pintype="passive"/>
+      <node ref="U10" pin="10" pinfunction="GND_10" pintype="power_in"/>
+      <node ref="U11" pin="3" pinfunction="ADJ_3" pintype="input"/>
+      <node ref="U11" pin="9" pinfunction="GND_9" pintype="power_in"/>
+      <node ref="U12" pin="1" pinfunction="OE_N_1" pintype="input"/>
+      <node ref="U12" pin="10" pinfunction="GND_10" pintype="power_in"/>
+      <node ref="U12" pin="13" pinfunction="D4_13" pintype="input"/>
+      <node ref="U12" pin="14" pinfunction="D5_14" pintype="input"/>
+      <node ref="U12" pin="17" pinfunction="D6_17" pintype="input"/>
+      <node ref="U12" pin="18" pinfunction="D7_18" pintype="input"/>
+      <node ref="U13" pin="3" pinfunction="GND_3" pintype="power_in"/>
+      <node ref="U13" pin="4" pinfunction="PFI_4" pintype="input"/>
+      <node ref="U2" pin="12" pinfunction="GND_12" pintype="power_in"/>
+      <node ref="U3" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U4" pin="10" pinfunction="GND_10" pintype="power_in"/>
+      <node ref="U5" pin="10" pinfunction="GND_10" pintype="power_in"/>
+      <node ref="U6" pin="10" pinfunction="GND_10" pintype="power_in"/>
+      <node ref="U7" pin="10" pinfunction="GND_10" pintype="power_in"/>
+      <node ref="U8" pin="25" pinfunction="GND_25" pintype="power_in"/>
+      <node ref="U8" pin="26" pinfunction="GND_26" pintype="power_in"/>
+      <node ref="U8" pin="27" pinfunction="GND_27" pintype="power_in"/>
+      <node ref="U8" pin="30" pinfunction="GND_30" pintype="input"/>
+      <node ref="U9" pin="5" pinfunction="VSS_5" pintype="power_in"/>
+    </net>
+    <net code="36" name="INPUT_OE_N" class="Default">
+      <node ref="JP2" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="D_3" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U4" pin="19" pinfunction="OE_N_19" pintype="input"/>
+      <node ref="U5" pin="19" pinfunction="OE_N_19" pintype="input"/>
+      <node ref="U7" pin="19" pinfunction="OE_N_19" pintype="input"/>
+    </net>
+    <net code="37" name="IORQ_N" class="Default">
+      <node ref="J1" pin="31" pinfunction="IORQ_N_31" pintype="passive"/>
+      <node ref="U2" pin="13" pinfunction="IORQ_N_13" pintype="input"/>
+      <node ref="U7" pin="3" pinfunction="A2_3" pintype="bidirectional"/>
+    </net>
+    <net code="38" name="MOUSED0" class="Default">
+      <node ref="U10" pin="17" pinfunction="MOUSED0_17" pintype="input"/>
+      <node ref="U9" pin="1" pinfunction="RA2_1" pintype="bidirectional"/>
+    </net>
+    <net code="39" name="MOUSED1" class="Default">
+      <node ref="U10" pin="15" pinfunction="MOUSED1_15" pintype="input"/>
+      <node ref="U9" pin="7" pinfunction="RB1_7" pintype="bidirectional"/>
+    </net>
+    <net code="40" name="MOUSED2" class="Default">
+      <node ref="U10" pin="13" pinfunction="MOUSED2_13" pintype="input"/>
+      <node ref="U9" pin="8" pinfunction="RB2_8" pintype="bidirectional"/>
+    </net>
+    <net code="41" name="MOUSED3" class="Default">
+      <node ref="U10" pin="11" pinfunction="MOUSED3_11" pintype="input"/>
+      <node ref="U9" pin="9" pinfunction="RB3_9" pintype="bidirectional"/>
+    </net>
+    <net code="42" name="MOUSED4" class="Default">
+      <node ref="U10" pin="8" pinfunction="MOUSED4_8" pintype="input"/>
+      <node ref="U9" pin="10" pinfunction="RB4_10" pintype="bidirectional"/>
+    </net>
+    <net code="43" name="MOUSED5" class="Default">
+      <node ref="U10" pin="6" pinfunction="MOUSED5_6" pintype="input"/>
+      <node ref="U9" pin="11" pinfunction="RB5_11" pintype="bidirectional"/>
+    </net>
+    <net code="44" name="MOUSED6" class="Default">
+      <node ref="U10" pin="4" pinfunction="MOUSED6_4" pintype="input"/>
+      <node ref="U9" pin="12" pinfunction="RB6_12" pintype="bidirectional"/>
+    </net>
+    <net code="45" name="MOUSED7" class="Default">
+      <node ref="U10" pin="2" pinfunction="MOUSED7_2" pintype="input"/>
+      <node ref="U9" pin="13" pinfunction="RB7_13" pintype="bidirectional"/>
+    </net>
+    <net code="46" name="MOUSE_CLK" class="Default">
+      <node ref="J4" pin="3" pinfunction="D+_/_PS2_CLK_3" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="U9" pin="17" pinfunction="RA0_17" pintype="bidirectional"/>
+    </net>
+    <net code="47" name="MOUSE_DATA" class="Default">
+      <node ref="J4" pin="2" pinfunction="D-_/_PS2_DATA_2" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="U9" pin="18" pinfunction="RA1_18" pintype="bidirectional"/>
+    </net>
+    <net code="48" name="PHI" class="Default">
+      <node ref="J1" pin="50" pinfunction="PHI_50" pintype="passive"/>
+      <node ref="U9" pin="16" pinfunction="OSC1_16" pintype="input"/>
+    </net>
+    <net code="49" name="PICO_3V3" class="Power,Default">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="U1" pin="36" pinfunction="3V3_OUT_36" pintype="power_out"/>
+      <node ref="U4" pin="20" pinfunction="VCC_20" pintype="power_in"/>
+      <node ref="U5" pin="20" pinfunction="VCC_20" pintype="power_in"/>
+      <node ref="U6" pin="20" pinfunction="VCC_20" pintype="power_in"/>
+      <node ref="U7" pin="20" pinfunction="VCC_20" pintype="power_in"/>
+    </net>
+    <net code="50" name="PICO_VSYS" class="Power,Default">
+      <node ref="D1" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="U1" pin="39" pinfunction="VSYS_39" pintype="power_in"/>
+    </net>
+    <net code="51" name="PINT_N" class="Default">
+      <node ref="U10" pin="1" pinfunction="PINT_N_1" pintype="input"/>
+      <node ref="U10" pin="19" pinfunction="PINT_N_19" pintype="input"/>
+      <node ref="U2" pin="17" pinfunction="PINT_N_17" pintype="output"/>
+      <node ref="U9" pin="6" pinfunction="RB0_6" pintype="bidirectional"/>
+    </net>
+    <net code="52" name="P_A0" class="Default">
+      <node ref="U1" pin="1" pinfunction="GPIO0_1" pintype="bidirectional"/>
+      <node ref="U4" pin="18" pinfunction="B1_18" pintype="bidirectional"/>
+    </net>
+    <net code="53" name="P_A1" class="Default">
+      <node ref="U1" pin="2" pinfunction="GPIO1_2" pintype="bidirectional"/>
+      <node ref="U4" pin="17" pinfunction="B2_17" pintype="bidirectional"/>
+    </net>
+    <net code="54" name="P_A2" class="Default">
+      <node ref="U1" pin="4" pinfunction="GPIO2_4" pintype="bidirectional"/>
+      <node ref="U4" pin="16" pinfunction="B3_16" pintype="bidirectional"/>
+    </net>
+    <net code="55" name="P_A3" class="Default">
+      <node ref="U1" pin="5" pinfunction="GPIO3_5" pintype="bidirectional"/>
+      <node ref="U4" pin="15" pinfunction="B4_15" pintype="bidirectional"/>
+    </net>
+    <net code="56" name="P_A4" class="Default">
+      <node ref="U1" pin="6" pinfunction="GPIO4_6" pintype="bidirectional"/>
+      <node ref="U4" pin="14" pinfunction="B5_14" pintype="bidirectional"/>
+    </net>
+    <net code="57" name="P_A5" class="Default">
+      <node ref="U1" pin="7" pinfunction="GPIO5_7" pintype="bidirectional"/>
+      <node ref="U4" pin="13" pinfunction="B6_13" pintype="bidirectional"/>
+    </net>
+    <net code="58" name="P_A6" class="Default">
+      <node ref="U1" pin="9" pinfunction="GPIO6_9" pintype="bidirectional"/>
+      <node ref="U4" pin="12" pinfunction="B7_12" pintype="bidirectional"/>
+    </net>
+    <net code="59" name="P_A7" class="Default">
+      <node ref="U1" pin="10" pinfunction="GPIO7_10" pintype="bidirectional"/>
+      <node ref="U4" pin="11" pinfunction="B8_11" pintype="bidirectional"/>
+    </net>
+    <net code="60" name="P_A8" class="Default">
+      <node ref="U1" pin="11" pinfunction="GPIO8_11" pintype="bidirectional"/>
+      <node ref="U5" pin="18" pinfunction="B1_18" pintype="bidirectional"/>
+    </net>
+    <net code="61" name="P_A9" class="Default">
+      <node ref="U1" pin="12" pinfunction="GPIO9_12" pintype="bidirectional"/>
+      <node ref="U5" pin="17" pinfunction="B2_17" pintype="bidirectional"/>
+    </net>
+    <net code="62" name="P_A10" class="Default">
+      <node ref="U1" pin="14" pinfunction="GPIO10_14" pintype="bidirectional"/>
+      <node ref="U5" pin="16" pinfunction="B3_16" pintype="bidirectional"/>
+    </net>
+    <net code="63" name="P_A11" class="Default">
+      <node ref="U1" pin="15" pinfunction="GPIO11_15" pintype="bidirectional"/>
+      <node ref="U5" pin="15" pinfunction="B4_15" pintype="bidirectional"/>
+    </net>
+    <net code="64" name="P_A12" class="Default">
+      <node ref="U1" pin="16" pinfunction="GPIO12_16" pintype="bidirectional"/>
+      <node ref="U5" pin="14" pinfunction="B5_14" pintype="bidirectional"/>
+    </net>
+    <net code="65" name="P_A13" class="Default">
+      <node ref="D3" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="U1" pin="17" pinfunction="GPIO13_17" pintype="bidirectional"/>
+      <node ref="U5" pin="13" pinfunction="B6_13" pintype="bidirectional"/>
+    </net>
+    <net code="66" name="P_A15" class="Default">
+      <node ref="U1" pin="31" pinfunction="GPIO26_31" pintype="bidirectional"/>
+      <node ref="U5" pin="12" pinfunction="B7_12" pintype="bidirectional"/>
+    </net>
+    <net code="67" name="P_BUSRESET_N" class="Default">
+      <node ref="D6" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="U7" pin="15" pinfunction="B4_15" pintype="bidirectional"/>
+    </net>
+    <net code="68" name="P_D0" class="Default">
+      <node ref="U1" pin="19" pinfunction="GPIO14_19" pintype="bidirectional"/>
+      <node ref="U6" pin="18" pinfunction="B1_18" pintype="bidirectional"/>
+    </net>
+    <net code="69" name="P_D1" class="Default">
+      <node ref="U1" pin="20" pinfunction="GPIO15_20" pintype="bidirectional"/>
+      <node ref="U6" pin="17" pinfunction="B2_17" pintype="bidirectional"/>
+    </net>
+    <net code="70" name="P_D2" class="Default">
+      <node ref="U1" pin="21" pinfunction="GPIO16_21" pintype="bidirectional"/>
+      <node ref="U6" pin="16" pinfunction="B3_16" pintype="bidirectional"/>
+    </net>
+    <net code="71" name="P_D3" class="Default">
+      <node ref="U1" pin="22" pinfunction="GPIO17_22" pintype="bidirectional"/>
+      <node ref="U6" pin="15" pinfunction="B4_15" pintype="bidirectional"/>
+    </net>
+    <net code="72" name="P_D4" class="Default">
+      <node ref="U1" pin="24" pinfunction="GPIO18_24" pintype="bidirectional"/>
+      <node ref="U6" pin="14" pinfunction="B5_14" pintype="bidirectional"/>
+    </net>
+    <net code="73" name="P_D5" class="Default">
+      <node ref="U1" pin="25" pinfunction="GPIO19_25" pintype="bidirectional"/>
+      <node ref="U6" pin="13" pinfunction="B6_13" pintype="bidirectional"/>
+    </net>
+    <net code="74" name="P_D6" class="Default">
+      <node ref="U1" pin="26" pinfunction="GPIO20_26" pintype="bidirectional"/>
+      <node ref="U6" pin="12" pinfunction="B7_12" pintype="bidirectional"/>
+    </net>
+    <net code="75" name="P_D7" class="Default">
+      <node ref="U1" pin="27" pinfunction="GPIO21_27" pintype="bidirectional"/>
+      <node ref="U6" pin="11" pinfunction="B8_11" pintype="bidirectional"/>
+    </net>
+    <net code="76" name="P_IORQ_N" class="Default">
+      <node ref="D5" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="U7" pin="17" pinfunction="B2_17" pintype="bidirectional"/>
+    </net>
+    <net code="77" name="P_ROMEN_N" class="Default">
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U1" pin="29" pinfunction="GPIO22_29" pintype="bidirectional"/>
+      <node ref="U7" pin="18" pinfunction="B1_18" pintype="bidirectional"/>
+    </net>
+    <net code="78" name="P_WR_N" class="Default">
+      <node ref="D4" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="U7" pin="16" pinfunction="B3_16" pintype="bidirectional"/>
+    </net>
+    <net code="79" name="RD_N" class="Default">
+      <node ref="D7" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="J1" pin="32" pinfunction="RD_N_32" pintype="passive"/>
+      <node ref="J2" pin="13" pinfunction="RD_N_13" pintype="passive"/>
+      <node ref="U2" pin="14" pinfunction="RD_N_14" pintype="input"/>
+    </net>
+    <net code="80" name="RESET_N" class="Default">
+      <node ref="J1" pin="41" pinfunction="RESET_N_41" pintype="passive"/>
+      <node ref="U8" pin="12" pinfunction="RESET_N_12" pintype="input"/>
+      <node ref="U9" pin="4" pinfunction="MCLR_N_4" pintype="input"/>
+    </net>
+    <net code="81" name="RESET_PULLDOWN" class="Default">
+      <node ref="D6" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="U1" pin="34" pinfunction="GPIO28_34" pintype="bidirectional"/>
+    </net>
+    <net code="82" name="ROMDIS" class="Default">
+      <node ref="J1" pin="43" pinfunction="ROMDIS_43" pintype="passive"/>
+      <node ref="JP2" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="83" name="ROMEN_N" class="Default">
+      <node ref="J1" pin="42" pinfunction="ROMEN_N_42" pintype="passive"/>
+      <node ref="U7" pin="2" pinfunction="A1_2" pintype="bidirectional"/>
+    </net>
+    <net code="84" name="ROM_LATCH" class="Default">
+      <node ref="D3" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D4" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D5" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U1" pin="32" pinfunction="GPIO27_32" pintype="bidirectional"/>
+    </net>
+    <net code="85" name="RTCAS" class="Default">
+      <node ref="U12" pin="11" pinfunction="LE_11" pintype="input"/>
+      <node ref="U2" pin="18" pinfunction="RTCAS_18" pintype="output"/>
+    </net>
+    <net code="86" name="RTCCS_N" class="Default">
+      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="U11" pin="1" pinfunction="/CS_1" pintype="input"/>
+      <node ref="U2" pin="15" pinfunction="RTCCS_N_15" pintype="output"/>
+    </net>
+    <net code="87" name="RTCRD_N" class="Default">
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="U11" pin="8" pinfunction="/RD_8" pintype="input"/>
+      <node ref="U2" pin="20" pinfunction="RTCRD_N_20" pintype="output"/>
+    </net>
+    <net code="88" name="RTCWR_N" class="Default">
+      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="U11" pin="10" pinfunction="/WR_10" pintype="input"/>
+      <node ref="U2" pin="19" pinfunction="RTCWR_N_19" pintype="output"/>
+    </net>
+    <net code="89" name="RTC_A0" class="Default">
+      <node ref="R23" pin="1" pintype="passive"/>
+      <node ref="U11" pin="4" pinfunction="A0_4" pintype="input"/>
+      <node ref="U12" pin="2" pinfunction="Q0_2" pintype="tri_state"/>
+    </net>
+    <net code="90" name="RTC_A1" class="Default">
+      <node ref="R24" pin="1" pintype="passive"/>
+      <node ref="U11" pin="5" pinfunction="A1_5" pintype="input"/>
+      <node ref="U12" pin="5" pinfunction="Q1_5" pintype="tri_state"/>
+    </net>
+    <net code="91" name="RTC_A2" class="Default">
+      <node ref="R25" pin="1" pintype="passive"/>
+      <node ref="U11" pin="6" pinfunction="A2_6" pintype="input"/>
+      <node ref="U12" pin="6" pinfunction="Q2_6" pintype="tri_state"/>
+    </net>
+    <net code="92" name="RTC_A3" class="Default">
+      <node ref="R26" pin="1" pintype="passive"/>
+      <node ref="U11" pin="7" pinfunction="A3_7" pintype="input"/>
+      <node ref="U12" pin="9" pinfunction="Q3_9" pintype="tri_state"/>
+    </net>
+    <net code="93" name="RTC_ALARM_TEST" class="Default">
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U11" pin="15" pinfunction="/ALARM_15" pintype="output"/>
+    </net>
+    <net code="94" name="RTC_BACKUP_VCC" class="Default">
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="U11" pin="18" pinfunction="VCC_18" pintype="power_in"/>
+      <node ref="U13" pin="1" pinfunction="VOUT_1" pintype="power_out"/>
+    </net>
+    <net code="95" name="RTC_OSCIN" class="Default">
+      <node ref="CV1" pin="1" pintype="passive"/>
+      <node ref="U11" pin="16" pinfunction="OSCIN_16" pintype="input"/>
+      <node ref="Y1" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="96" name="RTC_OSCOUT" class="Default">
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+      <node ref="U11" pin="17" pinfunction="OSCOUT_17" pintype="output"/>
+    </net>
+    <net code="97" name="RTC_POWER_GOOD" class="Default">
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="U11" pin="2" pinfunction="CS_2" pintype="input"/>
+      <node ref="U13" pin="7" pinfunction="RESET_N_7" pintype="output"/>
+    </net>
+    <net code="98" name="RTC_XOUT" class="Default">
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="Y1" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="99" name="USB_5V" class="Power,Default">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="F1" pin="2" pintype="passive"/>
+      <node ref="J2" pin="5" pinfunction="USB_5V_5" pintype="passive"/>
+    </net>
+    <net code="100" name="VBAT" class="Default">
+      <node ref="BT1" pin="1" pinfunction="+_1" pintype="passive"/>
+      <node ref="U13" pin="8" pinfunction="VBATT_8" pintype="power_in"/>
+    </net>
+    <net code="101" name="W5CS_N" class="Default">
+      <node ref="U2" pin="16" pinfunction="W5CS_N_16" pintype="output"/>
+      <node ref="U8" pin="29" pinfunction="W5CS_N_29" pintype="input"/>
+    </net>
+    <net code="102" name="W51D0" class="Default">
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="U8" pin="3" pinfunction="W51D0_3" pintype="bidirectional"/>
+    </net>
+    <net code="103" name="W51D1" class="Default">
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="U8" pin="4" pinfunction="W51D1_4" pintype="bidirectional"/>
+    </net>
+    <net code="104" name="W51D2" class="Default">
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U8" pin="5" pinfunction="W51D2_5" pintype="bidirectional"/>
+    </net>
+    <net code="105" name="W51D3" class="Default">
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="U8" pin="6" pinfunction="W51D3_6" pintype="bidirectional"/>
+    </net>
+    <net code="106" name="W51D4" class="Default">
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="U8" pin="7" pinfunction="W51D4_7" pintype="bidirectional"/>
+    </net>
+    <net code="107" name="W51D5" class="Default">
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="U8" pin="8" pinfunction="W51D5_8" pintype="bidirectional"/>
+    </net>
+    <net code="108" name="W51D6" class="Default">
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="U8" pin="9" pinfunction="W51D6_9" pintype="bidirectional"/>
+    </net>
+    <net code="109" name="W51D7" class="Default">
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="U8" pin="10" pinfunction="W51D7_10" pintype="bidirectional"/>
+    </net>
+    <net code="110" name="W51RD_N" class="Default">
+      <node ref="D7" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="U8" pin="1" pinfunction="W51RD_N_1" pintype="input"/>
+    </net>
+    <net code="111" name="W51WR_N" class="Default">
+      <node ref="D8" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="U8" pin="2" pinfunction="W51WR_N_2" pintype="input"/>
+    </net>
+    <net code="112" name="WR_N" class="Default">
+      <node ref="D8" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="J1" pin="33" pinfunction="WR_N_33" pintype="passive"/>
+      <node ref="J2" pin="15" pinfunction="WR_N_15" pintype="passive"/>
+      <node ref="U2" pin="23" pinfunction="WR_N_23" pintype="input"/>
+      <node ref="U7" pin="4" pinfunction="A3_4" pintype="bidirectional"/>
+    </net>
+    <net code="113" name="unconnected-(J1-UNUSED-Pad1)" class="Default">
+      <node ref="J1" pin="1" pinfunction="UNUSED_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="114" name="unconnected-(J1-UNUSED-Pad28)" class="Default">
+      <node ref="J1" pin="28" pinfunction="UNUSED_28" pintype="passive+no_connect"/>
+    </net>
+    <net code="115" name="unconnected-(J1-UNUSED-Pad29)" class="Default">
+      <node ref="J1" pin="29" pinfunction="UNUSED_29" pintype="passive+no_connect"/>
+    </net>
+    <net code="116" name="unconnected-(J1-UNUSED-Pad30)" class="Default">
+      <node ref="J1" pin="30" pinfunction="UNUSED_30" pintype="passive+no_connect"/>
+    </net>
+    <net code="117" name="unconnected-(J1-UNUSED-Pad34)" class="Default">
+      <node ref="J1" pin="34" pinfunction="UNUSED_34" pintype="passive+no_connect"/>
+    </net>
+    <net code="118" name="unconnected-(J1-UNUSED-Pad35)" class="Default">
+      <node ref="J1" pin="35" pinfunction="UNUSED_35" pintype="passive+no_connect"/>
+    </net>
+    <net code="119" name="unconnected-(J1-UNUSED-Pad36)" class="Default">
+      <node ref="J1" pin="36" pinfunction="UNUSED_36" pintype="passive+no_connect"/>
+    </net>
+    <net code="120" name="unconnected-(J1-UNUSED-Pad37)" class="Default">
+      <node ref="J1" pin="37" pinfunction="UNUSED_37" pintype="passive+no_connect"/>
+    </net>
+    <net code="121" name="unconnected-(J1-UNUSED-Pad38)" class="Default">
+      <node ref="J1" pin="38" pinfunction="UNUSED_38" pintype="passive+no_connect"/>
+    </net>
+    <net code="122" name="unconnected-(J1-UNUSED-Pad39)" class="Default">
+      <node ref="J1" pin="39" pinfunction="UNUSED_39" pintype="passive+no_connect"/>
+    </net>
+    <net code="123" name="unconnected-(J1-UNUSED-Pad44)" class="Default">
+      <node ref="J1" pin="44" pinfunction="UNUSED_44" pintype="passive+no_connect"/>
+    </net>
+    <net code="124" name="unconnected-(J1-UNUSED-Pad45)" class="Default">
+      <node ref="J1" pin="45" pinfunction="UNUSED_45" pintype="passive+no_connect"/>
+    </net>
+    <net code="125" name="unconnected-(J1-UNUSED-Pad46)" class="Default">
+      <node ref="J1" pin="46" pinfunction="UNUSED_46" pintype="passive+no_connect"/>
+    </net>
+    <net code="126" name="unconnected-(J1-UNUSED-Pad47)" class="Default">
+      <node ref="J1" pin="47" pinfunction="UNUSED_47" pintype="passive+no_connect"/>
+    </net>
+    <net code="127" name="unconnected-(J1-UNUSED-Pad48)" class="Default">
+      <node ref="J1" pin="48" pinfunction="UNUSED_48" pintype="passive+no_connect"/>
+    </net>
+    <net code="128" name="unconnected-(J2-NC-Pad7)" class="Default">
+      <node ref="J2" pin="7" pinfunction="NC_7" pintype="passive+no_connect"/>
+    </net>
+    <net code="129" name="unconnected-(U1-3V3_EN-Pad37)" class="Default">
+      <node ref="U1" pin="37" pinfunction="3V3_EN_37" pintype="input+no_connect"/>
+    </net>
+    <net code="130" name="unconnected-(U1-ADC_VREF-Pad35)" class="Default">
+      <node ref="U1" pin="35" pinfunction="ADC_VREF_35" pintype="passive+no_connect"/>
+    </net>
+    <net code="131" name="unconnected-(U1-RUN-Pad30)" class="Default">
+      <node ref="U1" pin="30" pinfunction="RUN_30" pintype="input+no_connect"/>
+    </net>
+    <net code="132" name="unconnected-(U1-VBUS-Pad40)" class="Default">
+      <node ref="U1" pin="40" pinfunction="VBUS_40" pintype="power_in+no_connect"/>
+    </net>
+    <net code="133" name="unconnected-(U3-NC-Pad3)" class="Default">
+      <node ref="U3" pin="3" pinfunction="NC_3" pintype="no_connect"/>
+    </net>
+    <net code="134" name="unconnected-(U3-NC-Pad11)" class="Default">
+      <node ref="U3" pin="11" pinfunction="NC_11" pintype="no_connect"/>
+    </net>
+    <net code="135" name="unconnected-(U4-NC-Pad1)" class="Default">
+      <node ref="U4" pin="1" pinfunction="NC_1" pintype="no_connect"/>
+    </net>
+    <net code="136" name="unconnected-(U5-A8-Pad9)" class="Default">
+      <node ref="U5" pin="9" pinfunction="A8_9" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="137" name="unconnected-(U5-B8-Pad11)" class="Default">
+      <node ref="U5" pin="11" pinfunction="B8_11" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="138" name="unconnected-(U5-NC-Pad1)" class="Default">
+      <node ref="U5" pin="1" pinfunction="NC_1" pintype="no_connect"/>
+    </net>
+    <net code="139" name="unconnected-(U6-NC-Pad1)" class="Default">
+      <node ref="U6" pin="1" pinfunction="NC_1" pintype="no_connect"/>
+    </net>
+    <net code="140" name="unconnected-(U7-A5-Pad6)" class="Default">
+      <node ref="U7" pin="6" pinfunction="A5_6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="141" name="unconnected-(U7-A6-Pad7)" class="Default">
+      <node ref="U7" pin="7" pinfunction="A6_7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="142" name="unconnected-(U7-A7-Pad8)" class="Default">
+      <node ref="U7" pin="8" pinfunction="A7_8" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="143" name="unconnected-(U7-A8-Pad9)" class="Default">
+      <node ref="U7" pin="9" pinfunction="A8_9" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="144" name="unconnected-(U7-B5-Pad14)" class="Default">
+      <node ref="U7" pin="14" pinfunction="B5_14" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="145" name="unconnected-(U7-B6-Pad13)" class="Default">
+      <node ref="U7" pin="13" pinfunction="B6_13" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="146" name="unconnected-(U7-B7-Pad12)" class="Default">
+      <node ref="U7" pin="12" pinfunction="B7_12" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="147" name="unconnected-(U7-B8-Pad11)" class="Default">
+      <node ref="U7" pin="11" pinfunction="B8_11" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="148" name="unconnected-(U7-NC-Pad1)" class="Default">
+      <node ref="U7" pin="1" pinfunction="NC_1" pintype="no_connect"/>
+    </net>
+    <net code="149" name="unconnected-(U8-3V3_OUT_1-Pad24)" class="Default">
+      <node ref="U8" pin="24" pinfunction="3V3_OUT_1_24" pintype="power_out+no_connect"/>
+    </net>
+    <net code="150" name="unconnected-(U8-3V3_OUT_2-Pad23)" class="Default">
+      <node ref="U8" pin="23" pinfunction="3V3_OUT_2_23" pintype="power_out+no_connect"/>
+    </net>
+    <net code="151" name="unconnected-(U8-NC-Pad11)" class="Default">
+      <node ref="U8" pin="11" pinfunction="NC_11" pintype="passive+no_connect"/>
+    </net>
+    <net code="152" name="unconnected-(U8-NC-Pad13)" class="Default">
+      <node ref="U8" pin="13" pinfunction="NC_13" pintype="passive+no_connect"/>
+    </net>
+    <net code="153" name="unconnected-(U8-NC-Pad14)" class="Default">
+      <node ref="U8" pin="14" pinfunction="NC_14" pintype="passive+no_connect"/>
+    </net>
+    <net code="154" name="unconnected-(U8-NC-Pad15)" class="Default">
+      <node ref="U8" pin="15" pinfunction="NC_15" pintype="passive+no_connect"/>
+    </net>
+    <net code="155" name="unconnected-(U8-NC-Pad16)" class="Default">
+      <node ref="U8" pin="16" pinfunction="NC_16" pintype="passive+no_connect"/>
+    </net>
+    <net code="156" name="unconnected-(U8-NC-Pad17)" class="Default">
+      <node ref="U8" pin="17" pinfunction="NC_17" pintype="passive+no_connect"/>
+    </net>
+    <net code="157" name="unconnected-(U8-NC-Pad18)" class="Default">
+      <node ref="U8" pin="18" pinfunction="NC_18" pintype="passive+no_connect"/>
+    </net>
+    <net code="158" name="unconnected-(U8-NC-Pad19)" class="Default">
+      <node ref="U8" pin="19" pinfunction="NC_19" pintype="passive+no_connect"/>
+    </net>
+    <net code="159" name="unconnected-(U8-NC-Pad20)" class="Default">
+      <node ref="U8" pin="20" pinfunction="NC_20" pintype="passive+no_connect"/>
+    </net>
+    <net code="160" name="unconnected-(U9-OSC2-Pad15)" class="Default">
+      <node ref="U9" pin="15" pinfunction="OSC2_15" pintype="output+no_connect"/>
+    </net>
+    <net code="161" name="unconnected-(U9-RA3-Pad2)" class="Default">
+      <node ref="U9" pin="2" pinfunction="RA3_2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="162" name="unconnected-(U9-RA4-Pad3)" class="Default">
+      <node ref="U9" pin="3" pinfunction="RA4_3" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="163" name="unconnected-(U12-Q4-Pad12)" class="Default">
+      <node ref="U12" pin="12" pinfunction="Q4_12" pintype="tri_state+no_connect"/>
+    </net>
+    <net code="164" name="unconnected-(U12-Q5-Pad15)" class="Default">
+      <node ref="U12" pin="15" pinfunction="Q5_15" pintype="tri_state+no_connect"/>
+    </net>
+    <net code="165" name="unconnected-(U12-Q6-Pad16)" class="Default">
+      <node ref="U12" pin="16" pinfunction="Q6_16" pintype="tri_state+no_connect"/>
+    </net>
+    <net code="166" name="unconnected-(U12-Q7-Pad19)" class="Default">
+      <node ref="U12" pin="19" pinfunction="Q7_19" pintype="tri_state+no_connect"/>
+    </net>
+    <net code="167" name="unconnected-(U13-PFO_N-Pad5)" class="Default">
+      <node ref="U13" pin="5" pinfunction="PFO_N_5" pintype="output+no_connect"/>
+    </net>
+    <net code="168" name="unconnected-(U13-WDI-Pad6)" class="Default">
+      <node ref="U13" pin="6" pinfunction="WDI_6" pintype="input+no_connect"/>
+    </net>
+  </nets>
+</export>

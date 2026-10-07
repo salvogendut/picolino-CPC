@@ -84,7 +84,7 @@ accessing a fully decoded 16-bit port.
 
 ## RP5C01 and CR2032
 
-The RTC is a separate 5 V peripheral with 4-bit addresses and data. A candidate
+The RTC is a separate 5 V peripheral with 4-bit addresses and data. A
 74HCT373 address latch stores D0–D3 on a write to FD15; its transparent enable
 closes at the end of the write. Unused inputs are tied to defined levels.
 Qualified read/write strobes and a chip-select control FD14 accesses. The GAL's
@@ -105,10 +105,13 @@ RP5C01A values apply. Choose the crystal and load network together and measure
 startup, frequency and backup current. Use a CR2032 holder with a verified
 footprint and clear polarity; there is no charging circuit.
 
-The ADM691A-based circuit in the reference RTC project is useful for studying
-switchover and write inhibition. It is not yet a selected Picolino BOM item:
-Analog Devices currently marks ADM691A as last-time-buy. Select and verify the
-backup supervisor independently before committing the RTC schematic.
+The implemented circuit uses MAX690AESA+: VOUT powers only the RTC, and its
+active-low reset output drives the RTC's active-high CS. WDI is left open to
+disable the watchdog; PFI is grounded. A 100 kΩ pulldown holds CS inactive below
+the supervisor's operating range, and 220 kΩ resistors bias RTC bus inputs in
+backup. The crystal network follows the original Ricoh databook page 3-6,
+including the 56 pF capacitor at OSCOUT. CV1 is a KKT330TR trimmer; BT1 is a
+Keystone 103 holder. Calibration and supply-fail behaviour require bench tests.
 
 ## Power and mechanics
 
@@ -116,9 +119,12 @@ The PCB needs explicit budgets for Pico 2, W5100S, USB-stick inrush and mouse
 power. Reserve an external regulated 5 V option and prevent it from feeding
 back into the CPC or Pico USB supply. The coin cell must not feed these loads.
 
-Use the CPC expansion connector directly; there is no CF-socket wiring. The
-combined-board envelope, module orientation, battery access, connector style
-and mounting holes are the next mechanical design decisions.
-The previous small-board outline must not be treated as a combined-board layout.
+The PCB is 150 × 120 mm, with a 50-way CPC expansion header and four M3 mounting
+holes. Pico 2 and the reference parallel W5100S plug into sockets; CH376 uses a
+16-way ribbon header. JP1 selects CPC or external regulated 5 V with one shunt.
+D1 isolates Pico VSYS from USB backfeeding. JP2 requires two shunts to enable
+ROM data and ROMDIS; both remain open for the input-only monitor. Q1 enables
+input translation only when CPC 5 V is present. See the
+[hardware guide](../hardware/README.md) for power sequencing and assembly.
 
 Primary sources are linked in [sources.md](sources.md).
