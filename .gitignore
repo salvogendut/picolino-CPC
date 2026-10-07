@@ -1,0 +1,10 @@
+build/
+__pycache__/
+*.pyc
+*.kicad_prl
+*-backups/
+~*
+.venv/
+# User-owned CPC system ROMs
+roms/*.rom
+roms/*.ROM

@@ -1,0 +1,74 @@
+/*  Cyboard for Amstrad CPC - I/O address decoding logic                  */
+/*  Copyright (C) 2023 Dimitris Kefalas                                   */
+
+/*  This program is free software: you can redistribute it and/or modify  */
+/*  it under the terms of the GNU General Public License as published by  */
+/*  the Free Software Foundation, either version 3 of the License, or     */
+/*  (at your option) any later version.                                   */
+
+/*  This program is distributed in the hope that it will be useful,       */
+/*  but WITHOUT ANY WARRANTY; without even the implied warranty of        */
+/*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         */
+/*  GNU General Public License for more details.                          */
+
+/*  You should have received a copy of the GNU General Public License     */
+/*  along with this program.  If not, see <http://www.gnu.org/licenses/>. */
+
+Name     cyboard;
+PartNo   01 ;
+Date     7/02/2023 ;
+Revision 01 ;
+Designer Dimitris Kefalas ;
+Company  ;
+Assembly none;
+Location IC4 ;
+Device   g20v8a ;
+
+/* *************** INPUT PINS *********************/
+PIN  1 = A0                      ; /*                                 */ 
+PIN  2 = A1                      ; /*                                 */ 
+PIN  3 = A2                      ; /*                                 */ 
+PIN  4 = A3                      ; /*                                 */ 
+PIN  5 = A4                      ; /*                                 */ 
+PIN  6 = A5                      ; /*                                 */ 
+PIN  7 = A6                      ; /*                                 */ 
+PIN  8 = A7                      ; /*                                 */ 
+PIN  9 = A8                      ; /*                                 */ 
+PIN 10 = A9                      ; /*                                 */ 
+PIN 11 = A1X                     ; /*A15 & A14 & A13 & A12 & A11 & A10*/ 
+/* PIN 12 = GND                                                       */ 
+PIN 13 = !IOREQ                  ; /*                                 */ 
+PIN 14 = !RD                     ; /*                                 */ 
+PIN 23 = !WR                     ; /*                                 */
+
+/* *************** OUTPUT PINS *********************/
+PIN 15 = CFA3                    ; /* CF card A3 line                 */
+PIN 16 = !W5CS                   ; /* W5100S module Chip select       */
+PIN 17 = !PINT                   ; /* PIC Interrupt line              */
+PIN 18 = RTCAS                   ; /* RTC Address Strobe              */
+PIN 19 = !RTCRW                  ; /* RTC Read/Write                  */
+PIN 20 = !RTCDS                  ; /* RTC Data Strobe                 */
+PIN 21 = !CFLED                  ; /* CF card activity LED            */
+PIN 22 = !CFCS                   ; /* CF card Chip Select             */
+/* PIN 24 = VCC                                                       */ 
+
+
+/* Logic */
+
+RTCRW =   IOREQ & A1X & WR & !RD & A8 & !A9 & !A7 & !A6 & !A5 & A4 & !A3 & A2 & !A1 & !A0;
+
+RTCDS =   IOREQ & A1X & !WR & RD & A8 & !A9 & !A7 & !A6 & !A5 & A4 & !A3 & A2 & !A1 & !A0;
+
+RTCAS =   IOREQ & A1X & WR & !RD & A8 & !A9 & !A7 & !A6 & !A5 & A4 & !A3 & A2 & !A1 & A0;
+
+PINT =    IOREQ & A1X & RD & !WR & A8 & !A9 & !A7 & !A6 & !A5 & A4 & !A3 & !A2 & !A1 & !A0;
+
+CFA3 =    !A3;
+
+CFCS =    IOREQ & A1X & A8 & !A9 & !A7 & !A6 & !A5 & !A4 & !A3 & A2 & A1
+        # IOREQ & A1X & A8 & !A9 & !A7 & !A6 & !A5 & !A4 & A3;
+
+CFCSLED = IOREQ & A1X & A8 & !A9 & !A7 & !A6 & !A5 & !A4 & !A3 & A2 & A1
+        # IOREQ & A1X & A8 & !A9 & !A7 & !A6 & !A5 & !A4 & A3;
+
+W5CS =    IOREQ & A1X & A8 & !A9 & !A7 & !A6 & A5 & !A4 & !A3 & !A2;

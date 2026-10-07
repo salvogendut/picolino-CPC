@@ -1,0 +1,46 @@
+{
+  "repository": "https://github.com/salvogendut/cyboard-for-cpc",
+  "commit": "ea19deeaf382e87b5bdd129c7dc76c5ac7fbb5a8",
+  "unmodified_imports": [
+    {
+      "file": "firmware/pic16f84a/ps2_cpc_mouse.asm",
+      "source": "firmware/pic16f84a/ps2_cpc_mouse.asm",
+      "sha256": "78ccfce397bbcbd74d780091f984ccb2181b876e8c2a5eb619385a16d502708b"
+    },
+    {
+      "file": "firmware/pic16f84a/ps2_cpc_mouse.hex",
+      "source": "firmware/pic16f84a/ps2_cpc_mouse.hex",
+      "sha256": "c7f247518b399a5059354408227fd2961e342b363b7686b40086458927bf5ab4"
+    },
+    {
+      "file": "LICENSE",
+      "source": "LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "file": "firmware/cpc/diagnostic.asm",
+      "source": "poc/ch376-picorom/cpc/diagnostic.asm",
+      "sha256": "e1e9ad2e841647120c706cd6c3fc21b266f5adfd3bf6a602531980127e2bf195"
+    },
+    {
+      "file": "firmware/cpc/diagnostic.inc",
+      "source": "poc/ch376-picorom/cpc/diagnostic.inc",
+      "sha256": "4ad0740a581118be94fe5856dc57f2a8a308dde65781eebf945a899310de304f"
+    },
+    {
+      "file": "firmware/cpc/rom.asm",
+      "source": "poc/ch376-picorom/cpc/rom.asm",
+      "sha256": "14f67ba27448ce9b2d129ff4ee7a9c0bd6eed465467c30b9dd3bf24230c61d0e"
+    },
+    {
+      "file": "firmware/cpc/CYBOARD.TXT",
+      "source": "poc/ch376-picorom/cpc/CYBOARD.TXT",
+      "sha256": "29ccd65afb628a56aee3082805d5936e2e11b57cc6d835ef12821b2143403944"
+    },
+    {
+      "file": "references/cyboard-original.pld",
+      "source": "firmware/gal20v8b/cyboard.pld",
+      "sha256": "1375de3d011f0e4dd36bd5fe3985cb09cf83451f44b38a82956b2d1ac44d7847"
+    }
+  ]
+}

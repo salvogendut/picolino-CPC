@@ -1,0 +1,39 @@
+/* Picolino CPC rev A draft. Derived from Dimitris Kefalas' Cyboard logic.
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ * RP5C01 interface is NOT compatible with the original DS12887 circuit.
+ */
+Name picolino;
+PartNo 01;
+Revision 01;
+Designer Picolino contributors;
+Device g20v8a;
+PIN 1 = A0;
+PIN 2 = A1;
+PIN 3 = A2;
+PIN 4 = A3;
+PIN 5 = A4;
+PIN 6 = A5;
+PIN 7 = A6;
+PIN 8 = A7;
+PIN 9 = A8;
+PIN 10 = A9;
+PIN 11 = A1X;
+PIN 13 = !IOREQ;
+PIN 14 = !RD;
+PIN 23 = !WR;
+PIN 15 = !RTCCS;
+PIN 16 = !W5CS;
+PIN 17 = !PINT;
+PIN 18 = RTCAS;
+PIN 19 = !RTCWR;
+PIN 20 = !RTCRD;
+PIN 21 = !CHLED;
+PIN 22 = !CHCS;
+RTCCS = IOREQ & A1X & A8 & !A9 & !A7 & !A6 & !A5 & A4 & !A3 & A2 & !A1 & !A0;
+RTCWR = IOREQ & A1X & WR & !RD & A8 & !A9 & !A7 & !A6 & !A5 & A4 & !A3 & A2 & !A1 & !A0;
+RTCRD = IOREQ & A1X & !WR & RD & A8 & !A9 & !A7 & !A6 & !A5 & A4 & !A3 & A2 & !A1 & !A0;
+RTCAS = IOREQ & A1X & WR & !RD & A8 & !A9 & !A7 & !A6 & !A5 & A4 & !A3 & A2 & !A1 & A0;
+PINT = IOREQ & A1X & RD & !WR & A8 & !A9 & !A7 & !A6 & !A5 & A4 & !A3 & !A2 & !A1 & !A0;
+W5CS = IOREQ & A1X & A8 & !A9 & !A7 & !A6 & A5 & !A4 & !A3 & !A2;
+CHCS = IOREQ & A1X & !A8 & A9 & A7 & !A6 & !A5 & !A4 & !A3 & !A2 & !A1;
+CHLED = IOREQ & A1X & !A8 & A9 & A7 & !A6 & !A5 & !A4 & !A3 & !A2 & !A1;

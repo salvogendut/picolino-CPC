@@ -1,0 +1,4 @@
+# Preserve byte-for-byte upstream sources and Intel HEX for provenance checks.
+firmware/pic16f84a/ps2_cpc_mouse.asm -text
+firmware/pic16f84a/ps2_cpc_mouse.hex -text
+references/cyboard-original.pld -text

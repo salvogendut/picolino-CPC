@@ -1,0 +1,378 @@
+{
+  "status": "Electrical reference contract; not a board netlist or fabrication release",
+  "selection": {
+    "modules": "Reference parallel modules confirmed by user 2026-10-07",
+    "rtc": "RP5C01 (not A), DIP-18 confirmed by user 2026-10-07"
+  },
+  "cpc": {
+    "source": "Cyboard CON1 plus CPC_PICOROM J1 ROM signals",
+    "pins": {
+      "49": "GND",
+      "2": "GND",
+      "27": "VCC",
+      "15": "A3",
+      "14": "A4",
+      "13": "A5",
+      "12": "A6",
+      "11": "A7",
+      "9": "A9",
+      "33": "/WR",
+      "31": "/IORQ",
+      "41": "/RESET",
+      "50": "PHI",
+      "26": "D0",
+      "25": "D1",
+      "24": "D2",
+      "23": "D3",
+      "22": "D4",
+      "21": "D5",
+      "20": "D6",
+      "19": "D7",
+      "32": "/RD",
+      "18": "A0",
+      "17": "A1",
+      "16": "A2",
+      "40": "/BUSRESET",
+      "10": "A8",
+      "8": "A10",
+      "7": "A11",
+      "6": "A12",
+      "5": "A13",
+      "4": "A14",
+      "3": "A15",
+      "42": "/ROMEN",
+      "43": "ROMDIS"
+    }
+  },
+  "pico2": {
+    "source": "Pico 2 datasheet pinout; CPC_PICOROM GPIO allocation",
+    "gpio": [
+      {
+        "gpio": 0,
+        "module_pin": 1,
+        "signal": "A0",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 1,
+        "module_pin": 2,
+        "signal": "A1",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 2,
+        "module_pin": 4,
+        "signal": "A2",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 3,
+        "module_pin": 5,
+        "signal": "A3",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 4,
+        "module_pin": 6,
+        "signal": "A4",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 5,
+        "module_pin": 7,
+        "signal": "A5",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 6,
+        "module_pin": 9,
+        "signal": "A6",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 7,
+        "module_pin": 10,
+        "signal": "A7",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 8,
+        "module_pin": 11,
+        "signal": "A8",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 9,
+        "module_pin": 12,
+        "signal": "A9",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 10,
+        "module_pin": 14,
+        "signal": "A10",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 11,
+        "module_pin": 15,
+        "signal": "A11",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 12,
+        "module_pin": 16,
+        "signal": "A12",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 13,
+        "module_pin": 17,
+        "signal": "A13",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 14,
+        "module_pin": 19,
+        "signal": "D0",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 15,
+        "module_pin": 20,
+        "signal": "D1",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 16,
+        "module_pin": 21,
+        "signal": "D2",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 17,
+        "module_pin": 22,
+        "signal": "D3",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 18,
+        "module_pin": 24,
+        "signal": "D4",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 19,
+        "module_pin": 25,
+        "signal": "D5",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 20,
+        "module_pin": 26,
+        "signal": "D6",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 21,
+        "module_pin": 27,
+        "signal": "D7",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 22,
+        "module_pin": 29,
+        "signal": "/ROMEN",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 26,
+        "module_pin": 31,
+        "signal": "A15",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 27,
+        "module_pin": 32,
+        "signal": "ROM_LATCH",
+        "interface": "External 5V/3V3 translation required"
+      },
+      {
+        "gpio": 28,
+        "module_pin": 34,
+        "signal": "RESET_PULLDOWN",
+        "interface": "External 5V/3V3 translation required"
+      }
+    ],
+    "ground_pins": [
+      3,
+      8,
+      13,
+      18,
+      23,
+      28,
+      33,
+      38
+    ],
+    "vsys_pin": 39,
+    "vbus_pin": 40,
+    "3v3_pin": 36,
+    "rows_mm": 17.78,
+    "size_mm": [
+      21,
+      51
+    ]
+  },
+  "ch376": {
+    "source": "CPC_PICOROM J2",
+    "pins": {
+      "1": "GND",
+      "3": "GND",
+      "5": "+5V_USB",
+      "7": "NC",
+      "9": "A0",
+      "11": "/CHCS",
+      "13": "/RD",
+      "15": "/WR",
+      "2": "D0",
+      "4": "D1",
+      "6": "D2",
+      "8": "D3",
+      "10": "D4",
+      "12": "D5",
+      "14": "D6",
+      "16": "D7"
+    },
+    "interface": "16-pin 2x8 parallel module; not serial-only modules"
+  },
+  "w5100s": {
+    "source": "Cyboard W5100S-MODULE",
+    "pins": {
+      "27": "GND",
+      "26": "GND",
+      "25": "GND",
+      "30": "GND",
+      "21": "VCC",
+      "22": "VCC",
+      "28": "VCC",
+      "12": "/RESET",
+      "31": "A0",
+      "32": "A1",
+      "29": "/W51CS",
+      "3": "W51D0",
+      "4": "W51D1",
+      "5": "W51D2",
+      "6": "W51D3",
+      "7": "W51D4",
+      "8": "W51D5",
+      "9": "W51D6",
+      "10": "W51D7",
+      "23": "3.3V2",
+      "24": "3.3V1",
+      "2": "/W51WR",
+      "1": "/W51RD"
+    },
+    "unconnected_supply_outputs": [
+      23,
+      24
+    ],
+    "interface": "32-pin parallel module with onboard 3.3V regulator",
+    "data_series_ohms": 470,
+    "notes": "Pin 28 mode high, pin 30 mode low. Preserve Cyboard RD/WR diodes. 3.3V outputs are not connected to 5V."
+  },
+  "mouse_pic": {
+    "source": "Cyboard IC1",
+    "part": "PIC16F84A",
+    "pins": {
+      "5": "GND",
+      "14": "VCC",
+      "4": "/RESET",
+      "16": "PHI",
+      "10": "MOUSED4",
+      "11": "MOUSED5",
+      "12": "MOUSED6",
+      "13": "MOUSED7",
+      "6": "/PINT",
+      "17": "USBD+",
+      "18": "USBD-",
+      "9": "MOUSED3",
+      "8": "MOUSED2",
+      "7": "MOUSED1",
+      "1": "MOUSED0"
+    }
+  },
+  "mouse_buffer": {
+    "source": "Cyboard IC3",
+    "part": "74HCT244",
+    "pins": {
+      "10": "GND",
+      "20": "VCC",
+      "8": "MOUSED4",
+      "6": "MOUSED5",
+      "4": "MOUSED6",
+      "2": "MOUSED7",
+      "1": "/PINT",
+      "19": "/PINT",
+      "3": "D0",
+      "5": "D1",
+      "7": "D2",
+      "9": "D3",
+      "12": "D4",
+      "14": "D5",
+      "16": "D6",
+      "18": "D7",
+      "11": "MOUSED3",
+      "13": "MOUSED2",
+      "15": "MOUSED1",
+      "17": "MOUSED0"
+    }
+  },
+  "rp5c01": {
+    "source": "Ricoh 1993 General-Purpose IC Data Book, RP5C01 section 3",
+    "package": "DIP-18",
+    "pins": {
+      "1": "/CS",
+      "2": "CS",
+      "3": "ADJ",
+      "4": "A0",
+      "5": "A1",
+      "6": "A2",
+      "7": "A3",
+      "8": "/RD",
+      "9": "GND",
+      "10": "/WR",
+      "11": "D0",
+      "12": "D1",
+      "13": "D2",
+      "14": "D3",
+      "15": "/ALARM",
+      "16": "OSCIN",
+      "17": "OSCOUT",
+      "18": "VCC"
+    },
+    "proposed_connections": {
+      "1": "/RTCCS",
+      "2": "RTC_POWER_GOOD",
+      "3": "GND",
+      "4": "RTC_A0",
+      "5": "RTC_A1",
+      "6": "RTC_A2",
+      "7": "RTC_A3",
+      "8": "/RTCRD",
+      "9": "GND",
+      "10": "/RTCWR",
+      "11": "D0",
+      "12": "D1",
+      "13": "D2",
+      "14": "D3",
+      "15": "RTC_ALARM_TEST",
+      "16": "RTC_OSCIN",
+      "17": "RTC_OSCOUT",
+      "18": "RTC_BACKUP_VCC"
+    },
+    "address_latch": "74HCT373; D0-D3 captured on FD15 write, enable=RTCAS",
+    "data_port": "FD14",
+    "index_port": "FD15",
+    "data_mask": "0F"
+  }
+}

@@ -1,0 +1,4 @@
+Cyboard CH376 wired prototype.
+This file is read and compared byte for byte by CYBUSB.
+The diagnostic does not write to the storage device.
+USB storage plus PicoROM; mouse, RTC and Ethernet retained.
